@@ -1,0 +1,6 @@
+prodenv
+devenv
+testenv
+*.pyc
+*~
+gymonline/static
