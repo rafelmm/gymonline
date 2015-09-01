@@ -42,4 +42,29 @@ Podemos usar Eclipse para desarrollar. Para ello deberemos seguir los siguientes
 2. Configurar el interprete de Python en Window->Preferences. Debemos seleccionar el interprete ubicado en devenv/bin/
 3. Importar el proyecto
 
+BASE DE DATOS
+Usuario: root
+Password: root
+
+Crear una base de datos llamada gymonline, otra gymonlinedev y otra gymonlinetest
+Para ello abrir una consola:
+$ mysql -u root -p
+[introducir password: root]
+mysql> create database gymonline character set utf8;
+mysql> create database gymonlinedev character set utf8;
+mysql> create database gymonlinetest character set utf8;
+mysql> exit;
+
+CREAR TABLAS PARA LA APLICACIÓN:
+Abrimos consola y vamos al directorio del proyecto donde esta el fichero manage.py
+$ python manage.py check
+$ python manage.py makemigrations
+$ python manage.py migrate
+
+Con esto se crearan las tablas en la base de datos
+
+INICIAR SERVIDOR
+$ python manage.py runserver
+
+
 
