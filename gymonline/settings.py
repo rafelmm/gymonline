@@ -25,7 +25,7 @@ SECRET_KEY = 'ue5r6n_a4cr86thbae!0i%g684^g_3t4y64244)#3x&xb&q2f='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.1.131:8000']
 
 # Application definition
 
@@ -36,11 +36,20 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'gymonline.mytemplates',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.twitter',
+    'gymonline.apps.gymclient',
 )
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -70,6 +79,21 @@ TEMPLATES = [
 ]
 
 
+
+AUTHENTICATION_BACKENDS = (
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+
+SOCIALACCOUNT_PROVIDERS = { 'google':
+    { 'SCOPE': ['profile', 'email'],
+      'AUTH_PARAMS': { 'access_type': 'online' } 
+    }
+}
+    
 WSGI_APPLICATION = 'gymonline.wsgi.application'
 
 
@@ -78,8 +102,10 @@ WSGI_APPLICATION = 'gymonline.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'gymonline',
+        'USER': 'root',
+        'PASSWORD': 'root',
     }
 }
 
@@ -87,9 +113,9 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Madrid'
 
 USE_I18N = True
 
@@ -98,6 +124,11 @@ USE_L10N = True
 USE_TZ = True
 
 
+# Needed by allauth
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
@@ -105,5 +136,15 @@ STATIC_URL = '/static/'
 STATIC_ROOT = 'staticfiles'
 STATICFILES_DIRS = (
 	os.path.join(BASE_DIR, 'static'),
+)
+
+ugettext = lambda s : s
+LANGUAGES = (
+    ('en', ugettext('English')),
+    ('es', ugettext('Spanish')),
+    ('ca', ugettext('Catalan')),
+)
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
 )
 
