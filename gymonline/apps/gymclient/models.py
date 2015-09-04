@@ -13,7 +13,7 @@ class Clase(models.Model):
             ('B', _('Baja')),
     )
     # Attributes
-    nombre = models.CharField(max_length=50, null=False)
+    nombre = models.CharField(max_length=50)
     descripcion = models.CharField(max_length=150,
                                    blank=True,
                                    help_text = _("Escribe una descripcion para la clase (opcional)"))
@@ -22,7 +22,9 @@ class Clase(models.Model):
                                   default='M')
     fecha_alta = models.DateField(verbose_name=_("Fecha alta"))
     fecha_modificacion = models.DateField(verbose_name=_("Fecha modificacion"))
-    fecha_baja = models.DateField(verbose_name=_("Fecha baja"))
+    fecha_baja = models.DateField(null=True,
+                                  blank=True,
+                                  verbose_name=_("Fecha baja"))
     popularidad = models.IntegerField()
     
     #Manager
@@ -30,7 +32,7 @@ class Clase(models.Model):
     
     # Functions
     def __unicode__(self):
-        return _("Clase %s") % self.nombre
+        return self.nombre
 
     def save(self, *args, **kwargs):
         self.fecha_modificacion = datetime.datetime.utcnow().replace(tzinfo = utc)
