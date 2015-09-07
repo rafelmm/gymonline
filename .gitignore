@@ -7,3 +7,7 @@ gymonline/static
 /setuptools-18.2.zip
 /mysqlclient-1.3.6.tar.gz
 /mysqlclient-1.3.6/
+gymonline/django_secret_key.py
+.coverage
+htmlcov
+/functional_tests

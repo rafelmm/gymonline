@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+	Alberto Garcias -- Developer -- @agar
+	Rafel Mormeneo  -- Developer -- @lefar
+
+# THANKS
+	Thanks to all people who will use this online gym platform
+
+# TECHNOLOGY COLOPHON
+	Django
+    HTML5, CSS3
+    jQuery, Modernizr

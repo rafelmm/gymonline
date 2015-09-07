@@ -15,11 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.conf.urls.i18n import i18n_patterns
+from .views import home, home_files
 
 urlpatterns = [
-    url(r'^$', 'gymonline.views.home', name='home'),
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^accounts/', include('allauth.urls')),
-    url(r'^gymclient/', include('gymonline.apps.gymclient.urls',namespace="gymclient")),
-    
+    url(r'^(?P<filename>(robots.txt)|(humans.txt))$',
+        home_files, name='home-files'),
 ]
+
+urlpatterns += i18n_patterns(
+    url(r'^$', home, name='home'),
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^gymclient/', include('gymonline.apps.gymclient.urls',namespace="gymclient")),   
+)

@@ -1,7 +1,10 @@
 eclipse.preferences.version=1
+encoding//functional_test/test_all_users.py=utf8
 encoding//gymonline/apps/gymclient/forms.py=utf-8
 encoding//gymonline/apps/gymclient/managers.py=utf-8
 encoding//gymonline/apps/gymclient/urls.py=utf-8
 encoding//gymonline/apps/gymclient/views.py=utf-8
 encoding//gymonline/development_settings.py=utf-8
+encoding//gymonline/test.py=utf-8
 encoding//gymonline/test_settings.py=utf-8
+encoding//gymonline/views.py=utf-8

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% load l10n %}
+
+{% block head_title %}{% trans "Welcome to TuGymOnline!" %}{% endblock %}
+
+{% block content %}
+	<input type="hidden" id="local-date" value="{{today}}" />
+    <input type="hidden" id="non-local-date" value="{{today|unlocalize}}"/>
+    
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>{% trans "Welcome to TuGymOnline!"%}</h1>
+		<p>{% blocktrans %}TuGymOnline is a system that records the classes in your gym, it broadcasts them in Internet and it publishes them allowing users to view them at any site and at any hour. Wanting to know more about TuGymOnline, contact with us.{% endblocktrans %}</p> 
+		
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">{% trans "Read more" %} &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>{% trans "Gain visibility"%}</h2>
+          <p>{% trans "You can record and broadcast your sessions online."%}</p>
+          <p><a class="btn btn-default" href="#" role="button">{% trans "View details" %} &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>{% trans "Adapt yourself" %}</h2>
+          <p>{% trans "The platform computes statistics to prepare sessions adapted to your customers needs." %}</p>
+          <p><a class="btn btn-default" href="#" role="button">{% trans "View details" %} &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>{% trans "Make the difference" %}</h2>
+          <p>{% trans "TuGymOnline gives you added value for your current clients and an strategy to get new ones." %}</p>
+          <p><a class="btn btn-default" href="#" role="button">{% trans "View details" %} &raquo;</a></p>
+        </div>
+      </div>
+    </div> <!-- /container --> 
+{% endblock %}

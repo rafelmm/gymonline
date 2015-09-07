@@ -9,10 +9,9 @@ from gymonline.apps.gymclient import forms
 
 def home(request):
     return render(request, 
-                  "gymclient/home.html",
+                  "home.html",
                   {}
                   )
-
 
 def clase_list(request):
     clase = models.Clase.objects.all()

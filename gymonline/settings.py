@@ -9,26 +9,27 @@ https://docs.djangoproject.com/en/1.8/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.8/ref/settings/
 """
+from django.utils.translation import ugettext_lazy as _
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ue5r6n_a4cr86thbae!0i%g684^g_3t4y64244)#3x&xb&q2f='
+from gymonline import django_secret_key
+SECRET_KEY = django_secret_key.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['192.168.1.131:8000']
+ALLOWED_HOSTS = []
 
 # Application definition
-
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -37,13 +38,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'gymonline.mytemplates',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.facebook',
-    'allauth.socialaccount.providers.google',
-    'allauth.socialaccount.providers.twitter',
     'gymonline.apps.gymclient',
 )
 
@@ -64,12 +58,15 @@ ROOT_URLCONF = 'gymonline.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',
+                'django.template.context_processors.i18n',
+                'django.template.context_processors.media',
+                'django.template.context_processors.static',
+                'django.template.context_processors.tz',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -83,9 +80,6 @@ TEMPLATES = [
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
-
-    # `allauth` specific authentication methods, such as login by e-mail
-    'allauth.account.auth_backends.AuthenticationBackend',
 )
 
 SOCIALACCOUNT_PROVIDERS = { 'google':
@@ -113,7 +107,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'es'
+LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Europe/Madrid'
 
@@ -137,12 +131,11 @@ STATIC_ROOT = 'staticfiles'
 STATICFILES_DIRS = (
 	os.path.join(BASE_DIR, 'static'),
 )
-
-ugettext = lambda s : s
+    
 LANGUAGES = (
-    ('en', ugettext('English')),
-    ('es', ugettext('Spanish')),
-    ('ca', ugettext('Catalan')),
+    ('en', _('English')),
+    ('es', _('Spanish')),
+    ('ca', _('Catalan')),
 )
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),

@@ -1,0 +1,1876 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-06 23:40+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: devenv/lib/python3.4/site-packages/django/contrib/messages/apps.py:7
+#: prodenv/lib/python3.4/site-packages/django/contrib/messages/apps.py:7
+#: testenv/lib/python3.4/site-packages/django/contrib/messages/apps.py:7
+msgid "Messages"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/contrib/sitemaps/apps.py:7
+#: prodenv/lib/python3.4/site-packages/django/contrib/sitemaps/apps.py:7
+#: testenv/lib/python3.4/site-packages/django/contrib/sitemaps/apps.py:7
+msgid "Site Maps"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/contrib/staticfiles/apps.py:7
+#: prodenv/lib/python3.4/site-packages/django/contrib/staticfiles/apps.py:7
+#: testenv/lib/python3.4/site-packages/django/contrib/staticfiles/apps.py:7
+msgid "Static Files"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/contrib/syndication/apps.py:7
+#: prodenv/lib/python3.4/site-packages/django/contrib/syndication/apps.py:7
+#: testenv/lib/python3.4/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/contrib/webdesign/apps.py:7
+#: prodenv/lib/python3.4/site-packages/django/contrib/webdesign/apps.py:7
+#: testenv/lib/python3.4/site-packages/django/contrib/webdesign/apps.py:7
+msgid "Web Design"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:20
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:20
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:20
+msgid "Enter a valid value."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:87
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:712
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:87
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:712
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:87
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:712
+msgid "Enter a valid URL."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:130
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:130
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:130
+msgid "Enter a valid integer."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:141
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:141
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:141
+msgid "Enter a valid email address."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:215
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:215
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:215
+msgid ""
+"Enter a valid 'slug' consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:220
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:239
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:220
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:239
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:220
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:239
+msgid "Enter a valid IPv4 address."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:225
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:240
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:225
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:240
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:225
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:240
+msgid "Enter a valid IPv6 address."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:235
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:238
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:235
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:238
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:235
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:238
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:263
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1144
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:263
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1144
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:263
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1144
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:272
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:272
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:272
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:298
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:298
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:298
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:305
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:305
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:305
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:314
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:314
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:314
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: devenv/lib/python3.4/site-packages/django/core/validators.py:325
+#: prodenv/lib/python3.4/site-packages/django/core/validators.py:325
+#: testenv/lib/python3.4/site-packages/django/core/validators.py:325
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/base.py:1130
+#: devenv/lib/python3.4/site-packages/django/forms/models.py:722
+#: prodenv/lib/python3.4/site-packages/django/db/models/base.py:1130
+#: prodenv/lib/python3.4/site-packages/django/forms/models.py:722
+#: testenv/lib/python3.4/site-packages/django/db/models/base.py:1130
+#: testenv/lib/python3.4/site-packages/django/forms/models.py:722
+msgid "and"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/base.py:1132
+#: prodenv/lib/python3.4/site-packages/django/db/models/base.py:1132
+#: testenv/lib/python3.4/site-packages/django/db/models/base.py:1132
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:107
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:107
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:107
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:108
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:108
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:108
+msgid "This field cannot be null."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:109
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:109
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:109
+msgid "This field cannot be blank."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:110
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:110
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:110
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or 'month'.
+#. Eg: "Title must be unique for pub_date year"
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:114
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:114
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:114
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:132
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:132
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:132
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:922
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1832
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:922
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1832
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:922
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1832
+msgid "Integer"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:926
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1830
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:926
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1830
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:926
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1830
+#, python-format
+msgid "'%(value)s' value must be an integer."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1001
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1001
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1001
+#, python-format
+msgid "'%(value)s' value must be either True or False."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1003
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1003
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1003
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1078
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1078
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1078
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1139
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1139
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1139
+msgid "Comma-separated integers"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1188
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1188
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1188
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1190
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1340
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1190
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1340
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1190
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1340
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1193
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1193
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1193
+msgid "Date (without time)"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1338
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1338
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1338
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1342
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1342
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1342
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1346
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1346
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1346
+msgid "Date (with time)"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1498
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1498
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1498
+#, python-format
+msgid "'%(value)s' value must be a decimal number."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1500
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1500
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1500
+msgid "Decimal number"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1651
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1651
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1651
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in [DD] [HH:[MM:]]ss[."
+"uuuuuu] format."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1654
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1654
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1654
+msgid "Duration"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1705
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1705
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1705
+msgid "Email address"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1729
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1729
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1729
+msgid "File path"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1796
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1796
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1796
+#, python-format
+msgid "'%(value)s' value must be a float."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1798
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1798
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1798
+msgid "Floating point number"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1899
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1899
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1899
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1914
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1914
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1914
+msgid "IPv4 address"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1950
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1950
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:1950
+msgid "IP address"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2029
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2029
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2029
+#, python-format
+msgid "'%(value)s' value must be either None, True or False."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2031
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2031
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2031
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2091
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2091
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2091
+msgid "Positive integer"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2103
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2103
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2103
+msgid "Positive small integer"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2116
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2116
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2116
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2145
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2145
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2145
+msgid "Small integer"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2152
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2152
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2152
+msgid "Text"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2175
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2175
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2175
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2177
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2177
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2177
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2180
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2180
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2180
+msgid "Time"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2308
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2308
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2308
+msgid "URL"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2331
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2331
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2331
+msgid "Raw binary data"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2375
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2375
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2375
+#, python-format
+msgid "'%(value)s' is not a valid UUID."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/files.py:239
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/files.py:239
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/files.py:239
+msgid "File"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/files.py:389
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/files.py:389
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/files.py:389
+msgid "Image"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/related.py:1802
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/related.py:1802
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/related.py:1802
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/related.py:1804
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/related.py:1804
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/related.py:1804
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/related.py:2034
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/related.py:2034
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/related.py:2034
+msgid "One-to-one relationship"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/db/models/fields/related.py:2124
+#: prodenv/lib/python3.4/site-packages/django/db/models/fields/related.py:2124
+#: testenv/lib/python3.4/site-packages/django/db/models/fields/related.py:2124
+msgid "Many-to-many relationship"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:64
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:64
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:64
+msgid "This field is required."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:237
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:237
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:237
+msgid "Enter a whole number."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:280
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:317
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:280
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:317
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:280
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:317
+msgid "Enter a number."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:319
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:319
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:319
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:323
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:323
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:323
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:327
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:327
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:327
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:438
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:1193
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:438
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:1193
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:438
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:1193
+msgid "Enter a valid date."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:462
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:1194
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:462
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:1194
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:462
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:1194
+msgid "Enter a valid time."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:484
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:484
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:484
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:525
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:525
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:525
+msgid "Enter a valid duration."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:591
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:591
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:591
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:592
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:592
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:592
+msgid "No file was submitted."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:593
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:593
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:593
+msgid "The submitted file is empty."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:595
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:595
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:595
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:598
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:598
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:598
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:660
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:660
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:660
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:827
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:921
+#: devenv/lib/python3.4/site-packages/django/forms/models.py:1238
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:827
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:921
+#: prodenv/lib/python3.4/site-packages/django/forms/models.py:1238
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:827
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:921
+#: testenv/lib/python3.4/site-packages/django/forms/models.py:1238
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:922
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:1037
+#: devenv/lib/python3.4/site-packages/django/forms/models.py:1237
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:922
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:1037
+#: prodenv/lib/python3.4/site-packages/django/forms/models.py:1237
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:922
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:1037
+#: testenv/lib/python3.4/site-packages/django/forms/models.py:1237
+msgid "Enter a list of values."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:1038
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:1038
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:1038
+msgid "Enter a complete value."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/fields.py:1264
+#: prodenv/lib/python3.4/site-packages/django/forms/fields.py:1264
+#: testenv/lib/python3.4/site-packages/django/forms/fields.py:1264
+msgid "Enter a valid UUID."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: devenv/lib/python3.4/site-packages/django/forms/forms.py:129
+#: prodenv/lib/python3.4/site-packages/django/forms/forms.py:129
+#: testenv/lib/python3.4/site-packages/django/forms/forms.py:129
+msgid ":"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/forms.py:214
+#: prodenv/lib/python3.4/site-packages/django/forms/forms.py:214
+#: testenv/lib/python3.4/site-packages/django/forms/forms.py:214
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: devenv/lib/python3.4/site-packages/django/forms/forms.py:659
+#: prodenv/lib/python3.4/site-packages/django/forms/forms.py:659
+#: testenv/lib/python3.4/site-packages/django/forms/forms.py:659
+msgid ":?.!"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/formsets.py:96
+#: prodenv/lib/python3.4/site-packages/django/forms/formsets.py:96
+#: testenv/lib/python3.4/site-packages/django/forms/formsets.py:96
+msgid "ManagementForm data is missing or has been tampered with"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/formsets.py:333
+#: prodenv/lib/python3.4/site-packages/django/forms/formsets.py:333
+#: testenv/lib/python3.4/site-packages/django/forms/formsets.py:333
+#, python-format
+msgid "Please submit %d or fewer forms."
+msgid_plural "Please submit %d or fewer forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/formsets.py:340
+#: prodenv/lib/python3.4/site-packages/django/forms/formsets.py:340
+#: testenv/lib/python3.4/site-packages/django/forms/formsets.py:340
+#, python-format
+msgid "Please submit %d or more forms."
+msgid_plural "Please submit %d or more forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/formsets.py:368
+#: devenv/lib/python3.4/site-packages/django/forms/formsets.py:370
+#: prodenv/lib/python3.4/site-packages/django/forms/formsets.py:368
+#: prodenv/lib/python3.4/site-packages/django/forms/formsets.py:370
+#: testenv/lib/python3.4/site-packages/django/forms/formsets.py:368
+#: testenv/lib/python3.4/site-packages/django/forms/formsets.py:370
+msgid "Order"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/formsets.py:372
+#: prodenv/lib/python3.4/site-packages/django/forms/formsets.py:372
+#: testenv/lib/python3.4/site-packages/django/forms/formsets.py:372
+msgid "Delete"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/models.py:716
+#: prodenv/lib/python3.4/site-packages/django/forms/models.py:716
+#: testenv/lib/python3.4/site-packages/django/forms/models.py:716
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/models.py:720
+#: prodenv/lib/python3.4/site-packages/django/forms/models.py:720
+#: testenv/lib/python3.4/site-packages/django/forms/models.py:720
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/models.py:726
+#: prodenv/lib/python3.4/site-packages/django/forms/models.py:726
+#: testenv/lib/python3.4/site-packages/django/forms/models.py:726
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/models.py:734
+#: prodenv/lib/python3.4/site-packages/django/forms/models.py:734
+#: testenv/lib/python3.4/site-packages/django/forms/models.py:734
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/models.py:1057
+#: prodenv/lib/python3.4/site-packages/django/forms/models.py:1057
+#: testenv/lib/python3.4/site-packages/django/forms/models.py:1057
+msgid "The inline foreign key did not match the parent instance primary key."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/models.py:1123
+#: prodenv/lib/python3.4/site-packages/django/forms/models.py:1123
+#: testenv/lib/python3.4/site-packages/django/forms/models.py:1123
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/models.py:1240
+#: prodenv/lib/python3.4/site-packages/django/forms/models.py:1240
+#: testenv/lib/python3.4/site-packages/django/forms/models.py:1240
+#, python-format
+msgid "\"%(pk)s\" is not a valid value for a primary key."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/utils.py:165
+#: prodenv/lib/python3.4/site-packages/django/forms/utils.py:165
+#: testenv/lib/python3.4/site-packages/django/forms/utils.py:165
+#, python-format
+msgid ""
+"%(datetime)s couldn't be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/widgets.py:345
+#: prodenv/lib/python3.4/site-packages/django/forms/widgets.py:345
+#: testenv/lib/python3.4/site-packages/django/forms/widgets.py:345
+msgid "Currently"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/widgets.py:346
+#: prodenv/lib/python3.4/site-packages/django/forms/widgets.py:346
+#: testenv/lib/python3.4/site-packages/django/forms/widgets.py:346
+msgid "Change"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/widgets.py:347
+#: prodenv/lib/python3.4/site-packages/django/forms/widgets.py:347
+#: testenv/lib/python3.4/site-packages/django/forms/widgets.py:347
+msgid "Clear"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/widgets.py:555
+#: prodenv/lib/python3.4/site-packages/django/forms/widgets.py:555
+#: testenv/lib/python3.4/site-packages/django/forms/widgets.py:555
+msgid "Unknown"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/widgets.py:556
+#: prodenv/lib/python3.4/site-packages/django/forms/widgets.py:556
+#: testenv/lib/python3.4/site-packages/django/forms/widgets.py:556
+msgid "Yes"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/forms/widgets.py:557
+#: prodenv/lib/python3.4/site-packages/django/forms/widgets.py:557
+#: testenv/lib/python3.4/site-packages/django/forms/widgets.py:557
+msgid "No"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/template/defaultfilters.py:865
+#: prodenv/lib/python3.4/site-packages/django/template/defaultfilters.py:865
+#: testenv/lib/python3.4/site-packages/django/template/defaultfilters.py:865
+msgid "yes,no,maybe"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/template/defaultfilters.py:894
+#: devenv/lib/python3.4/site-packages/django/template/defaultfilters.py:906
+#: prodenv/lib/python3.4/site-packages/django/template/defaultfilters.py:894
+#: prodenv/lib/python3.4/site-packages/django/template/defaultfilters.py:906
+#: testenv/lib/python3.4/site-packages/django/template/defaultfilters.py:894
+#: testenv/lib/python3.4/site-packages/django/template/defaultfilters.py:906
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: devenv/lib/python3.4/site-packages/django/template/defaultfilters.py:908
+#: prodenv/lib/python3.4/site-packages/django/template/defaultfilters.py:908
+#: testenv/lib/python3.4/site-packages/django/template/defaultfilters.py:908
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/template/defaultfilters.py:910
+#: prodenv/lib/python3.4/site-packages/django/template/defaultfilters.py:910
+#: testenv/lib/python3.4/site-packages/django/template/defaultfilters.py:910
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/template/defaultfilters.py:912
+#: prodenv/lib/python3.4/site-packages/django/template/defaultfilters.py:912
+#: testenv/lib/python3.4/site-packages/django/template/defaultfilters.py:912
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/template/defaultfilters.py:914
+#: prodenv/lib/python3.4/site-packages/django/template/defaultfilters.py:914
+#: testenv/lib/python3.4/site-packages/django/template/defaultfilters.py:914
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/template/defaultfilters.py:916
+#: prodenv/lib/python3.4/site-packages/django/template/defaultfilters.py:916
+#: testenv/lib/python3.4/site-packages/django/template/defaultfilters.py:916
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dateformat.py:61
+#: prodenv/lib/python3.4/site-packages/django/utils/dateformat.py:61
+#: testenv/lib/python3.4/site-packages/django/utils/dateformat.py:61
+msgid "p.m."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dateformat.py:62
+#: prodenv/lib/python3.4/site-packages/django/utils/dateformat.py:62
+#: testenv/lib/python3.4/site-packages/django/utils/dateformat.py:62
+msgid "a.m."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dateformat.py:67
+#: prodenv/lib/python3.4/site-packages/django/utils/dateformat.py:67
+#: testenv/lib/python3.4/site-packages/django/utils/dateformat.py:67
+msgid "PM"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dateformat.py:68
+#: prodenv/lib/python3.4/site-packages/django/utils/dateformat.py:68
+#: testenv/lib/python3.4/site-packages/django/utils/dateformat.py:68
+msgid "AM"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dateformat.py:151
+#: prodenv/lib/python3.4/site-packages/django/utils/dateformat.py:151
+#: testenv/lib/python3.4/site-packages/django/utils/dateformat.py:151
+msgid "midnight"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dateformat.py:153
+#: prodenv/lib/python3.4/site-packages/django/utils/dateformat.py:153
+#: testenv/lib/python3.4/site-packages/django/utils/dateformat.py:153
+msgid "noon"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:6
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:6
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:6
+msgid "Monday"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:6
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:6
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:6
+msgid "Tuesday"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:6
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:6
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:6
+msgid "Wednesday"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:6
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:6
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:6
+msgid "Thursday"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:6
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:6
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:6
+msgid "Friday"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:7
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:7
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:7
+msgid "Saturday"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:7
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:7
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:7
+msgid "Sunday"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:10
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:10
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:10
+msgid "Mon"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:10
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:10
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:10
+msgid "Tue"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:10
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:10
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:10
+msgid "Wed"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:10
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:10
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:10
+msgid "Thu"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:10
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:10
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:10
+msgid "Fri"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:11
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:11
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:11
+msgid "Sat"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:11
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:11
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:11
+msgid "Sun"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:18
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:18
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:18
+msgid "January"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:18
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:18
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:18
+msgid "February"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:18
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:18
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:18
+msgid "March"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:18
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:18
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:18
+msgid "April"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:18
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:18
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:18
+msgid "May"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:18
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:18
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:18
+msgid "June"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:19
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:19
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:19
+msgid "July"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:19
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:19
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:19
+msgid "August"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:19
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:19
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:19
+msgid "September"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:19
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:19
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:19
+msgid "October"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:19
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:19
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:19
+msgid "November"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:20
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:20
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:20
+msgid "December"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:23
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:23
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:23
+msgid "jan"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:23
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:23
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:23
+msgid "feb"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:23
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:23
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:23
+msgid "mar"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:23
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:23
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:23
+msgid "apr"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:23
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:23
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:23
+msgid "may"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:23
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:23
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:23
+msgid "jun"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:24
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:24
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:24
+msgid "jul"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:24
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:24
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:24
+msgid "aug"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:24
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:24
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:24
+msgid "sep"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:24
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:24
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:24
+msgid "oct"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:24
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:24
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:24
+msgid "nov"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:24
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:24
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:24
+msgid "dec"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:31
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:31
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:31
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:32
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:32
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:32
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:33
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:33
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:33
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:34
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:34
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:34
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:35
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:35
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:35
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:36
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:36
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:36
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:37
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:37
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:37
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:38
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:38
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:38
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:39
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:39
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:39
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:40
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:40
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:40
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:41
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:41
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:41
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:42
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:42
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:42
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:45
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:45
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:45
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:46
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:46
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:46
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:47
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:47
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:47
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:48
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:48
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:48
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:49
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:49
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:49
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:50
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:50
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:50
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:51
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:51
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:51
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:52
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:52
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:52
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:53
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:53
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:53
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:54
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:54
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:54
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:55
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:55
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:55
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/dates.py:56
+#: prodenv/lib/python3.4/site-packages/django/utils/dates.py:56
+#: testenv/lib/python3.4/site-packages/django/utils/dates.py:56
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/ipv6.py:10
+#: prodenv/lib/python3.4/site-packages/django/utils/ipv6.py:10
+#: testenv/lib/python3.4/site-packages/django/utils/ipv6.py:10
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/text.py:79
+#: prodenv/lib/python3.4/site-packages/django/utils/text.py:79
+#: testenv/lib/python3.4/site-packages/django/utils/text.py:79
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s..."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/text.py:248
+#: prodenv/lib/python3.4/site-packages/django/utils/text.py:248
+#: testenv/lib/python3.4/site-packages/django/utils/text.py:248
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#. Translators: This string is used as a separator between list elements
+#. Translators: This string is used as a separator between list elements
+#: devenv/lib/python3.4/site-packages/django/utils/text.py:267
+#: devenv/lib/python3.4/site-packages/django/utils/timesince.py:58
+#: prodenv/lib/python3.4/site-packages/django/utils/text.py:267
+#: prodenv/lib/python3.4/site-packages/django/utils/timesince.py:58
+#: testenv/lib/python3.4/site-packages/django/utils/text.py:267
+#: testenv/lib/python3.4/site-packages/django/utils/timesince.py:58
+msgid ", "
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/timesince.py:10
+#: prodenv/lib/python3.4/site-packages/django/utils/timesince.py:10
+#: testenv/lib/python3.4/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/timesince.py:11
+#: prodenv/lib/python3.4/site-packages/django/utils/timesince.py:11
+#: testenv/lib/python3.4/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/timesince.py:12
+#: prodenv/lib/python3.4/site-packages/django/utils/timesince.py:12
+#: testenv/lib/python3.4/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/timesince.py:13
+#: prodenv/lib/python3.4/site-packages/django/utils/timesince.py:13
+#: testenv/lib/python3.4/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/timesince.py:14
+#: prodenv/lib/python3.4/site-packages/django/utils/timesince.py:14
+#: testenv/lib/python3.4/site-packages/django/utils/timesince.py:14
+#, python-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/timesince.py:15
+#: prodenv/lib/python3.4/site-packages/django/utils/timesince.py:15
+#: testenv/lib/python3.4/site-packages/django/utils/timesince.py:15
+#, python-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: devenv/lib/python3.4/site-packages/django/utils/timesince.py:47
+#: prodenv/lib/python3.4/site-packages/django/utils/timesince.py:47
+#: testenv/lib/python3.4/site-packages/django/utils/timesince.py:47
+msgid "0 minutes"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/csrf.py:107
+#: prodenv/lib/python3.4/site-packages/django/views/csrf.py:107
+#: testenv/lib/python3.4/site-packages/django/views/csrf.py:107
+msgid "Forbidden"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/csrf.py:108
+#: prodenv/lib/python3.4/site-packages/django/views/csrf.py:108
+#: testenv/lib/python3.4/site-packages/django/views/csrf.py:108
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/csrf.py:112
+#: prodenv/lib/python3.4/site-packages/django/views/csrf.py:112
+#: testenv/lib/python3.4/site-packages/django/views/csrf.py:112
+msgid ""
+"You are seeing this message because this HTTPS site requires a 'Referer "
+"header' to be sent by your Web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/csrf.py:117
+#: prodenv/lib/python3.4/site-packages/django/views/csrf.py:117
+#: testenv/lib/python3.4/site-packages/django/views/csrf.py:117
+msgid ""
+"If you have configured your browser to disable 'Referer' headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for 'same-"
+"origin' requests."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/csrf.py:122
+#: prodenv/lib/python3.4/site-packages/django/views/csrf.py:122
+#: testenv/lib/python3.4/site-packages/django/views/csrf.py:122
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/csrf.py:127
+#: prodenv/lib/python3.4/site-packages/django/views/csrf.py:127
+#: testenv/lib/python3.4/site-packages/django/views/csrf.py:127
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for 'same-origin' requests."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/csrf.py:132
+#: prodenv/lib/python3.4/site-packages/django/views/csrf.py:132
+#: testenv/lib/python3.4/site-packages/django/views/csrf.py:132
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/debug.py:583
+#: prodenv/lib/python3.4/site-packages/django/views/debug.py:583
+#: testenv/lib/python3.4/site-packages/django/views/debug.py:583
+msgid "Welcome to Django"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/debug.py:584
+#: prodenv/lib/python3.4/site-packages/django/views/debug.py:584
+#: testenv/lib/python3.4/site-packages/django/views/debug.py:584
+msgid "It worked!"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/debug.py:585
+#: prodenv/lib/python3.4/site-packages/django/views/debug.py:585
+#: testenv/lib/python3.4/site-packages/django/views/debug.py:585
+msgid "Congratulations on your first Django-powered page."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/debug.py:586
+#: prodenv/lib/python3.4/site-packages/django/views/debug.py:586
+#: testenv/lib/python3.4/site-packages/django/views/debug.py:586
+msgid ""
+"Of course, you haven't actually done any work yet. Next, start your first "
+"app by running <code>python manage.py startapp [app_label]</code>."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/debug.py:588
+#: prodenv/lib/python3.4/site-packages/django/views/debug.py:588
+#: testenv/lib/python3.4/site-packages/django/views/debug.py:588
+msgid ""
+"You're seeing this message because you have <code>DEBUG = True</code> in "
+"your Django settings file and you haven't configured any URLs. Get to work!"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/generic/dates.py:48
+#: prodenv/lib/python3.4/site-packages/django/views/generic/dates.py:48
+#: testenv/lib/python3.4/site-packages/django/views/generic/dates.py:48
+msgid "No year specified"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/generic/dates.py:104
+#: prodenv/lib/python3.4/site-packages/django/views/generic/dates.py:104
+#: testenv/lib/python3.4/site-packages/django/views/generic/dates.py:104
+msgid "No month specified"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/generic/dates.py:163
+#: prodenv/lib/python3.4/site-packages/django/views/generic/dates.py:163
+#: testenv/lib/python3.4/site-packages/django/views/generic/dates.py:163
+msgid "No day specified"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/generic/dates.py:219
+#: prodenv/lib/python3.4/site-packages/django/views/generic/dates.py:219
+#: testenv/lib/python3.4/site-packages/django/views/generic/dates.py:219
+msgid "No week specified"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/generic/dates.py:378
+#: devenv/lib/python3.4/site-packages/django/views/generic/dates.py:406
+#: prodenv/lib/python3.4/site-packages/django/views/generic/dates.py:378
+#: prodenv/lib/python3.4/site-packages/django/views/generic/dates.py:406
+#: testenv/lib/python3.4/site-packages/django/views/generic/dates.py:378
+#: testenv/lib/python3.4/site-packages/django/views/generic/dates.py:406
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/generic/dates.py:660
+#: prodenv/lib/python3.4/site-packages/django/views/generic/dates.py:660
+#: testenv/lib/python3.4/site-packages/django/views/generic/dates.py:660
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/generic/dates.py:694
+#: prodenv/lib/python3.4/site-packages/django/views/generic/dates.py:694
+#: testenv/lib/python3.4/site-packages/django/views/generic/dates.py:694
+#, python-format
+msgid "Invalid date string '%(datestr)s' given format '%(format)s'"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/generic/detail.py:55
+#: prodenv/lib/python3.4/site-packages/django/views/generic/detail.py:55
+#: testenv/lib/python3.4/site-packages/django/views/generic/detail.py:55
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/generic/list.py:76
+#: prodenv/lib/python3.4/site-packages/django/views/generic/list.py:76
+#: testenv/lib/python3.4/site-packages/django/views/generic/list.py:76
+msgid "Page is not 'last', nor can it be converted to an int."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/generic/list.py:81
+#: prodenv/lib/python3.4/site-packages/django/views/generic/list.py:81
+#: testenv/lib/python3.4/site-packages/django/views/generic/list.py:81
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/generic/list.py:172
+#: prodenv/lib/python3.4/site-packages/django/views/generic/list.py:172
+#: testenv/lib/python3.4/site-packages/django/views/generic/list.py:172
+#, python-format
+msgid "Empty list and '%(class_name)s.allow_empty' is False."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/static.py:58
+#: prodenv/lib/python3.4/site-packages/django/views/static.py:58
+#: testenv/lib/python3.4/site-packages/django/views/static.py:58
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/static.py:60
+#: prodenv/lib/python3.4/site-packages/django/views/static.py:60
+#: testenv/lib/python3.4/site-packages/django/views/static.py:60
+#, python-format
+msgid "\"%(path)s\" does not exist"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/django/views/static.py:100
+#: htmlcov/testenv_lib_python3_4_site-packages_django_views_static.html:302
+#: htmlcov/testenv_lib_python3_4_site-packages_django_views_static.html:305
+#: prodenv/lib/python3.4/site-packages/django/views/static.py:100
+#: testenv/lib/python3.4/site-packages/django/views/static.py:100
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:313
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:313
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:313
+msgid "usage: "
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:821
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:821
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:821
+msgid ".__call__() not defined"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1105
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1105
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1105
+#, python-format
+msgid "unknown parser %r (choices: %s)"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1146
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1146
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1146
+#, python-format
+msgid "argument \"-\" with mode %r"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1349
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1349
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1349
+#, python-format
+msgid "cannot merge actions - two groups are named %r"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1387
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1387
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1387
+msgid "'required' is an invalid argument for positionals"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1407
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1407
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1407
+#, python-format
+msgid "invalid option string %r: must start with a character %r"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1428
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1428
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1428
+#, python-format
+msgid "dest= is required for options like %r"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1445
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1445
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1445
+#, python-format
+msgid "invalid conflict_resolution value: %r"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1463
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1463
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1463
+#, python-format
+msgid "conflicting option string(s): %s"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1526
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1526
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1526
+msgid "mutually exclusive arguments must be optional"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1596
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1596
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1596
+msgid "positional arguments"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1597
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1597
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1597
+msgid "optional arguments"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1615
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1615
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1615
+msgid "show this help message and exit"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1621
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1621
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1621
+msgid "show program's version number and exit"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1653
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1653
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1653
+msgid "cannot have multiple subparser arguments"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1705
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1705
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1705
+#, python-format
+msgid "unrecognized arguments: %s"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1802
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1802
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1802
+#, python-format
+msgid "not allowed with argument %s"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1848
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1862
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1848
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1862
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1848
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1862
+#, python-format
+msgid "ignored explicit argument %r"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1952
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1952
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1952
+msgid "too few arguments"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1959
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1959
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1959
+#, python-format
+msgid "argument %s is required"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1973
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1973
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:1973
+#, python-format
+msgid "one of the arguments %s is required"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2019
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2019
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2019
+msgid "expected one argument"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2020
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2020
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2020
+msgid "expected at most one argument"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2021
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2021
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2021
+msgid "expected at least one argument"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2023
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2023
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2023
+#, python-format
+msgid "expected %s argument(s)"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2080
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2080
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2080
+#, python-format
+msgid "ambiguous option: %s could match %s"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2142
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2142
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2142
+#, python-format
+msgid "unexpected option string: %s"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2243
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2243
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2243
+#, python-format
+msgid "%r is not callable"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2259
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2259
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2259
+#, python-format
+msgid "invalid %s value: %r"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2269
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2269
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2269
+#, python-format
+msgid "invalid choice: %r (choose from %s)"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2362
+#: prodenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2362
+#: testenv/lib/python3.4/site-packages/gunicorn/argparse_compat.py:2362
+#, python-format
+msgid "%s: error: %s\n"
+msgstr ""
+
+#: gymonline/apps/gymclient/models.py:11
+msgid "Alta"
+msgstr ""
+
+#: gymonline/apps/gymclient/models.py:12
+msgid "Media"
+msgstr ""
+
+#: gymonline/apps/gymclient/models.py:13
+msgid "Baja"
+msgstr ""
+
+#: gymonline/apps/gymclient/models.py:19
+msgid "Escribe una descripcion para la clase (opcional)"
+msgstr ""
+
+#: gymonline/apps/gymclient/models.py:23
+msgid "Fecha alta"
+msgstr ""
+
+#: gymonline/apps/gymclient/models.py:24
+msgid "Fecha modificacion"
+msgstr ""
+
+#: gymonline/apps/gymclient/models.py:27
+msgid "Fecha baja"
+msgstr ""
+
+#: gymonline/apps/gymclient/models.py:43
+msgid "Clase"
+msgstr ""
+
+#: gymonline/apps/gymclient/models.py:44
+msgid "Classes"
+msgstr ""
+
+#: gymonline/settings.py:136
+msgid "English"
+msgstr ""
+
+#: gymonline/settings.py:137
+msgid "Spanish"
+msgstr ""
+
+#: gymonline/settings.py:138
+msgid "Catalan"
+msgstr ""
+
+#: gymonline/templates/gymonline/index.html:10
+msgid "Welcome to TuGymOnline!"
+msgstr "Benvingut a TuGymOnline!"
+
+#: gymonline/templates/gymonline/index.html:11
+msgid ""
+"TuGymOnline is a system that records the classes in your gym, it broadcasts "
+"them in Internet and it publishes them allowing users to view them at any "
+"site and at any hour. Wanting to know more about TuGymOnline, contact with "
+"us."
+msgstr ""
+"TuGymOnline es un sistema integral que graba las clases dirigidas de tu gimnasio, "
+"las emite por Internet y las publica para que puedan ser seguidas desde cualquier "
+"lugar y a cualquier hora. Si quieres saber más sobre TuGymOnline, no dudes en "
+"ponerte en contacto con nosotros."
+
+#: htmlcov/testenv_lib_python3_4_site-packages_django_template_defaulttags.html:3128
+#, python-format
+msgid "The width is: %(width)s"
+msgstr ""

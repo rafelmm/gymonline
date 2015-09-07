@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
-from django.shortcuts import render_to_response
-from django.shortcuts import RequestContext
-
+from django.shortcuts import render
+from datetime import date
 def home(request):
-    return render_to_response("base.html", RequestContext(request, {}))
+    today = date.today()
+    return render(request, "gymonline/index.html", {'today': today})
+
+def home_files(request, filename):
+    return render(request, filename, {}, content_type="text/plain")

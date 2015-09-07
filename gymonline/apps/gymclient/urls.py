@@ -2,8 +2,10 @@
 
 from django.conf.urls import patterns, url
 from gymonline.apps.gymclient import views
+from .views import home
+
 urlpatterns = patterns('',
-    url(r'^$', views.home,name='home'),
+    url(r'^$', home,name='home'),
     url(r'^clase/$', views.clase_list, name="clase_list"),
     url(r'^clase/(?P<id>\d+)/$', views.clase_detail, name="clase_detail"),
     url(r'^edit-clase/$', views.clase_form, name="clase_form"),
