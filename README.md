@@ -15,16 +15,21 @@ Para empezar a desarrollar hay que crear el entorno siguiendo los siguientes pas
 	$ virtualenv prodenv
 	
 4. Instalar los paquetes necesarios en cada entorno:
+	NOTA: Si se produce un error al instalar psycopg2 ejecutar el siguiente comando:
+	$ sudo apt-get install libpq-dev python3-dev
 
 	$ source devenv/bin/activate
+	$ (devenv) pip install -r requirements/common.txt
 	$ (devenv) pip install -r requirements/dev.txt
 	$ deactivate
 	
 	$ source testenv/bin/activate
+	$ (devenv) pip install -r requirements/common.txt
 	$ (devenv) pip install -r requirements/test.txt
 	$ deactivate
 
 	$ source prodenv/bin/activate
+	$ (devenv) pip install -r requirements/common.txt
 	$ (devenv) pip install -r requirements/prod.txt
 	$ deactivate
 	
