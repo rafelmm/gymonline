@@ -4,11 +4,18 @@
 
 {% load l10n %}
 
+{% load tz %}
+
 {% block head_title %}{% trans "Welcome to TuGymOnline!" %}{% endblock %}
 
 {% block content %}
+
+	<!-- Hidden fields for testing purposes -->
 	<input type="hidden" id="local-date" value="{{today}}" />
     <input type="hidden" id="non-local-date" value="{{today|unlocalize}}"/>
+    <input type="hidden" id="time-tz" value="{{now|time:"H:i"}}"/>
+    <input type="hidden" id="time-utc" value="{{now|utc|time:"H:i"}}"/>
+    <input type="hidden" id="time-ny" value="{{now|timezone:"America/New_York"|time:"H:i"}}"/>
     
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
