@@ -1,19 +1,18 @@
-# Fichero de textos de TuGymOnline. Catalan
-# Copyright (C) 2015 TuGymOnline
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Rafel Mormeneo <rmormeneo@tugymonline.com>, 2015.
-# Alberto Garcia <agarcia@tugymonline.com>, 2015
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.0\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-08 20:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: Catalan\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1845,38 +1844,36 @@ msgstr ""
 
 #: gymonline/settings.py:137
 msgid "English"
-msgstr "Anglès"
+msgstr ""
 
 #: gymonline/settings.py:138
 msgid "Spanish"
-msgstr "Espanyol"
+msgstr ""
 
 #: gymonline/settings.py:139
 msgid "Catalan"
-msgstr "Català"
+msgstr ""
 
 #: gymonline/templates/404.html:7 gymonline/templates/404.html.py:58
 msgid "Page Not Found"
-msgstr "La página no existeix"
+msgstr "La página no existe"
 
 #: gymonline/templates/404.html:59
 msgid "Sorry, but the page you were trying to view does not exist."
-msgstr "La página que intenta carregar no existeix, disculpi les molèsties."
+msgstr "La página que esta intentando cargar no existe."
 
 #: gymonline/templates/base.html:48 gymonline/templates/base.html.py:70
-#, fuzzy
-#| msgid "Welcome to TuGymOnline!"
 msgid "TuGymOnline"
-msgstr "Benvingut a TuGymOnline!"
+msgstr "TyGymOnline"
 
 #: gymonline/templates/base.html:58
 msgid "Sign in"
-msgstr "Identificat"
+msgstr "Identifícate"
 
 #: gymonline/templates/gymonline/index.html:7
 #: gymonline/templates/gymonline/index.html:16
 msgid "Welcome to TuGymOnline!"
-msgstr "Benvingut a TuGymOnline!"
+msgstr "Bienvenido a TuGymOnline!"
 
 #: gymonline/templates/gymonline/index.html:17
 msgid ""
@@ -1892,51 +1889,51 @@ msgstr ""
 
 #: gymonline/templates/gymonline/index.html:19
 msgid "Read more"
-msgstr "Llegeix més"
+msgstr "Leer más"
 
 #: gymonline/templates/gymonline/index.html:26
 msgid "Gain visibility"
-msgstr "Guanya visibilitat"
+msgstr "Gana visibilidad"
 
 #: gymonline/templates/gymonline/index.html:27
 msgid ""
 "With TuGymOnline you can record and broadcast your sessions online so that "
 "millions of users can follow and share them."
 msgstr ""
-"Amb TuGymOnline pots enregistrar y transmetre les classes dirigides del teu "
-"gimnàs online per què milions d'usuaris les puguin seguir i compartir."
+"Con TuGymOnline puedes grabar y publicar tus clases dirigidas en Internet "
+"para que millones de usuarios las puedan seguir y compartir."
 
 #: gymonline/templates/gymonline/index.html:28
 #: gymonline/templates/gymonline/index.html:33
 #: gymonline/templates/gymonline/index.html:38
 msgid "View details"
-msgstr "Mostra detalls"
+msgstr "Ver detalles"
 
 #: gymonline/templates/gymonline/index.html:31
 msgid "Adapt yourself"
-msgstr "Adapta't"
+msgstr "Adáptate"
 
 #: gymonline/templates/gymonline/index.html:32
 msgid ""
 "The platform computes statistics to prepare sessions adapted to your "
 "customers needs."
 msgstr ""
-"La plataforma et mostrará estadístiques per que puguis adaptar les sessions "
-"dirigies a les necessitats i als gustos dels teus usuaris."
+"La plataforma te enseña estadísticas para que puedas adaptar tus sesiones "
+"dirigidas a las necesidades y las preferencias de tus usuarios."
 
 #: gymonline/templates/gymonline/index.html:36
 msgid "Make the difference"
-msgstr "Diferència't"
+msgstr "Diferénciate"
 
 #: gymonline/templates/gymonline/index.html:37
 msgid ""
 "TuGymOnline gives you added value for your current clients and an strategy "
 "to get new ones."
 msgstr ""
-"TuGymOnline et dona valor afegit per als teus actuals usuaris i t'ajuda a "
-"preparar una estratègia adient per captar nous clients."
+"TyGymOnline te da valor añadido para tus actuales clientes y te ayuda a "
+"preparar una estrategia adecuada para ganar nuevos usuarios."
 
 #: htmlcov/testenv_lib_python3_4_site-packages_django_template_defaulttags.html:3128
 #, python-format
 msgid "The width is: %(width)s"
-msgstr "L'amplada és: %(width)s"
+msgstr "El ancho es: %(width)s"
