@@ -2,6 +2,7 @@ eclipse.preferences.version=1
 encoding//docs/conf.py=utf-8
 encoding//functional_test/__init__.py=utf-8
 encoding//functional_test/test_all_users.py=utf8
+encoding//functional_test/test_allauth.py=utf8
 encoding//gymonline/__init__.py=utf-8
 encoding//gymonline/apps/__init__.py=utf-8
 encoding//gymonline/apps/gymclient/__init__.py=utf-8

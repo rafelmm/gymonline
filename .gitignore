@@ -9,3 +9,4 @@ testenv
 gymonline/django_secret_key.py
 .coverage
 htmlcov
+gymonline/fixtures/*

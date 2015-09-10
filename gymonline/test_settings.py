@@ -13,3 +13,9 @@ DATABASES = {
         'PASSWORD': 'root',
     }
 }
+
+FIXTURE_DIRS = (
+    os.path.join(BASE_DIR, 'fixtures'),
+    )
+
+SITE_ID = 1
