@@ -1,5 +1,8 @@
 {% load staticfiles %}
+
 {% load i18n %}
+
+{% load cookielaw_tags %}
 
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
@@ -25,9 +28,9 @@
         </style>
         
         <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+        <link rel="stylesheet" href="{% static 'cookielaw/css/cookielaw.css' %}">
         <link rel="stylesheet" href="{% static 'css/main.css' %}">
-        <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
-        
+       
         {% block head_css %}{% endblock %}
 		{% block head_javascript %}{% endblock %}
     </head>
@@ -35,7 +38,10 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-	{% block navbar %}
+    {% block navbar %}
+    
+    {% cookielaw_banner %}
+	
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -93,7 +99,8 @@
 
     <script src="{% static 'js/plugins.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
-
+    <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
+	<script src="{% static 'cookielaw/js/cookielaw.js' %}"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 	<!--
         <script>

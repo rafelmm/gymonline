@@ -17,3 +17,5 @@ mysqlclient==1.3.6
 pytz==2015.4
 --allow-external mysql-connector-python
 mysql-connector-python==2.0.3
+django-classy-tags==0.6.2
+django-cookie-law==1.0.6

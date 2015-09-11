@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-08 20:14+0200\n"
+"POT-Creation-Date: 2015-09-11 15:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: devenv/lib/python3.4/site-packages/alabaster/layout.html:26
+msgid "Page source"
+msgstr ""
 
 #: devenv/lib/python3.4/site-packages/django/contrib/messages/apps.py:7
 #: prodenv/lib/python3.4/site-packages/django/contrib/messages/apps.py:7
@@ -1806,6 +1810,41 @@ msgstr ""
 msgid "%s: error: %s\n"
 msgstr ""
 
+#: devenv/lib/python3.4/site-packages/sphinx_rtd_theme/layout.html:51
+#: devenv/lib/python3.4/site-packages/sphinx_rtd_theme/layout_old.html:131
+msgid "About these documents"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/sphinx_rtd_theme/layout.html:55
+#: devenv/lib/python3.4/site-packages/sphinx_rtd_theme/layout_old.html:134
+msgid "Index"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/sphinx_rtd_theme/layout.html:59
+#: devenv/lib/python3.4/site-packages/sphinx_rtd_theme/layout_old.html:137
+#: devenv/lib/python3.4/site-packages/sphinx_rtd_theme/search.html:11
+msgid "Search"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/sphinx_rtd_theme/layout.html:62
+#: devenv/lib/python3.4/site-packages/sphinx_rtd_theme/layout_old.html:140
+msgid "Copyright"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/sphinx_rtd_theme/layout_old.html:29
+msgid "Navigation"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/sphinx_rtd_theme/search.html:33
+msgid "Search Results"
+msgstr ""
+
+#: devenv/lib/python3.4/site-packages/sphinx_rtd_theme/search.html:35
+msgid ""
+"Your search did not match any documents. Please make sure that all words are "
+"spelled correctly and that you've selected enough categories."
+msgstr ""
+
 #: gymonline/apps/gymclient/models.py:11
 msgid "Alta"
 msgstr ""
@@ -1842,15 +1881,15 @@ msgstr ""
 msgid "Classes"
 msgstr ""
 
-#: gymonline/settings.py:137
+#: gymonline/settings.py:153
 msgid "English"
 msgstr ""
 
-#: gymonline/settings.py:138
+#: gymonline/settings.py:154
 msgid "Spanish"
 msgstr ""
 
-#: gymonline/settings.py:139
+#: gymonline/settings.py:155
 msgid "Catalan"
 msgstr ""
 
@@ -1862,20 +1901,48 @@ msgstr "La página no existe"
 msgid "Sorry, but the page you were trying to view does not exist."
 msgstr "La página que esta intentando cargar no existe."
 
-#: gymonline/templates/base.html:48 gymonline/templates/base.html.py:70
+#: gymonline/templates/base.html:54 gymonline/templates/base.html.py:90
 msgid "TuGymOnline"
-msgstr "TyGymOnline"
+msgstr "TuGymOnline"
 
-#: gymonline/templates/base.html:58
+#: gymonline/templates/base.html:65
 msgid "Sign in"
 msgstr "Identifícate"
 
-#: gymonline/templates/gymonline/index.html:7
-#: gymonline/templates/gymonline/index.html:16
+#: gymonline/templates/base.html:70
+msgid "Logout"
+msgstr ""
+
+#: gymonline/templates/base.html:73
+msgid "Sign in with Google"
+msgstr ""
+
+#: gymonline/templates/base.html:76
+msgid "Sign in with Twitter"
+msgstr ""
+
+#: gymonline/templates/cookielaw/banner.html:5
+msgid "COOKIE_INFO_HEADER"
+msgstr "Política de Cookies"
+
+#: gymonline/templates/cookielaw/banner.html:7
+msgid "COOKIE_INFO_OK"
+msgstr "Estoy de acuerdo"
+
+#: gymonline/templates/cookielaw/banner.html:8
+msgid "COOKIE_INFO_PARA"
+msgstr ""
+"TuGymOnline utiliza cookies propias y de terceros con la finalidad de elaborar estadísticas "
+"y analizar el uso de la página. Puede deshabilitar el uso de las cookies accediendo "
+"a la configuración de su navegador. Si sigue navegando en TyGymOnline sin cambiar la configuración "
+"del navegador nos autoriza a grabar esta información en su dispositivo."
+
+#: gymonline/templates/gymonline/index.html:9
+#: gymonline/templates/gymonline/index.html:23
 msgid "Welcome to TuGymOnline!"
 msgstr "Bienvenido a TuGymOnline!"
 
-#: gymonline/templates/gymonline/index.html:17
+#: gymonline/templates/gymonline/index.html:24
 msgid ""
 "TuGymOnline is a system that records the classes in your gym, it broadcasts "
 "them in Internet and it publishes them allowing users to view them at any "
@@ -1887,15 +1954,15 @@ msgstr ""
 "desde cualquier lugar y a cualquier hora. Si quieres saber más sobre "
 "TuGymOnline, no dudes en ponerte en contacto con nosotros."
 
-#: gymonline/templates/gymonline/index.html:19
+#: gymonline/templates/gymonline/index.html:26
 msgid "Read more"
 msgstr "Leer más"
 
-#: gymonline/templates/gymonline/index.html:26
+#: gymonline/templates/gymonline/index.html:33
 msgid "Gain visibility"
 msgstr "Gana visibilidad"
 
-#: gymonline/templates/gymonline/index.html:27
+#: gymonline/templates/gymonline/index.html:34
 msgid ""
 "With TuGymOnline you can record and broadcast your sessions online so that "
 "millions of users can follow and share them."
@@ -1903,17 +1970,17 @@ msgstr ""
 "Con TuGymOnline puedes grabar y publicar tus clases dirigidas en Internet "
 "para que millones de usuarios las puedan seguir y compartir."
 
-#: gymonline/templates/gymonline/index.html:28
-#: gymonline/templates/gymonline/index.html:33
-#: gymonline/templates/gymonline/index.html:38
+#: gymonline/templates/gymonline/index.html:35
+#: gymonline/templates/gymonline/index.html:40
+#: gymonline/templates/gymonline/index.html:45
 msgid "View details"
 msgstr "Ver detalles"
 
-#: gymonline/templates/gymonline/index.html:31
+#: gymonline/templates/gymonline/index.html:38
 msgid "Adapt yourself"
 msgstr "Adáptate"
 
-#: gymonline/templates/gymonline/index.html:32
+#: gymonline/templates/gymonline/index.html:39
 msgid ""
 "The platform computes statistics to prepare sessions adapted to your "
 "customers needs."
@@ -1921,11 +1988,11 @@ msgstr ""
 "La plataforma te enseña estadísticas para que puedas adaptar tus sesiones "
 "dirigidas a las necesidades y las preferencias de tus usuarios."
 
-#: gymonline/templates/gymonline/index.html:36
+#: gymonline/templates/gymonline/index.html:43
 msgid "Make the difference"
 msgstr "Diferénciate"
 
-#: gymonline/templates/gymonline/index.html:37
+#: gymonline/templates/gymonline/index.html:44
 msgid ""
 "TuGymOnline gives you added value for your current clients and an strategy "
 "to get new ones."

@@ -46,6 +46,8 @@ INSTALLED_APPS = (
     # Login via Google
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.twitter',
+    # Cookie-Law
+    'cookielaw',
     # My apps
     'gymonline.apps.gymclient',
 )
