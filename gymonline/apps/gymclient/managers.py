@@ -2,5 +2,9 @@
 
 from django.db import models
 
-class gymclientManager(models.Manager):
+class ProfileManager(models.Manager):
     pass
+
+class ClassManager(models.Manager):
+    pass
+

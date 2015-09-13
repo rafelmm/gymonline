@@ -6,8 +6,8 @@ from .views import home
 
 urlpatterns = patterns('',
     url(r'^$', home,name='home'),
-    url(r'^clase/$', views.clase_list, name="clase_list"),
-    url(r'^clase/(?P<id>\d+)/$', views.clase_detail, name="clase_detail"),
-    url(r'^edit-clase/$', views.clase_form, name="clase_form"),
-    url(r'^edit-clase/(?P<id>\d*)/$', views.clase_form, name="clase_form"),
+    url(r'^class/$', views.class_list, name="class_list"),
+    url(r'^class/(?P<id>\d+)/$', views.class_detail, name="class_detail"),
+    url(r'^edit-class/$', views.class_form, name="class_form"),
+    url(r'^edit-class/(?P<id>\d*)/$', views.class_form, name="class_form"),
 )

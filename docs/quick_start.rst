@@ -171,8 +171,22 @@ We need to update the languages in our Tests to make sure the translation works 
 - in **test_localization**, update your languages.
  
 
+Apache
+------
 
+First we need to install the Apache Web Server::
+	
+	$ sudo apt-get install apache2
+	
+Then we have to install mod_wsgi and setuptools::
+
+	$ sudo apt-get install python-setuptools libapache2-mod-wsgi
  
+Next restart the apache server::
+
+	$ sudo service apache2 restart
+	
+
 Useful commands
 ---------------
  
