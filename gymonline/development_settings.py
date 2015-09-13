@@ -8,9 +8,9 @@ TEMPLATES[0]['OPTIONS']['debug'] = DEBUG
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'gymonlinedev',
-        'USER': 'root',
-        'PASSWORD': 'root',
+        'NAME': django_secret_key.DB_NAME['dev'],
+        'USER': django_secret_key.DB_USER,
+        'PASSWORD': django_secret_key.DB_PASSWORD,
     }
 }
 

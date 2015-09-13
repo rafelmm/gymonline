@@ -112,9 +112,9 @@ WSGI_APPLICATION = 'gymonline.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'gymonline',
-        'USER': 'root',
-        'PASSWORD': 'root',
+        'NAME': django_secret_key.DB_NAME['prod'],
+        'USER': django_secret_key.DB_USER,
+        'PASSWORD': django_secret_key.DB_PASSWORD,
     }
 }
 
@@ -131,7 +131,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Needed by allauth
 SITE_ID = 3
