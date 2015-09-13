@@ -46,31 +46,33 @@ target="_blank">here</a>.</p>
 </div>
 <div class="section" id="virtual-environments-and-settings-files">
 <h2>Virtual environments and Settings Files<a class="headerlink" href="#virtual-environments-and-settings-files" title="Permalink to this headline">¶</a></h2>
-<p>First, you must know your Python 3 path:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ which python3
+<p>First, you must check that libqp-dev, python3-dev and libmysqlclient-dev are installed:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ sudo apt-get install libpq-dev python3-dev libmysqlclient-dev
 </pre></div>
 </div>
-<p>which is something similar to /usr/local/bin/python3.</p>
+<p>First, you must install virtualenv for python3:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ pip3 install virtualenv
+</pre></div>
+</div>
 <p>Next, create a Development virtual environment with Python 3 installed:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ mkvirtualenv --python=/usr/local/bin/python3 tb_dev
+<div class="highlight-python"><div class="highlight"><pre>$ virtualenv tb_dev
 </pre></div>
 </div>
-<p>where you might need to change it with your python path.</p>
 <p>Go to the virtual enviornment folder with:</p>
 <div class="highlight-python"><div class="highlight"><pre>$ cd $VIRTUAL_ENV/bin
 </pre></div>
 </div>
-<p>and edit the postactivate file.:</p>
+<p>and edit the activate file.:</p>
 <blockquote>
-<div>$ vi postactivate</div></blockquote>
+<div>$ vi activate</div></blockquote>
 <p>You must add the lines:</p>
 <div class="highlight-python"><div class="highlight"><pre>export DJANGO_SETTINGS_MODULE=&quot;gymonline.development_settings&quot;
 </pre></div>
 </div>
 <p>Repeat the last steps for your testing environment:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ mkvirtualenv --python=/usr/local/bin/python3 tb_test
+<div class="highlight-python"><div class="highlight"><pre>$ virtualenv tb_test
 $ cd $VIRTUAL_ENV/bin
-$ vi postactivate
+$ vi activate
 </pre></div>
 </div>
 <p>where you have to add the lines:</p>
@@ -78,10 +80,10 @@ $ vi postactivate
 </pre></div>
 </div>
 <p>Next, install the packages in each environment:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ workon tb_dev
-$ pip install -r requirements/development.txt
-$ workon tb_test
-$ pip install -r requirements/testing.txt
+<div class="highlight-python"><div class="highlight"><pre>$ source tb_dev/bin/activate
+$ (tb_dev) pip install -r requirements/dev.txt
+$ source tb_test/bin/activate
+$ pip install -r requirements/test.txt
 </pre></div>
 </div>
 </div>
@@ -90,7 +92,7 @@ $ pip install -r requirements/testing.txt
 <div class="section" id="instalacion">
 <h3>Instalación<a class="headerlink" href="#instalacion" title="Permalink to this headline">¶</a></h3>
 <p>Tenemos que instalar mysql:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ sudo apt-get install mysql
+<div class="highlight-python"><div class="highlight"><pre>$ sudo apt-get install mysql-server
 </pre></div>
 </div>
 </div>
@@ -113,7 +115,6 @@ mysql&gt; exit;
 <h3>Crear tablas para la aplicación<a class="headerlink" href="#crear-tablas-para-la-aplicacion" title="Permalink to this headline">¶</a></h3>
 <p>Abrimos consola y vamos al directorio del proyecto donde esta el fichero manage.py:</p>
 <div class="highlight-python"><div class="highlight"><pre>$ python manage.py check
-$ python manage.py makemigrations
 $ python manage.py migrate
 </pre></div>
 </div>
@@ -174,8 +175,7 @@ $ python manage.py migrate
 <div class="section" id="useful-commands">
 <h2>Useful commands<a class="headerlink" href="#useful-commands" title="Permalink to this headline">¶</a></h2>
 <p>A list of all the commands used to run this template:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ workon tb_dev
-$ workon tb_test
+<div class="highlight-python"><div class="highlight"><pre>$ activate tb_dev
 
 $ python manage.py makemessages -l ca
 $ python manage.py compilemessages -l ca

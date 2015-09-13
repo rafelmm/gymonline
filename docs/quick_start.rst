@@ -16,26 +16,26 @@ You can generate your DJANGO_KEY |django_key|.
   
 Virtual environments and Settings Files
 ---------------------------------------
+
+First, you must check that libqp-dev, python3-dev and libmysqlclient-dev are installed::
+	
+	$ sudo apt-get install libpq-dev python3-dev libmysqlclient-dev
+
+First, you must install virtualenv for python3::
  
-First, you must know your Python 3 path::
- 
-    $ which python3
- 
-which is something similar to /usr/local/bin/python3.
+    $ pip3 install virtualenv
  
 Next, create a Development virtual environment with Python 3 installed::
  
-    $ mkvirtualenv --python=/usr/local/bin/python3 tb_dev
- 
-where you might need to change it with your python path.
+    $ virtualenv tb_dev
  
 Go to the virtual enviornment folder with::
  
     $ cd $VIRTUAL_ENV/bin
  
-and edit the postactivate file.:
+and edit the activate file.:
  
-    $ vi postactivate
+    $ vi activate
  
 You must add the lines: ::
  
@@ -44,9 +44,9 @@ You must add the lines: ::
  
 Repeat the last steps for your testing environment::
  
-    $ mkvirtualenv --python=/usr/local/bin/python3 tb_test
+    $ virtualenv tb_test
     $ cd $VIRTUAL_ENV/bin
-    $ vi postactivate
+    $ vi activate
  
 where you have to add the lines::
  
@@ -54,10 +54,10 @@ where you have to add the lines::
  
 Next, install the packages in each environment::
  
-    $ workon tb_dev
-    $ pip install -r requirements/development.txt
-    $ workon tb_test
-    $ pip install -r requirements/testing.txt
+    $ source tb_dev/bin/activate
+    $ (tb_dev) pip install -r requirements/dev.txt
+    $ source tb_test/bin/activate
+    $ pip install -r requirements/test.txt
  
 
 Base de datos
@@ -67,8 +67,8 @@ Instalación
 ***********
 
 Tenemos que instalar mysql::
-
-	$ sudo apt-get install mysql
+	
+	$ sudo apt-get install mysql-server
 
 Cración de la base de datos
 ***************************
@@ -92,7 +92,6 @@ Crear tablas para la aplicación
 Abrimos consola y vamos al directorio del proyecto donde esta el fichero manage.py::
 
 	$ python manage.py check
-	$ python manage.py makemigrations
 	$ python manage.py migrate
 
 
@@ -179,8 +178,7 @@ Useful commands
  
 A list of all the commands used to run this template::
  
-    $ workon tb_dev
-    $ workon tb_test
+    $ activate tb_dev
  
     $ python manage.py makemessages -l ca
     $ python manage.py compilemessages -l ca
