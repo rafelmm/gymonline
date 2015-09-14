@@ -176,11 +176,11 @@ Apache
 
 First we need to install the Apache Web Server::
 	
-	$ sudo apt-get install apache2
+	$ sudo apt-get install apache2 apache2-threaded-dev
 	
 Then we have to install mod_wsgi and setuptools::
 
-	$ sudo apt-get install python-setuptools libapache2-mod-wsgi
+	$ sudo apt-get install python-setuptools libapache2-mod-wsgi-py3
  
 Next restart the apache server::
 

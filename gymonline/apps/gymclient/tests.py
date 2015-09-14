@@ -21,4 +21,4 @@ class TestProfileModel(TestCase):
                     postal_code = '08440')
         p.save()
         # Check that a Profile instance has been created
-        self.assertIsInstance(user.profile, models.Profile)
+        self.assertIsInstance(user.profile, models.Profiles
