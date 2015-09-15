@@ -14,7 +14,6 @@ encoding//gymonline/apps/gymclient/tests.py=utf-8
 encoding//gymonline/apps/gymclient/urls.py=utf-8
 encoding//gymonline/apps/gymclient/views.py=utf-8
 encoding//gymonline/development_settings.py=utf-8
-encoding//gymonline/django_secret_key.py=utf-8
 encoding//gymonline/libs/__init__.py=utf-8
 encoding//gymonline/settings.py=utf-8
 encoding//gymonline/test.py=utf-8
