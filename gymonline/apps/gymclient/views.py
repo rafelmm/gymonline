@@ -21,22 +21,22 @@ def class_list(request):
                   )
 
 
-def class_detail(request, id):
-    id = int(id)
-    clase = get_object_or_404(models.Class, id=id)
+def class_detail(request, classid):
+    classid = int(classid)
+    clase = get_object_or_404(models.Class, id=classid)
     return render(request,
                   "gymclient/clase_detail.html",
                   {'clase': clase}
                   )
 
-def class_form(request, id=None):
+def class_form(request, classid=None):
     if request.method == "POST":
         clase_form = forms.ClassForm(request.POST)
         if clase_form.is_valid():
             clase = clase_form.save()
             return HttpResponseRedirect(reverse('gymclient:home'))
     else:
-        if id:
+        if classid:
             clase = get_object_or_404(models.Class, id=id)
             clase_form = forms.ClassForm(instance=clase)
         else:

@@ -2,6 +2,7 @@ from django.db import models
 from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
 from django.utils.timezone import utc
+from .resources import COUNTRY_CHOICES
 
 import datetime
 
@@ -28,10 +29,11 @@ class Profile(models.Model):
                               choices = GENDER_CHICES,
                               default = 'M',
                               verbose_name=_("Gender"))
-    postal_code = models.IntegerField(verbose_name=_("Postal code"))
-    date_update = models.DateTimeField(verbose_name=_("Updated at"),auto_now=True)
+    postal_code = models.CharField(max_length=5,
+                                   verbose_name=_("Postal code"))
+    date_updated = models.DateTimeField(verbose_name=_("Updated at"),auto_now=True)
     # Attributes - Optional
-    date_deleted = models.DateTimeField(verbose_name=_("Deleted at"), editable=False)
+    date_deleted = models.DateTimeField(null=True, editable=False, verbose_name=_("Deleted at"))
     phone = models.IntegerField(verbose_name=_("Phone number"), 
                                 null=True, 
                                 blank=True)
@@ -91,14 +93,13 @@ class Gym(models.Model):
     cif = models.CharField(max_length=10, verbose_name=_("CIF"))
     active = models.BooleanField(default=True, editable=False, verbose_name=_("Active"))
     profile = models.CharField(max_length=50, verbose_name=_("Profile"))
-    date_create = models.DateTimeField(verbose_name=_("Created at"), 
+    date_created = models.DateTimeField(verbose_name=_("Created at"), 
                                             auto_now_add=True)
-    date_update = models.DateField(verbose_name=_("Updated at"),
+    date_updated = models.DateTimeField(verbose_name=_("Updated at"),
                                         auto_now=True)
     
     # Attributes - Optional
-    date_deleted = models.DateField(verbose_name=_("Deleted at"),
-                                        blank=True,
+    date_deleted = models.DateTimeField(verbose_name=_("Deleted at"),
                                         null=True,
                                         editable=False)
     # Manager
@@ -119,7 +120,50 @@ class Gym(models.Model):
         verbose_name_plural = _("Gyms")
         ordering = ["name"]
         
+   
+class Center(models.Model):
+    # Relations
+    gym = models.ForeignKey(Gym, related_name="gym", verbose_name=_("Gym"))
+    contact_person = models.ForeignKey(settings.AUTH_USER_MODEL, verbose_name=_("Contact person"))
+    
+    # Attributes - Mandatory
+    active = models.BooleanField(default=True, editable=False)
+    name = models.CharField(max_length=150, verbose_name=_("Center Name"))
+    date_created = models.DateTimeField(auto_now_add=True, 
+                                        editable=False, 
+                                        verbose_name=_("Created at"))
+    date_updated = models.DateTimeField(auto_now = True, 
+                                        editable=False, 
+                                        verbose_name=_("Updated at"))
+    
+    address = models.CharField(max_length=250, verbose_name=_("Address"))
+    postal_code = models.CharField(max_length=5, verbose_name=_("Postal Code"))
+    region = models.CharField(max_length=20, verbose_name=_("Region"))
+    country = models.CharField(max_length=2, 
+                               choices = COUNTRY_CHOICES, 
+                               default = 'ES', 
+                               verbose_name=_("Country"))
+    # Attributes - Optional
+    date_deleted = models.DateTimeField(null=True, editable=False, verbose_name=_("Deleted at"))
            
+    # Manager
+    object = managers.CenterManager()
+    
+    # Functions
+    def delete(self):
+        self.active = False
+        self.date_deleted = datetime.datetime.utcnow().replace(tzinfo = utc)
+        self.save()
+        
+    def __unicode__(self):
+        return "%s - %s" %(self.gym.name, self.name)
+
+    # Meta
+    class Meta:
+        verbose_name = _("Gym Center")
+        verbose_name_plural = _("Gym Centers")
+        ordering = ["name"]
+        
 class Class(models.Model):
     INTENSITY_CHOICES = (
             ('H', _('High')),
@@ -140,7 +184,7 @@ class Class(models.Model):
     
     # Attributes - Optional
     date_deleted = models.DateTimeField(null=True,
-                                  blank=True,
+                                  editable=False,
                                   verbose_name=_("Deleted at"))
     popularity = models.IntegerField(null=True,
                                      blank=True,
