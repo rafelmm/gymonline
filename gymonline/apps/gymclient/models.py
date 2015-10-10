@@ -1,9 +1,10 @@
+# -*- coding: utf-8 -*-
+
 from django.db import models
 from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
 from django.utils.timezone import utc
-from .resources import COUNTRY_CHOICES
-
+from gymonline.settings import LANGUAGES
 import datetime
 
 
@@ -19,7 +20,7 @@ class Profile(models.Model):
     # Relations
     user = models.OneToOneField(
                         settings.AUTH_USER_MODEL,
-                        related_name="profile",
+                        related_name="custom_user_profile",
                         verbose_name=_("user")
     )
     
@@ -87,6 +88,12 @@ class Profile(models.Model):
         return self.user.username
     
 class Gym(models.Model):
+    # Relations
+    contact_person = models.ForeignKey(
+                                       settings.AUTH_USER_MODEL, 
+                                       related_name="gym_contact_person",
+                                       verbose_name=_("Gym Contact person"))
+    
     # Attributes - Mandatory
     name = models.CharField(max_length=150, verbose_name=_("Name"))
     
@@ -97,7 +104,14 @@ class Gym(models.Model):
                                             auto_now_add=True)
     date_updated = models.DateTimeField(verbose_name=_("Updated at"),
                                         auto_now=True)
-    
+    number_of_views = models.IntegerField(verbose_name=_("Number of views"),
+                                          default = 0,
+                                          editable = False)
+    mark = models.DecimalField(max_digits=2, 
+                               decimal_places=1,
+                               default = 0,
+                               editable = False,
+                               verbose_name=_("Mark"))
     # Attributes - Optional
     date_deleted = models.DateTimeField(verbose_name=_("Deleted at"),
                                         null=True,
@@ -120,11 +134,33 @@ class Gym(models.Model):
         verbose_name_plural = _("Gyms")
         ordering = ["name"]
         
-   
+class Country(models.Model):
+    # Attributes - Mandatory
+    language = models.CharField(max_length=2, 
+                                choices = LANGUAGES,
+                                default = 'es')
+    name = models.CharField(max_length=50,
+                            verbose_name = _("Name")) 
+    
+    # Functions
+    def __unicode__(self):
+        return self.name
+    
+    # Meta
+    class Meta:
+        verbose_name = _("Country")
+        verbose_name_plural = _("Countries")
+        ordering = ["language", "name"]
+        
 class Center(models.Model):
     # Relations
-    gym = models.ForeignKey(Gym, related_name="gym", verbose_name=_("Gym"))
-    contact_person = models.ForeignKey(settings.AUTH_USER_MODEL, verbose_name=_("Contact person"))
+    gym = models.ForeignKey(Gym, related_name="belongs_to_gym", verbose_name=_("Gym"))
+    contact_person = models.ForeignKey(settings.AUTH_USER_MODEL, 
+                                       related_name="center_contact_person",
+                                       verbose_name=_("Center Contact person"))
+    country = models.ForeignKey(Country, 
+                                related_name="center_country", 
+                                verbose_name=_("Country"))
     
     # Attributes - Mandatory
     active = models.BooleanField(default=True, editable=False)
@@ -139,10 +175,14 @@ class Center(models.Model):
     address = models.CharField(max_length=250, verbose_name=_("Address"))
     postal_code = models.CharField(max_length=5, verbose_name=_("Postal Code"))
     region = models.CharField(max_length=20, verbose_name=_("Region"))
-    country = models.CharField(max_length=2, 
-                               choices = COUNTRY_CHOICES, 
-                               default = 'ES', 
-                               verbose_name=_("Country"))
+    number_of_views = models.IntegerField(verbose_name=_("Number of views"),
+                                          default = 0,
+                                          editable = False)
+    mark = models.DecimalField(max_digits=2, 
+                               decimal_places=1,
+                               default = 0,
+                               editable = False,
+                               verbose_name=_("Mark"))
     # Attributes - Optional
     date_deleted = models.DateTimeField(null=True, editable=False, verbose_name=_("Deleted at"))
            
@@ -163,25 +203,96 @@ class Center(models.Model):
         verbose_name = _("Gym Center")
         verbose_name_plural = _("Gym Centers")
         ordering = ["name"]
-        
-class Class(models.Model):
-    INTENSITY_CHOICES = (
-            ('H', _('High')),
-            ('M', _('Medium')),
-            ('L', _('Low')),
-    )
+     
+class IntensityLevel(models.Model):
+    # Attributes - Mandatory
+    language = models.CharField(max_length=2, 
+                                choices = LANGUAGES,
+                                default = 'es')
+    description = models.CharField(max_length=20,
+                                   verbose_name = _("Description")) 
+      
+    # Functions
+    def __unicode__(self):
+        return self.description
+    
+    # Meta
+    class Meta:
+        verbose_name = _("Intensity Level")
+        verbose_name_plural = _("Intensity Levels")
+        ordering = ["language", "description"]
+    
+class Monitor(models.Model):
+    # Relations
+    user = models.OneToOneField(
+                        settings.AUTH_USER_MODEL,
+                        related_name="monitor_user_profile",
+                        verbose_name=_("user"))
+    gym = models.ForeignKey(Gym, 
+                            related_name="monitor_gym",
+                            verbose_name=_("Gym"))
+              
+    # Attributes - Mandatory
+    active = models.BooleanField(default = True, 
+                                 verbose_name=_("Active"))
+    date_created = models.DateTimeField(verbose_name=_("Created at"),
+                                        auto_now_add=True)
+    date_updated = models.DateTimeField(verbose_name=_("Updated at"),
+                                        auto_now=True)
+    number_of_views = models.IntegerField(verbose_name=_("Number of views"),
+                                          default = 0,
+                                          editable = False)
+    mark = models.DecimalField(max_digits=2, 
+                               decimal_places=1,
+                               default = 0,
+                               editable = False,
+                               verbose_name=_("Mark"))
+    # Attributes - Optional
+    date_deleted = models.DateTimeField(null=True,
+                                  editable=False,
+                                  verbose_name=_("Deleted at"))
+    #Manager
+    objects = managers.MonitorManager()
+    
+    # Functions
+    def __unicode__(self):
+        return ' '.join([self.user.first_name, self.user.last_name])
+    
+    def delete(self):
+        self.active = False
+        self.date_deleted = datetime.datetime.utcnow().replace(tzinfo = utc)
+        self.save()
+
+    # Meta
+    class Meta:
+        verbose_name = _("Monitor")
+        verbose_name_plural = _("Monitors")
+            
+class GymClass(models.Model):
+    # Relations
+    intensity  = models.ForeignKey(IntensityLevel, 
+                                   related_name="class_intensity",
+                                   verbose_name=_("Intensity Level"))
+    monitor = models.ForeignKey(Monitor,
+                                related_name="monitor_of_class",
+                                verbose_name=_("Monitor"))
     # Attributes - Mandatory
     active = models.BooleanField(default = True, verbose_name=_("Active"))
-    name = models.CharField(max_length=50, verbose_name=_("Name"))
-    description = models.CharField(max_length=150,
+    name = models.CharField(max_length=150, verbose_name=_("Name"))
+    description = models.CharField(max_length=500,
                                    blank=True,
-                                   help_text = _("Write a description for the class (optional)"))
-    intensity = models.CharField(max_length=1, 
-                                  choices=INTENSITY_CHOICES,
-                                  default='M')
+                                   help_text = _("Write a description for the class (optional)"),
+                                   verbose_name = _("Description"))
     date_created = models.DateTimeField(verbose_name=_("Created at"),auto_now_add=True)
     date_updated = models.DateTimeField(verbose_name=_("Updated at"),auto_now=True)
-    
+    number_of_views = models.IntegerField(verbose_name=_("Number of views"),
+                                          default = 0,
+                                          editable = False)
+    mark = models.DecimalField(max_digits=2, 
+                               decimal_places=1,
+                               default = 0,
+                               editable = False,
+                               verbose_name=_("Mark"))
     # Attributes - Optional
     date_deleted = models.DateTimeField(null=True,
                                   editable=False,
@@ -189,17 +300,12 @@ class Class(models.Model):
     popularity = models.IntegerField(null=True,
                                      blank=True,
                                      verbose_name=_("Popularity"))
-    
     #Manager
-    objects = managers.ClassManager()
+    objects = managers.GymClassManager()
     
     # Functions
     def __unicode__(self):
         return self.name
-
-    def save(self, *args, **kwargs):
-        self.date_updated = datetime.datetime.utcnow().replace(tzinfo = utc)
-        super(Class, self).save(args, kwargs)
     
     def delete(self):
         self.active = False
@@ -212,3 +318,48 @@ class Class(models.Model):
         verbose_name_plural = _("Classes")
         ordering = ["name"]
         
+class GymClassSession(models.Model):
+    # Relations
+    gymClass = models.ForeignKey(GymClass,
+                                 related_name="session_of_class",
+                                 verbose_name=_("Class"))
+    name = models.CharField(max_length=150, verbose_name=_("Name"))
+    description = models.CharField(max_length=500,
+                                   blank=True,
+                                   help_text = _("Write a description for the session (optional)"),
+                                   verbose_name = _("Description"))
+    
+    date_created = models.DateTimeField(verbose_name=_("Created at"),auto_now_add=True)
+    date_updated = models.DateTimeField(verbose_name=_("Updated at"),auto_now=True)
+    number_of_views = models.IntegerField(verbose_name=_("Number of views"),
+                                          default = 0,
+                                          editable = False)
+    mark = models.DecimalField(max_digits=2, 
+                               decimal_places=1,
+                               default = 0,
+                               editable = False,
+                               verbose_name=_("Mark"))
+    # Attributes - Optional
+    date_deleted = models.DateTimeField(null=True,
+                                  editable=False,
+                                  verbose_name=_("Deleted at"))
+    popularity = models.IntegerField(null=True,
+                                     blank=True,
+                                     verbose_name=_("Popularity"))
+    #Manager
+    objects = managers.GymClassSessionManager()
+    
+    # Functions
+    def __unicode__(self):
+        return self.name
+    
+    def delete(self):
+        self.active = False
+        self.date_deleted = datetime.datetime.utcnow().replace(tzinfo = utc)
+        self.save()
+
+    # Meta
+    class Meta:
+        verbose_name = _("Class Session")
+        verbose_name_plural = _("Class Sessions")
+        ordering = ["name"]

@@ -4,5 +4,5 @@ from gymonline.apps.gymclient import models
 
 class ClassForm(forms.ModelForm):
     class Meta:
-        model = models.Class
+        model = models.GymClass
         exclude = ['date_updated', 'date_deleted', 'date_created' ]

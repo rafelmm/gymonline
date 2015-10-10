@@ -28,10 +28,20 @@ class CenterManager(models.Manager):
     def get_query_set(self):
         return CustomQuerySet(self.model, using=self._db)
     
-class ClassManager(models.Manager):
+class GymClassManager(models.Manager):
     def active(self):
         return self.model.objects.filter(active=True)
     
     def get_query_set(self):
         return CustomQuerySet(self.model, using=self._db)
 
+    
+class MonitorManager(models.Manager):
+    def active(self):
+        return self.model.objects.filter(active=True)
+    
+    def get_query_set(self):
+        return CustomQuerySet(self.model, using=self._db)
+    
+class GymClassSessionManager(models.Manager):
+    pass

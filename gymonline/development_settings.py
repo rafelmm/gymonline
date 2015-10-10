@@ -3,6 +3,8 @@
 from .settings import *
 
 DEBUG = True
+ALLOWED_HOSTS = []
+
 TEMPLATES[0]['OPTIONS']['debug'] = DEBUG
 
 DATABASES = {

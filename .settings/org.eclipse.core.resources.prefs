@@ -10,7 +10,6 @@ encoding//gymonline/apps/gymclient/admin.py=utf-8
 encoding//gymonline/apps/gymclient/forms.py=utf-8
 encoding//gymonline/apps/gymclient/managers.py=utf-8
 encoding//gymonline/apps/gymclient/models.py=utf-8
-encoding//gymonline/apps/gymclient/resources.py=utf-8
 encoding//gymonline/apps/gymclient/tests.py=utf-8
 encoding//gymonline/apps/gymclient/urls.py=utf-8
 encoding//gymonline/apps/gymclient/views.py=utf-8

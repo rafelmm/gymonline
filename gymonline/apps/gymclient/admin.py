@@ -5,8 +5,6 @@ from . import models
 from django.contrib.auth import get_user_model
 from django.utils.translation import ugettext_lazy as _
 
-# Register your models here.
-
 # Define an inline admin descriptor for Profile model
 # which acts a bit like a singleton
 class ProfileInline(admin.StackedInline):
@@ -18,10 +16,6 @@ class ProfileInline(admin.StackedInline):
 class UserAdmin(UserAdmin):
     inlines = (ProfileInline, )
 
-# Re-register UserAdmin
-admin.site.unregister(get_user_model())
-admin.site.register(get_user_model(), UserAdmin)
-
 class CenterInline(admin.StackedInline):
     model = models.Center
     verbose_name_plural = _("Centers")
@@ -30,4 +24,19 @@ class CenterInline(admin.StackedInline):
 class GymAdmin(admin.ModelAdmin):
     inlines = (CenterInline, )
     
-admin.site.register(models.Gym, GymAdmin)
+# Re-register UserAdmin
+admin.site.unregister(get_user_model())
+admin.site.register(get_user_model(), UserAdmin)
+ 
+@admin.register(models.IntensityLevel)
+class IntensityLevelAdmin(admin.ModelAdmin):
+    list_display = ('language', 'description')
+    
+@admin.register(models.Country)
+class CountryAdmin(admin.ModelAdmin):
+    list_display = ('language', 'name')
+
+admin.site.register(models.Gym, GymAdmin)  
+admin.site.register(models.Monitor)
+admin.site.register(models.GymClass)
+admin.site.register(models.GymClassSession)

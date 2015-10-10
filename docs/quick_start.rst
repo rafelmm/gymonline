@@ -198,3 +198,8 @@ A list of all the commands used to run this template::
     $ python manage.py compilemessages -l ca
     
     $ python manage.py runserver
+    
+Useful links
+------------
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-an-apache-mysql-and-python-lamp-server-without-frameworks-on-ubuntu-14-04
