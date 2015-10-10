@@ -173,10 +173,13 @@ We need to update the languages in our Tests to make sure the translation works 
 
 Apache
 ------
+We need to have libxml2 and libxslt installed::
 
+	$ sudo apt-get install libxml2 libxslt
+	
 First we need to install the Apache Web Server::
 	
-	$ sudo apt-get install apache2 apache2-threaded-dev
+	$ sudo apt-get install apache2 apache2-mpm-prefork
 	
 Then we have to install mod_wsgi and setuptools::
 
