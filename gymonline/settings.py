@@ -140,12 +140,12 @@ SOCIALACCOUNT_QUERY_EMAIL = True
 LOGIN_REDIRECT_URL = "/"
 
 # Send Mail configuration
-EMAIL_HOST = 'authsmtp.tugymonline.com'
-EMAIL_PORT = 25
-EMAIL_HOST_USER = 'rmormeneo@tugymonline.com'
-EMAIL_HOST_PASSWORD = '19rafel84'
-EMAIL_USE_SSL = False
-EMAIL_USE_TLS =  False
+EMAIL_HOST = django_secret_key.EMAIL_HOST     
+EMAIL_PORT = django_secret_key.EMAIL_PORT      
+EMAIL_HOST_USER = django_secret_key.EMAIL_HOST_USER  
+EMAIL_HOST_PASSWORD = django_secret_key.EMAIL_HOST_PASSWORD
+EMAIL_USE_SSL = django_secret_key.EMAIL_USE_SSL   
+EMAIL_USE_TLS = django_secret_key.EMAIL_USE_TLS    
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
