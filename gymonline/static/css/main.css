@@ -4,12 +4,26 @@
    Author's custom styles
    ========================================================================== */
 
-.jumbotron h1 {
-    color: rgba(200, 50, 255, 1);
+.navbar {
+	margin-bottom:0px;
 }
 
+footer {
+	margin:0px 0px 10px;
+	color: rgba(90,90,90,1);
+}
 
+footer p{
+	line-height:40px;
+}
 
+footer .share-text{
+	padding-bottom:2px;
+	text-align:center;
+}
+footer .social-buttons{
+	text-align: center;
+}
 
 
 

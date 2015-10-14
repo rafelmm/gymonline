@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% load l10n %}
+
+{% load tz %}
+
+{% block head_title %}{% trans "TuGymOnline" %}{% endblock %}
+
+{% block head_css %}
+<style type="text/css">
+      
+
+      .form-contact {
+        max-width: 450px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-contact .form-contact-heading {
+        margin-bottom: 10px;
+      }
+      .form-contact input[type="text"],
+      .form-contact input[type="email"] {
+        font-size: 16px;
+        height: 40px;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+        float: right;
+        width: 100%
+      }
+      .form-contact label {
+      	margin-bottom: 15px;
+        padding: 7px 9px;
+      	float: left;
+      	height: 40px;
+      }
+
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+    	{% if messages %}
+    		{% for message in messages %}
+    			{{ message }}
+    		{% endfor %}
+    	{% endif %}
+    	{% if not messages %}
+      		<form action="{% url 'sendcontact' %}" method="post" class="form-contact">
+      		<h2 class="form-contact-heading">{% trans "Contact us" %}</h2>
+      			{% csrf_token %}
+    			{{ form }}
+		    	<!-- 
+    			<input type="text" class="input-block-level" placeholder="Name">
+        		<input type="text" class="input-block-level" placeholder="Email Address">
+        		<input type="text" class="input-block-level" placeholder="Your comments">
+    	 		-->
+		    	<button class="btn btn-large btn-primary" type="submit">{% trans "Contact now" %}</button>
+			</form>
+		{% endif %}
+    </div> <!-- /container --> 
+{% endblock %}

@@ -139,6 +139,14 @@ ACCOUNT_EMAIL_VERIFICATION = "none"
 SOCIALACCOUNT_QUERY_EMAIL = True
 LOGIN_REDIRECT_URL = "/"
 
+# Send Mail configuration
+EMAIL_HOST = 'authsmtp.tugymonline.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'rmormeneo@tugymonline.com'
+EMAIL_HOST_PASSWORD = '19rafel84'
+EMAIL_USE_SSL = False
+EMAIL_USE_TLS =  False
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
