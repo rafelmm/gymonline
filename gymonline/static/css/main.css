@@ -1,13 +1,14 @@
-
-
 /* ==========================================================================
-   Author's custom styles
+   Barra de navegación
    ========================================================================== */
-
 .navbar {
 	margin-bottom:0px;
 }
 
+/* ==========================================================================
+   Pie de página
+   ========================================================================== */
+   
 footer {
 	margin:0px 0px 10px;
 	color: rgba(90,90,90,1);
@@ -25,12 +26,111 @@ footer .social-buttons{
 	text-align: center;
 }
 
+/* ==========================================================================
+   Formulario de contacto
+   ========================================================================== */
 
+.form-contact {
+	max-width: 450px;
+	padding: 19px 29px 29px;
+	margin: 0 auto 20px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+}
 
+.form-contact .form-contact-heading {
+	margin-bottom: 10px;
+}
 
+.form-contact input[type="text"], .form-contact input[type="email"] {
+	font-size: 16px;
+	height: 40px;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+	float: right;
+	width: 100%;
+}
 
+.form-contact textarea {
+	font-size: 16px;
+	height: 140px;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+	float: left;
+	width: 100%;
+}
 
+.form-contact label {
+	height: 40px;
+	margin-bottom: 0;
+	padding: 7px 9px;
+	float: right;
+	width: 100%
+}
 
-
-
-
+/* ==========================================================================
+   Redes sociales
+   ========================================================================== */
+   
+.btn-twitter {
+    background: #00acee;
+    border-radius: 0;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+}
+.btn-twitter:link, .btn-twitter:visited {
+    color: #fff;
+}
+.btn-twitter:active, .btn-twitter:hover {
+    background: #0087bd;
+    color: #fff;
+}
+.btn-facebook {
+    background: #3b5998;
+    border-radius: 0;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+}
+.btn-facebook:link, .btn-facebook:visited {
+    color: #fff;
+}
+.btn-facebook:active, .btn-facebook:hover {
+    background: #30477a;
+    color: #fff;
+}
+.btn-googleplus {
+    background: #e93f2e;
+    border-radius: 0;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+}
+.btn-googleplus:link, .btn-googleplus:visited {
+    color: #fff;
+}
+.btn-googleplus:active, .btn-googleplus:hover {
+    background: #ba3225;
+    color: #fff;
+}
+.btn-linkedin {
+    background: #0e76a8;
+    border-radius: 0;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+}
+.btn-linkedin:link, .btn-linkedin:visited {
+    color: #fff;
+}
+.btn-linkedin:active, .btn-linkedin:hover {
+    background: #0b6087;
+    color: #fff;
+}

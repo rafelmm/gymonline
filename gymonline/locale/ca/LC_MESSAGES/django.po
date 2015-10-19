@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-11 15:44+0200\n"
+"POT-Creation-Date: 2015-10-19 19:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1589,8 +1589,6 @@ msgid "\"%(path)s\" does not exist"
 msgstr ""
 
 #: devenv/lib/python3.4/site-packages/django/views/static.py:100
-#: htmlcov/testenv_lib_python3_4_site-packages_django_views_static.html:302
-#: htmlcov/testenv_lib_python3_4_site-packages_django_views_static.html:305
 #: prodenv/lib/python3.4/site-packages/django/views/static.py:100
 #: testenv/lib/python3.4/site-packages/django/views/static.py:100
 #, python-format
@@ -1846,51 +1844,250 @@ msgid ""
 "spelled correctly and that you've selected enough categories."
 msgstr ""
 
-#: gymonline/apps/gymclient/models.py:11
-msgid "Alta"
-msgstr ""
+#: gymonline/apps/gymclient/admin.py:13 gymonline/apps/gymclient/models.py:84
+msgid "Profiles"
+msgstr "Perfils"
 
-#: gymonline/apps/gymclient/models.py:12
-msgid "Media"
-msgstr ""
+#: gymonline/apps/gymclient/admin.py:21
+msgid "Centers"
+msgstr "Centres"
 
-#: gymonline/apps/gymclient/models.py:13
-msgid "Baja"
-msgstr ""
+#: gymonline/apps/gymclient/models.py:16
+msgid "Male"
+msgstr "Home"
 
-#: gymonline/apps/gymclient/models.py:19
-msgid "Escribe una descripcion para la clase (opcional)"
-msgstr ""
-
-#: gymonline/apps/gymclient/models.py:23
-msgid "Fecha alta"
-msgstr ""
+#: gymonline/apps/gymclient/models.py:17
+msgid "Female"
+msgstr "Dona"
 
 #: gymonline/apps/gymclient/models.py:24
-msgid "Fecha modificacion"
-msgstr ""
+#: gymonline/apps/gymclient/models.py:230
+msgid "user"
+msgstr "usuari"
 
-#: gymonline/apps/gymclient/models.py:27
-msgid "Fecha baja"
-msgstr ""
+#: gymonline/apps/gymclient/models.py:28
+msgid "Birthday"
+msgstr "Aniversari"
 
-#: gymonline/apps/gymclient/models.py:43
-msgid "Clase"
-msgstr ""
+#: gymonline/apps/gymclient/models.py:32
+msgid "Gender"
+msgstr "Génere"
 
-#: gymonline/apps/gymclient/models.py:44
+#: gymonline/apps/gymclient/models.py:34
+msgid "Postal code"
+msgstr "Codi Postal"
+
+#: gymonline/apps/gymclient/models.py:35
+#: gymonline/apps/gymclient/models.py:105
+#: gymonline/apps/gymclient/models.py:173
+#: gymonline/apps/gymclient/models.py:240
+#: gymonline/apps/gymclient/models.py:287
+#: gymonline/apps/gymclient/models.py:333
+msgid "Updated at"
+msgstr "Data d'actualització"
+
+#: gymonline/apps/gymclient/models.py:37
+#: gymonline/apps/gymclient/models.py:116
+#: gymonline/apps/gymclient/models.py:187
+#: gymonline/apps/gymclient/models.py:253
+#: gymonline/apps/gymclient/models.py:299
+#: gymonline/apps/gymclient/models.py:345
+msgid "Deleted at"
+msgstr "Data de borrat"
+
+#: gymonline/apps/gymclient/models.py:38
+msgid "Phone number"
+msgstr "Teléfon"
+
+#: gymonline/apps/gymclient/models.py:42
+msgid "NIF"
+msgstr "DNI"
+
+#: gymonline/apps/gymclient/models.py:46
+msgid "City"
+msgstr "Ciutat"
+
+#: gymonline/apps/gymclient/models.py:50
+#: gymonline/apps/gymclient/models.py:175
+msgid "Address"
+msgstr "Direcció"
+
+#: gymonline/apps/gymclient/models.py:83
+#: gymonline/apps/gymclient/models.py:102
+msgid "Profile"
+msgstr "Perfil"
+
+#: gymonline/apps/gymclient/models.py:95
+msgid "Gym Contact person"
+msgstr "Persona de contacte del gimnàs"
+
+#: gymonline/apps/gymclient/models.py:98
+#: gymonline/apps/gymclient/models.py:143
+#: gymonline/apps/gymclient/models.py:281
+#: gymonline/apps/gymclient/models.py:326
+msgid "Name"
+msgstr "Nom"
+
+#: gymonline/apps/gymclient/models.py:100
+msgid "CIF"
+msgstr "CIF"
+
+#: gymonline/apps/gymclient/models.py:101
+#: gymonline/apps/gymclient/models.py:237
+#: gymonline/apps/gymclient/models.py:280
+msgid "Active"
+msgstr "Actiu"
+
+#: gymonline/apps/gymclient/models.py:103
+#: gymonline/apps/gymclient/models.py:170
+#: gymonline/apps/gymclient/models.py:238
+#: gymonline/apps/gymclient/models.py:286
+#: gymonline/apps/gymclient/models.py:332
+msgid "Created at"
+msgstr "Data de creació"
+
+#: gymonline/apps/gymclient/models.py:107
+#: gymonline/apps/gymclient/models.py:178
+#: gymonline/apps/gymclient/models.py:242
+#: gymonline/apps/gymclient/models.py:288
+#: gymonline/apps/gymclient/models.py:334
+msgid "Number of views"
+msgstr "Nombre de visualitzacions"
+
+#: gymonline/apps/gymclient/models.py:114
+#: gymonline/apps/gymclient/models.py:185
+#: gymonline/apps/gymclient/models.py:249
+#: gymonline/apps/gymclient/models.py:295
+#: gymonline/apps/gymclient/models.py:341
+msgid "Mark"
+msgstr "Puntuació"
+
+#: gymonline/apps/gymclient/models.py:133
+#: gymonline/apps/gymclient/models.py:157
+#: gymonline/apps/gymclient/models.py:233
+msgid "Gym"
+msgstr "Gimnàs"
+
+#: gymonline/apps/gymclient/models.py:134
+msgid "Gyms"
+msgstr "Gimnassos"
+
+#: gymonline/apps/gymclient/models.py:151
+#: gymonline/apps/gymclient/models.py:163
+msgid "Country"
+msgstr "País"
+
+#: gymonline/apps/gymclient/models.py:152
+msgid "Countries"
+msgstr "Països"
+
+#: gymonline/apps/gymclient/models.py:160
+msgid "Center Contact person"
+msgstr "Persona de contacte del centre"
+
+#: gymonline/apps/gymclient/models.py:167
+msgid "Center Name"
+msgstr "Nom del centre"
+
+#: gymonline/apps/gymclient/models.py:176
+msgid "Postal Code"
+msgstr "Codi Postal"
+
+#: gymonline/apps/gymclient/models.py:177
+msgid "Region"
+msgstr "Regió"
+
+#: gymonline/apps/gymclient/models.py:203
+msgid "Gym Center"
+msgstr "Centre"
+
+#: gymonline/apps/gymclient/models.py:204
+msgid "Gym Centers"
+msgstr "Centres"
+
+#: gymonline/apps/gymclient/models.py:213
+#: gymonline/apps/gymclient/models.py:285
+#: gymonline/apps/gymclient/models.py:330
+msgid "Description"
+msgstr "Descripció"
+
+#: gymonline/apps/gymclient/models.py:221
+#: gymonline/apps/gymclient/models.py:275
+msgid "Intensity Level"
+msgstr "Nivell d'intensitat"
+
+#: gymonline/apps/gymclient/models.py:222
+msgid "Intensity Levels"
+msgstr "Nivells d'intensitat"
+
+#: gymonline/apps/gymclient/models.py:268
+#: gymonline/apps/gymclient/models.py:278
+msgid "Monitor"
+msgstr "Monitor"
+
+#: gymonline/apps/gymclient/models.py:269
+msgid "Monitors"
+msgstr "Monitors"
+
+#: gymonline/apps/gymclient/models.py:284
+msgid "Write a description for the class (optional)"
+msgstr "Escriu una descripció per la classe (opcional)"
+
+#: gymonline/apps/gymclient/models.py:302
+#: gymonline/apps/gymclient/models.py:348
+msgid "Popularity"
+msgstr "Popularitat"
+
+#: gymonline/apps/gymclient/models.py:317
+#: gymonline/apps/gymclient/models.py:325
+msgid "Class"
+msgstr "Classe"
+
+#: gymonline/apps/gymclient/models.py:318
 msgid "Classes"
-msgstr ""
+msgstr "Classes"
 
-#: gymonline/settings.py:153
+#: gymonline/apps/gymclient/models.py:329
+msgid "Write a description for the session (optional)"
+msgstr "Escriu una descripció per la sessió (opcional)"
+
+#: gymonline/apps/gymclient/models.py:363
+msgid "Class Session"
+msgstr "Sessió"
+
+#: gymonline/apps/gymclient/models.py:364
+msgid "Class Sessions"
+msgstr "Sessions"
+
+#: gymonline/forms.py:5
+msgid "Your Company"
+msgstr "La teva empresa"
+
+#: gymonline/forms.py:6
+msgid "Your Name"
+msgstr "El teu nom"
+
+#: gymonline/forms.py:7
+msgid "Your Phone Number"
+msgstr "El teu teléfon"
+
+#: gymonline/forms.py:8
+msgid "Your Email"
+msgstr "El teu email"
+
+#: gymonline/forms.py:9
+msgid "Your message"
+msgstr "El teu missatge"
+
+#: gymonline/settings.py:160
 msgid "English"
 msgstr "Anglès"
 
-#: gymonline/settings.py:154
+#: gymonline/settings.py:161
 msgid "Spanish"
 msgstr "Espanyol"
 
-#: gymonline/settings.py:155
+#: gymonline/settings.py:162
 msgid "Catalan"
 msgstr "Català"
 
@@ -1902,27 +2099,44 @@ msgstr "La página no existeix"
 msgid "Sorry, but the page you were trying to view does not exist."
 msgstr "La página que intenta carregar no existeix, disculpi les molèsties."
 
-#: gymonline/templates/base.html:54 gymonline/templates/base.html.py:90
+#: gymonline/templates/base.html:50 gymonline/templates/base.html.py:107
+#: gymonline/templates/gymonline/contact.html:9
+#: gymonline/templates/gymonline/index.html:11
 #, fuzzy
 #| msgid "Welcome to TuGymOnline!"
 msgid "TuGymOnline"
-msgstr "Benvingut a TuGymOnline!"
+msgstr "TuGymOnline"
 
-#: gymonline/templates/base.html:65
+#: gymonline/templates/base.html:61
 msgid "Sign in"
 msgstr "Identificat"
 
-#: gymonline/templates/base.html:70
+#: gymonline/templates/base.html:66
 msgid "Logout"
-msgstr ""
+msgstr "Surt"
 
-#: gymonline/templates/base.html:73
+#: gymonline/templates/base.html:69
 msgid "Sign in with Google"
-msgstr ""
+msgstr "Registrat't amb Google"
 
-#: gymonline/templates/base.html:76
+#: gymonline/templates/base.html:72
 msgid "Sign in with Twitter"
-msgstr ""
+msgstr "Registra't amb Twitter"
+
+#: gymonline/templates/base.html:91
+msgid "Go"
+msgstr "Anar"
+
+#: gymonline/templates/base.html:110
+#, fuzzy
+#| msgid "Welcome to TuGymOnline!"
+msgid "Share TuGymOnline in:"
+msgstr "Benvingut a TuGymOnline!"
+
+#: gymonline/templates/base.html:112 gymonline/templates/base.html.py:115
+#: gymonline/templates/base.html:118 gymonline/templates/base.html.py:121
+msgid "Share on"
+msgstr "Comparteix en"
 
 #: gymonline/templates/cookielaw/banner.html:5
 msgid "COOKIE_INFO_HEADER"
@@ -1935,37 +2149,65 @@ msgstr "Estic d'acord"
 #: gymonline/templates/cookielaw/banner.html:8
 msgid "COOKIE_INFO_PARA"
 msgstr ""
-"TuGymOnline utilitza cookies própies i de tercers amb la finalitat d'elaborar estadístiques "
-"i analitzar l'ús de la página. Pot deshabilitar l'ús de cookies accedint a la configuració "
-"del seu navegador. Si continua navegant en TuGymOnline sense cambiar la configuració "
-"del navegador ens autoritza a grabar aquesta informació en el seu dispositiu."
+"TuGymOnline utilitza cookies própies i de tercers amb la finalitat "
+"d'elaborar estadístiques i analitzar l'ús de la página. Pot deshabilitar "
+"l'ús de cookies accedint a la configuració del seu navegador. Si continua "
+"navegant en TuGymOnline sense cambiar la configuració del navegador ens "
+"autoritza a grabar aquesta informació en el seu dispositiu."
 
-#: gymonline/templates/gymonline/index.html:9
-#: gymonline/templates/gymonline/index.html:23
+#: gymonline/templates/gymonline/contact.html:20
+#: gymonline/templates/gymonline/index.html:40
+#: gymonline/templates/gymonline/index.html:50
+#: gymonline/templates/gymonline/index.html:60
+#: gymonline/templates/gymonline/index.html:80
+#: gymonline/templates/gymonline/index.html:85
+#: gymonline/templates/gymonline/index.html:90
+msgid "Contact us"
+msgstr "Contacta'ns"
+
+#: gymonline/templates/gymonline/contact.html:28
+msgid "Contact now"
+msgstr "Contacta ara"
+
+#: gymonline/templates/gymonline/index.html:38
 msgid "Welcome to TuGymOnline!"
 msgstr "Benvingut a TuGymOnline!"
 
-#: gymonline/templates/gymonline/index.html:24
+#: gymonline/templates/gymonline/index.html:39
+#, fuzzy
+#| msgid ""
+#| "TuGymOnline is a system that records the classes in your gym, it "
+#| "broadcasts them in Internet and it publishes them allowing users to view "
+#| "them at any site and at any hour. Wanting to know more about TuGymOnline, "
+#| "contact with us."
 msgid ""
 "TuGymOnline is a system that records the classes in your gym, it broadcasts "
-"them in Internet and it publishes them allowing users to view them at any "
-"site and at any hour. Wanting to know more about TuGymOnline, contact with "
-"us."
+"and publishes them in Internet"
 msgstr ""
-"TuGymOnline es un sistema integral que graba las clases dirigidas de tu "
-"gimnasio, las emite por Internet y las publica para que puedan ser seguidas "
-"desde cualquier lugar y a cualquier hora. Si quieres saber más sobre "
-"TuGymOnline, no dudes en ponerte en contacto con nosotros."
+"TuGymOnline és un sistema que enregistra les classes en les teves instalaciones, "
+"les publica i les retransmet a través d'Internet."
 
-#: gymonline/templates/gymonline/index.html:26
-msgid "Read more"
-msgstr "Llegeix més"
+#: gymonline/templates/gymonline/index.html:48
+msgid "Get customers easily"
+msgstr "Aconsegueix clients fácilment"
 
-#: gymonline/templates/gymonline/index.html:33
+#: gymonline/templates/gymonline/index.html:49
+msgid "Hundreds of users will view your classes at any site and at any hour."
+msgstr "Centenars d'usuaris veuran les seves classes a qualsevol lloc del món i a qualsevol hora."
+
+#: gymonline/templates/gymonline/index.html:58
+msgid "Start now!"
+msgstr "Comenci ara!"
+
+#: gymonline/templates/gymonline/index.html:59
+msgid "Wanting to know more about TuGymOnline, contact with us."
+msgstr "Si vol coneixer-nos millor no dubti en contactar-nos."
+
+#: gymonline/templates/gymonline/index.html:78
 msgid "Gain visibility"
 msgstr "Guanya visibilitat"
 
-#: gymonline/templates/gymonline/index.html:34
+#: gymonline/templates/gymonline/index.html:79
 msgid ""
 "With TuGymOnline you can record and broadcast your sessions online so that "
 "millions of users can follow and share them."
@@ -1973,17 +2215,11 @@ msgstr ""
 "Amb TuGymOnline pots enregistrar y transmetre les classes dirigides del teu "
 "gimnàs online per què milions d'usuaris les puguin seguir i compartir."
 
-#: gymonline/templates/gymonline/index.html:35
-#: gymonline/templates/gymonline/index.html:40
-#: gymonline/templates/gymonline/index.html:45
-msgid "View details"
-msgstr "Mostra detalls"
-
-#: gymonline/templates/gymonline/index.html:38
+#: gymonline/templates/gymonline/index.html:83
 msgid "Adapt yourself"
 msgstr "Adapta't"
 
-#: gymonline/templates/gymonline/index.html:39
+#: gymonline/templates/gymonline/index.html:84
 msgid ""
 "The platform computes statistics to prepare sessions adapted to your "
 "customers needs."
@@ -1991,11 +2227,11 @@ msgstr ""
 "La plataforma et mostrará estadístiques per que puguis adaptar les sessions "
 "dirigies a les necessitats i als gustos dels teus usuaris."
 
-#: gymonline/templates/gymonline/index.html:43
+#: gymonline/templates/gymonline/index.html:88
 msgid "Make the difference"
 msgstr "Diferència't"
 
-#: gymonline/templates/gymonline/index.html:44
+#: gymonline/templates/gymonline/index.html:89
 msgid ""
 "TuGymOnline gives you added value for your current clients and an strategy "
 "to get new ones."
@@ -2003,7 +2239,11 @@ msgstr ""
 "TuGymOnline et dona valor afegit per als teus actuals usuaris i t'ajuda a "
 "preparar una estratègia adient per captar nous clients."
 
-#: htmlcov/testenv_lib_python3_4_site-packages_django_template_defaulttags.html:3128
-#, python-format
-msgid "The width is: %(width)s"
-msgstr "L'amplada és: %(width)s"
+#: gymonline/views.py:33
+msgid ""
+"Your message has been successfully send. We will contact you as soon as "
+"possible. Thanks."
+msgstr ""
+"El teu missatge s'ha enviat correctament. L'equip de TuGymOnline contactarà "
+"amb vosté amb la major brevetat possible. Gràcies."
+

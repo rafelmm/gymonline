@@ -10,6 +10,7 @@ import datetime
 from gymonline.apps.gymclient import managers
 
 # Create your models here.
+  
 class Profile(models.Model):
     GENDER_CHICES = (
             ('M', _('Male')),
