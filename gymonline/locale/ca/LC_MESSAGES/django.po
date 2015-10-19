@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-19 19:56+0200\n"
+"POT-Creation-Date: 2015-10-19 20:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2174,18 +2174,12 @@ msgid "Welcome to TuGymOnline!"
 msgstr "Benvingut a TuGymOnline!"
 
 #: gymonline/templates/gymonline/index.html:39
-#, fuzzy
-#| msgid ""
-#| "TuGymOnline is a system that records the classes in your gym, it "
-#| "broadcasts them in Internet and it publishes them allowing users to view "
-#| "them at any site and at any hour. Wanting to know more about TuGymOnline, "
-#| "contact with us."
 msgid ""
-"TuGymOnline is a system that records the classes in your gym, it broadcasts "
-"and publishes them in Internet"
+"TuGymOnline is a system that records classes in your gym, it broadcasts and "
+"publishes them in Internet"
 msgstr ""
-"TuGymOnline és un sistema que enregistra les classes en les teves instalaciones, "
-"les publica i les retransmet a través d'Internet."
+"TuGymOnline és un sistema que enregistra les classes en les teves "
+"instalaciones, les publica i les retransmet a través d'Internet."
 
 #: gymonline/templates/gymonline/index.html:48
 msgid "Get customers easily"
@@ -2193,7 +2187,9 @@ msgstr "Aconsegueix clients fácilment"
 
 #: gymonline/templates/gymonline/index.html:49
 msgid "Hundreds of users will view your classes at any site and at any hour."
-msgstr "Centenars d'usuaris veuran les seves classes a qualsevol lloc del món i a qualsevol hora."
+msgstr ""
+"Centenars d'usuaris veuran les seves classes a qualsevol lloc del món i a "
+"qualsevol hora."
 
 #: gymonline/templates/gymonline/index.html:58
 msgid "Start now!"
@@ -2242,8 +2238,7 @@ msgstr ""
 #: gymonline/views.py:33
 msgid ""
 "Your message has been successfully send. We will contact you as soon as "
-"possible. Thanks."
+"possible. Thanks"
 msgstr ""
 "El teu missatge s'ha enviat correctament. L'equip de TuGymOnline contactarà "
 "amb vosté amb la major brevetat possible. Gràcies."
-

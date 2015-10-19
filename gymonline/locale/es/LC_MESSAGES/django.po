@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-19 19:54+0200\n"
+"POT-Creation-Date: 2015-10-19 20:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2169,15 +2169,9 @@ msgid "Welcome to TuGymOnline!"
 msgstr "Bienvenido a TuGymOnline!"
 
 #: gymonline/templates/gymonline/index.html:39
-#, fuzzy
-#| msgid ""
-#| "TuGymOnline is a system that records the classes in your gym, it "
-#| "broadcasts them in Internet and it publishes them allowing users to view "
-#| "them at any site and at any hour. Wanting to know more about TuGymOnline, "
-#| "contact with us."
 msgid ""
-"TuGymOnline is a system that records the classes in your gym, it broadcasts "
-"and publishes them in Internet"
+"TuGymOnline is a system that records classes in your gym, it broadcasts and "
+"publishes them in Internet"
 msgstr ""
 "TuGymOnline es un sistema integral que graba las clases dirigidas de tu "
 "gimnasio, las publica y las emite en directo en Internet"
@@ -2188,7 +2182,8 @@ msgstr "Gana usuario fácilmente"
 
 #: gymonline/templates/gymonline/index.html:49
 msgid "Hundreds of users will view your classes at any site and at any hour."
-msgstr "Cientos de usuarios veran sus clases en cualquier lugar y a cualquier hora."
+msgstr ""
+"Cientos de usuarios veran sus clases en cualquier lugar y a cualquier hora."
 
 #: gymonline/templates/gymonline/index.html:58
 msgid "Start now!"
@@ -2196,7 +2191,8 @@ msgstr "¡Empieza ahora!"
 
 #: gymonline/templates/gymonline/index.html:59
 msgid "Wanting to know more about TuGymOnline, contact with us."
-msgstr "Si desea conocer más detalles sobre TuGymOnline no dude en contactarnos."
+msgstr ""
+"Si desea conocer más detalles sobre TuGymOnline no dude en contactarnos."
 
 #: gymonline/templates/gymonline/index.html:78
 msgid "Gain visibility"
