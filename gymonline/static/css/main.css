@@ -26,54 +26,56 @@ footer .social-buttons{
 	text-align: center;
 }
 
+footer .footer-contact{
+	text-align: right;
+}
 /* ==========================================================================
    Formulario de contacto
    ========================================================================== */
 
 .form-contact {
-	max-width: 450px;
-	padding: 19px 29px 29px;
-	margin: 0 auto 20px;
 	background-color: #fff;
-	border: 1px solid #e5e5e5;
-	-webkit-border-radius: 0 0 5px 5px;
-	-moz-border-radius: 0 0 5px 5px;
-	border-radius: 0 0 5px 5px;
-	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
-	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
-	box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
 }
 
 .form-contact .form-contact-heading {
 	margin-bottom: 10px;
 }
 
+.form-contact .input-group{
+	margin-top: 20px;
+}
+
 .form-contact input[type="text"], .form-contact input[type="email"] {
-	font-size: 16px;
-	height: 40px;
-	margin-bottom: 15px;
+	font-size: 15px;
 	padding: 7px 9px;
 	float: right;
 	width: 100%;
 }
 
 .form-contact textarea {
-	font-size: 16px;
+	font-size: 15px;
 	height: 140px;
-	margin-bottom: 15px;
 	padding: 7px 9px;
 	float: left;
 	width: 100%;
 }
-
-.form-contact label {
-	height: 40px;
-	margin-bottom: 0;
-	padding: 7px 9px;
-	float: right;
-	width: 100%
+.form-contact button{
+	margin-top:20px;
+}
+.form-contact-message{
+	font-size: 16px;
+	margin-top:30px;
+	text-align: center;
 }
 
+.form-contact .form-contact-field-error{
+	margin:0;
+}
+
+.form-contact .form-contact-field-error::before{
+	content: "* ";
+	color:red;
+}
 /* ==========================================================================
    Redes sociales
    ========================================================================== */

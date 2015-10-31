@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% load l10n %}
+
+{% load tz %}
+
+{% block head_title %}{% trans "TuGymOnline" %}{% endblock %}
+
+{% block content %}
+    <div class="container">
+    	{% if messages %}
+    		{% for message in messages %}
+    			<div class="row">
+					<div class="col-md-6 col-md-offset-3 form-contact-message">{{ message|linebreaks }}</div>
+    			</div>
+    		{% endfor %}
+    	{% endif %}
+    	{% if not messages %}
+    		<form action="{% url 'gymcontact:sendcontact' %}" method="post" class="form-contact">
+    			{% csrf_token %}
+		    	<div class="row">
+			      	<h2 class="col-md-5 col-md-offset-3 form-contact-heading">{% trans "Contact us" %}</h2>
+		      	</div>
+		      	<div class="row">
+			      	<p class="col-md-5 col-md-offset-3 form-contact-text">{% trans "Wanting to know more about TuGymOnline? <br />Complete the following fields and we will contact you as soon as possible." %}</p>
+		      	</div>
+
+    			<div class="row">
+    				<div class="col-md-5 col-md-offset-3">
+    					<div class="input-group">
+    						<span class="input-group-addon">
+    							<i class="glyphicon glyphicon-home"></i>
+    						</span>
+	    					<input class="form-control" id="id_{{ form.company.name }}" type="text" name="{{ form.company.name }}" placeholder="{{ form.company.label }}" value="{{ form.company.value|default_if_none:'' }}">
+    					</div>
+    					{% for error in form.company.errors %}
+    						<p class="form-contact-field-error">{{ error }}</p>
+    					{% endfor %}
+    				</div>
+    			</div>
+    			
+    			<div class="row">
+    				<div class="col-md-5 col-md-offset-3">
+    					<div class="input-group">
+    						<span class="input-group-addon">
+    							<i class="glyphicon glyphicon-user"></i>
+    						</span>
+	    					<input class="form-control" id="id_{{ form.name.name }}" type="text" name="{{ form.name.name }}" placeholder="{{ form.name.label }}" value="{{ form.name.value|default_if_none:'' }}">
+    					</div>
+    					{% for error in form.name.errors %}
+    						<p class="form-contact-field-error">{{ error }}</p>
+    					{% endfor %}
+    				</div>
+    			</div>
+    			
+    			<div class="row">
+    				<div class="col-md-5 col-md-offset-3">
+    					<div class="input-group">
+    						<span class="input-group-addon">
+    							<i class="glyphicon glyphicon-phone"></i>
+    						</span>
+	    					<input class="form-control" id="id_{{ form.phone.name }}" type="text" name="{{ form.phone.name }}" placeholder="{{ form.phone.label }}" value="{{ form.phone.value|default_if_none:'' }}">
+    					</div>
+    					{% for error in form.phone.errors %}
+    						<p class="form-contact-field-error">{{ error }}</p>
+    					{% endfor %}
+    				</div>
+    			</div>
+    			
+    			<div class="row">
+    				<div class="col-md-5 col-md-offset-3">
+    					<div class="input-group">
+    						<span class="input-group-addon">
+    							<i class="glyphicon glyphicon-envelope"></i>
+    						</span>
+	    					<input class="form-control" id="id_{{ form.email.name }}" type="text" name="{{ form.email.name }}" placeholder="{{ form.email.label }}" value="{{ form.email.value|default_if_none:'' }}">
+    					</div>
+    					{% for error in form.email.errors %}
+    						<p class="form-contact-field-error">{{ error }}</p>
+    					{% endfor %}
+    				</div>
+    			</div>
+    			
+    			<div class="row">
+    				<div class="col-md-5 col-md-offset-3">
+    					<div class="input-group">
+    						<span class="input-group-addon">
+    							<i class="glyphicon glyphicon-list-alt"></i>
+    						</span>
+	    					<textarea class="form-control" id="id_{{ form.message.name }}" type="text" name="{{ form.message.name }}" placeholder="{{ form.message.label }}" value="{{ form.message.value|default_if_none:'' }}"></textarea>
+    					</div>
+    					{% for error in form.message.errors %}
+    						<p class="form-contact-field-error">{{ error }}</p>
+    					{% endfor %}
+    				</div>
+    			</div>
+    			
+    	 		<div class="row">
+    				<div class="col-md-5 col-md-offset-3">
+		    			<button class="btn btn-large btn-primary" type="submit">{% trans "Contact now" %}</button>
+		    		</div>
+		    	</div>
+			</form>
+		{% endif %}
+    </div> <!-- /container --> 
+{% endblock %}

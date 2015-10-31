@@ -17,7 +17,7 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.conf.urls.i18n import i18n_patterns
-from .views import home, home_files, contact
+from .views import home, home_files
 
 urlpatterns = [
     url(r'^(?P<filename>(robots.txt)|(humans.txt))$',
@@ -30,8 +30,7 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     url(r'^$', home, name='home'),
-    url(r'^contact/', contact, name='contact'),
-    url(r'^contact/send/', contact, name='sendcontact'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^gymclient/', include('gymonline.apps.gymclient.urls',namespace="gymclient")),   
+    url(r'^contact/', include('gymonline.apps.gymcontact.urls', namespace="gymcontact")),
 )

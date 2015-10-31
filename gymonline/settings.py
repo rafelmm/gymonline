@@ -50,6 +50,7 @@ INSTALLED_APPS = (
     'cookielaw',
     # My apps
     'gymonline.apps.gymclient',
+    'gymonline.apps.gymcontact',
 )
 
 MIDDLEWARE_CLASSES = (

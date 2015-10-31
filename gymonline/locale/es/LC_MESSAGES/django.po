@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-19 20:26+0200\n"
+"POT-Creation-Date: 2015-10-31 14:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1942,6 +1942,7 @@ msgstr "Activo"
 #: gymonline/apps/gymclient/models.py:238
 #: gymonline/apps/gymclient/models.py:286
 #: gymonline/apps/gymclient/models.py:332
+#: gymonline/apps/gymcontact/models.py:18
 msgid "Created at"
 msgstr "Creado en"
 
@@ -2058,35 +2059,45 @@ msgstr "Sesion"
 msgid "Class Sessions"
 msgstr "Sesiones"
 
-#: gymonline/forms.py:5
-msgid "Your Company"
+#: gymonline/apps/gymcontact/models.py:9
+msgid "Your company"
 msgstr "Su empresa"
 
-#: gymonline/forms.py:6
-msgid "Your Name"
+#: gymonline/apps/gymcontact/models.py:11
+msgid "Your name"
 msgstr "Su nombre"
 
-#: gymonline/forms.py:7
-msgid "Your Phone Number"
+#: gymonline/apps/gymcontact/models.py:13
+msgid "Your phone"
 msgstr "Su teléfono"
 
-#: gymonline/forms.py:8
-msgid "Your Email"
+#: gymonline/apps/gymcontact/models.py:14
+msgid "Your email"
 msgstr "Su email"
 
-#: gymonline/forms.py:9
+#: gymonline/apps/gymcontact/models.py:16
 msgid "Your message"
 msgstr "Su mensaje"
 
-#: gymonline/settings.py:160
+#: gymonline/apps/gymcontact/views.py:38
+msgid ""
+"Your message has been successfully send. We will contact you as soon as "
+"possible.\n"
+"Thank you very much"
+msgstr ""
+"Su mensaje se ha enviado correctamente. El equipo de TuGymOnline se pondrá "
+"en contacto con usted en la mayor brevedad posible.\n"
+"Muchas gracias"
+
+#: gymonline/settings.py:161
 msgid "English"
 msgstr "Inglés"
 
-#: gymonline/settings.py:161
+#: gymonline/settings.py:162
 msgid "Spanish"
 msgstr "Español"
 
-#: gymonline/settings.py:162
+#: gymonline/settings.py:163
 msgid "Catalan"
 msgstr "Catalán"
 
@@ -2099,7 +2110,7 @@ msgid "Sorry, but the page you were trying to view does not exist."
 msgstr "La página que esta intentando cargar no existe."
 
 #: gymonline/templates/base.html:50 gymonline/templates/base.html.py:107
-#: gymonline/templates/gymonline/contact.html:9
+#: gymonline/templates/gymcontact/contact.html:9
 #: gymonline/templates/gymonline/index.html:11
 msgid "TuGymOnline"
 msgstr "TuGymOnline"
@@ -2133,6 +2144,10 @@ msgstr "Comparte TuGymOnline en:"
 msgid "Share on"
 msgstr "Comparte en"
 
+#: gymonline/templates/base.html:127
+msgid "Contact email"
+msgstr "Email de contacto"
+
 #: gymonline/templates/cookielaw/banner.html:5
 msgid "COOKIE_INFO_HEADER"
 msgstr "Política de Cookies"
@@ -2150,7 +2165,7 @@ msgstr ""
 "navegando en TyGymOnline sin cambiar la configuración del navegador nos "
 "autoriza a grabar esta información en su dispositivo."
 
-#: gymonline/templates/gymonline/contact.html:20
+#: gymonline/templates/gymcontact/contact.html:24
 #: gymonline/templates/gymonline/index.html:40
 #: gymonline/templates/gymonline/index.html:50
 #: gymonline/templates/gymonline/index.html:60
@@ -2160,7 +2175,15 @@ msgstr ""
 msgid "Contact us"
 msgstr "Contacta con nosotros"
 
-#: gymonline/templates/gymonline/contact.html:28
+#: gymonline/templates/gymcontact/contact.html:27
+msgid ""
+"Wanting to know more about TuGymOnline? <br />Complete the following fields "
+"and we will contact you as soon as possible."
+msgstr ""
+"Si quiere saber más sobre TuGymOnline, rellene los siguientes campos "
+"y nos pondremos en contacto con usted en la mayor brevedad posible."
+
+#: gymonline/templates/gymcontact/contact.html:102
 msgid "Contact now"
 msgstr "Contacta ahora"
 
@@ -2192,7 +2215,8 @@ msgstr "¡Empieza ahora!"
 #: gymonline/templates/gymonline/index.html:59
 msgid "Wanting to know more about TuGymOnline, contact with us."
 msgstr ""
-"Si desea conocer más detalles sobre TuGymOnline no dude en contactarnos."
+"Si desea conocer más detalles sobre TuGymOnline no dude en ponerse en contacto "
+"con nosotros."
 
 #: gymonline/templates/gymonline/index.html:78
 msgid "Gain visibility"
@@ -2229,11 +2253,3 @@ msgid ""
 msgstr ""
 "TyGymOnline te da valor añadido para tus actuales clientes y te ayuda a "
 "preparar una estrategia adecuada para ganar nuevos usuarios."
-
-#: gymonline/views.py:33
-msgid ""
-"Your message has been successfully send. We will contact you as soon as "
-"possible. Thanks"
-msgstr ""
-"Tu mensaje se ha enviado correctamente. El equipo de TuGymOnline se pondrá "
-"en contacto con usted en la mayor brevedad posible. Muchas gracias."
