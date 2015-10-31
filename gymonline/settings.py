@@ -28,7 +28,7 @@ SECRET_KEY = django_secret_key.SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['52.18.71.38','tugymonline.com']
+ALLOWED_HOSTS = django_secret_key.ALLOWED_HOSTS
 
 # Application definition
 INSTALLED_APPS = (
