@@ -31,7 +31,7 @@ def home(request):
                                            form.cleaned_data['phone'],
                                            form.cleaned_data['message'])
             sender = form.cleaned_data['email']
-            recipients = ['rmormeneo@tugymonline.com']
+            recipients = ['rmormeneo@tugymonline.com','info@tugymonline.com']
             send_mail(subject, message, sender, recipients)
             
             # Redirigimos a la nueva url
