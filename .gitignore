@@ -11,3 +11,4 @@ gymonline/django_secret_key.py
 htmlcov
 gymonline/fixtures/*
 gymonline/staticfiles/
+wsgi.py
