@@ -5,8 +5,8 @@ from django.utils.translation import ugettext_lazy as _
 from django.utils.timezone import utc
 from gymonline.settings import LANGUAGES
 import datetime
-
-
+from allauth.account.models import EmailAddress
+from django.contrib.auth.models import User
 from gymonline.apps.gymclient import managers
 
 # Create your models here.
@@ -20,7 +20,7 @@ class Profile(models.Model):
     # Relations
     user = models.OneToOneField(
                         settings.AUTH_USER_MODEL,
-                        related_name="custom_user_profile",
+                        related_name="profile",
                         verbose_name=_("user")
     )
     
@@ -33,6 +33,7 @@ class Profile(models.Model):
     postal_code = models.CharField(max_length=5,
                                    verbose_name=_("Postal code"))
     date_updated = models.DateTimeField(verbose_name=_("Updated at"),auto_now=True)
+    
     # Attributes - Optional
     date_deleted = models.DateTimeField(null=True, editable=False, verbose_name=_("Deleted at"))
     phone = models.IntegerField(verbose_name=_("Phone number"), 
@@ -53,7 +54,7 @@ class Profile(models.Model):
     
     # Object Manager
     objects = managers.ProfileManager()
-    
+
     # Custom Properties
     @property
     def username(self):
@@ -87,6 +88,15 @@ class Profile(models.Model):
     def __str__(self):
         return self.user.username
     
+    def account_verified(self):
+        if self.user.is_authenticated:
+            result = EmailAddress.objects.filter(email=self.user.email)
+            if len(result):
+                return result[0].verified
+        return False
+    
+User.profile = property(lambda u: Profile.objects.get_or_create(user=u)[0])
+
 class Gym(models.Model):
     # Relations
     contact_person = models.ForeignKey(

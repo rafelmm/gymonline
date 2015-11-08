@@ -35,10 +35,16 @@ def home(request):
             send_mail(subject, message, sender, recipients)
             
             # Redirigimos a la nueva url
-            messages.success(request, _("Your message has been successfully send. We will contact you as soon as possible.\nThank you very much"))
-            return HttpResponseRedirect(reverse('gymcontact:contact'))
+            messages.success(request, _(""))
+            return HttpResponseRedirect(reverse('gymcontact:contact_sended'))
     else:
         # Creamos un form vacio
         form = ContactForm()
         
     return render(request, "gymcontact/contact.html", {'form': form})
+
+def contact_sended(request):
+    return render(request, 
+                  "gymcontact/contact_sended.html",
+                  {}
+                  )

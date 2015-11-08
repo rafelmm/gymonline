@@ -1,0 +1,190 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% load l10n %}
+
+{% load tz %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block content %}
+    <div class="container">
+   		<form id="signup_form" action="{% url 'account_signup' %}" method="post" class="form-signup">
+   			{% csrf_token %}
+   			
+   			<div class="row">
+				<h2 class="col-md-4 col-md-offset-4 form-signup-heading">{% trans "Join now TuGymOnline" %}</h2>
+			</div>
+		
+   			{% if form.non_field_errors %}
+		  	<div class="row">
+		  		<div class="col-md-6 col-md-offset-3">
+		  			<p class="alert alert-danger">
+				  		{% for error in form.non_field_errors %}
+				  			{{ error }}
+				  		{% endfor %}
+			  		<p>
+		  		</div>
+		  	</div>
+		  	{% endif %}
+		  	
+	    	
+	      	<div class="row">
+   				<div class="col-md-4 col-md-offset-4">
+   					<input id="id_{{ form.first_name.name }}" 
+   						   type="text" 
+   						   name="{{ form.first_name.name }}" 
+   						   placeholder="{{ form.first_name.label }}" 
+   						   value="{{ form.first_name.value|default_if_none:'' }}">
+   				</div>
+   				{% if form.first_name.errors %}
+			  		<div class="col-md-4">
+			  			<p class="alert alert-danger form-field-alert">
+				  			{% for error in form.first_name.errors %}
+				  				{{ error }}
+				  			{% endfor %}
+				  		</p>
+			  		</div>
+	  			{% endif %}
+	  		</div>
+	  		<div class="row">
+   				<div class="col-md-4 col-md-offset-4">
+   					<input id="id_{{ form.last_name.name }}" 
+   						   type="text" 
+   						   name="{{ form.last_name.name }}" 
+   						   placeholder="{{ form.last_name.label }}" 
+   						   value="{{ form.last_name.value|default_if_none:'' }}">
+   				</div>
+   				{% if form.last_name.errors %}
+			  		<div class="col-md-4">
+			  			<p class="alert alert-danger form-field-alert">
+				  			{% for error in form.last_name.errors %}
+				  				{{ error }}
+				  			{% endfor %}
+				  		</p>
+			  		</div>
+	  			{% endif %}
+   			</div>
+   			<div class="row">
+   				<div class="col-md-4 col-md-offset-4">
+   					<input id="id_{{ form.email.name }}" 
+   						   type="email" 
+   						   name="{{ form.email.name }}" 
+   						   placeholder="{{ form.email.label }}" 
+   						   value="{{ form.email.value|default_if_none:'' }}">
+   				</div>
+   				{% if form.email.errors %}
+			  		<div class="col-md-4">
+			  			<p class="alert alert-danger form-field-alert">
+				  			{% for error in form.email.errors %}
+				  				{{ error }}
+				  			{% endfor %}
+				  		</p>
+			  		</div>
+	  			{% endif %}
+   			</div>
+   			<div class="row">
+   				<div class="col-md-4 col-md-offset-4">
+   					<input id="id_{{ form.password1.name }}" 
+   						   type="password" 
+   						   name="{{ form.password1.name }}" 
+   						   placeholder="{{ form.password1.label }}" 
+   						   value="{{ form.password1.value|default_if_none:'' }}">
+   				</div>
+   				{% if form.password1.errors %}
+			  		<div class="col-md-4">
+			  			<p class="alert alert-danger form-field-alert">
+				  			{% for error in form.password1.errors %}
+				  				{{ error }}
+				  			{% endfor %}
+				  		</p>
+			  		</div>
+	  			{% endif %}
+	  		</div>
+	  		<div class="row">
+   				<div class="col-md-4 col-md-offset-4">
+   					<input id="id_{{ form.password2.name }}" 
+   						   type="password" 
+   						   name="{{ form.password2.name }}" 
+   						   placeholder="{{ form.password2.label }}" 
+   						   value="{{ form.password2.value|default_if_none:'' }}">
+   				</div>
+   				{% if form.password2.errors %}
+			  		<div class="col-md-4">
+			  			<p class="alert alert-danger form-field-alert">
+				  			{% for error in form.password2.errors %}
+				  				{{ error }}
+				  			{% endfor %}
+				  		</p>
+			  		</div>
+	  			{% endif %}
+   			</div>
+   			<div class="row">
+   				<div class="col-md-2 col-md-offset-4">
+   					<input id="id_{{ form.postal_code.name }}" 
+   						   type="text" 
+   						   name="{{ form.postal_code.name }}" 
+   						   placeholder="{{ form.postal_code.label }}" 
+   						   value="{{ form.postal_code.value|default_if_none:'' }}">
+   				</div>
+   				{% if form.postal_code.errors %}
+			  		<div class="col-md-4">
+			  			<p class="alert alert-danger form-field-alert">
+				  			{% for error in form.postal_code.errors %}
+				  				{{ error }}
+				  			{% endfor %}
+				  		</p>
+			  		</div>
+	  			{% endif %}
+	  		</div>
+	  		<div class="row">
+   				<div class="col-md-2 col-md-offset-4">
+   					<input id="id_{{ form.birthday.name }}" 
+   						   type="text" 
+   						   name="{{ form.birthday.name }}" 
+   						   placeholder="{{ form.birthday.label }}" 
+   						   value="{{ form.birthday.value|default_if_none:'' }}"
+   						   class="datepicker">
+   				</div>
+   				{% if form.birthday.errors %}
+			  		<div class="col-md-4">
+			  			<p class="alert alert-danger form-field-alert">
+				  			{% for error in form.birthday.errors %}
+				  				{{ error }}
+				  			{% endfor %}
+				  		</p>
+			  		</div>
+	  			{% endif %}
+	  		</div>
+	  		<div class="row">
+   				<div class="col-md-2 col-md-offset-4">
+   					{{ form.gender }}
+   				</div>
+   			</div>
+   			{% if redirect_field_value %}
+		  		<input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+		  	{% endif %}
+   	 		<div class="row">
+   				<div class="col-md-4 col-md-offset-4">
+	    			<button class="btn btn-large btn-primary" type="submit">{% trans "Sign up" %}</button>
+	    		</div>
+	    	</div>
+	    	<div class="row">
+		      	<p class="col-md-4 col-md-offset-4 have-account">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+	      	</div>
+		</form>
+    </div> <!-- /container --> 
+{% endblock %}
+
+
+{% block footer_javascript %}
+<script>
+$(function() {
+	$('.datepicker').datepicker({
+			dateFormat: "dd/mm/yy",
+			changeYear: true,
+	});
+});
+</script>
+{% endblock %}

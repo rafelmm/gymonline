@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Access denied" %}{% endblock %}
+
+{% block content %}
+<div class="container error-template">
+     <div class="row">
+       	<div class="col-md-8 col-md-offset-2">
+   			<h1>{% trans "Acess denied (403 Error)" %}</h1>
+   			<p>{% trans "Sorry, but you do not have the right permission to access this page. If you need this functionality, pelase contact our administrator at info@tugymonline.com." %}</p>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -103,7 +103,9 @@ SOCIALACCOUNT_PROVIDERS = { 'google':
       'AUTH_PARAMS': { 'access_type': 'online' } 
     }
 }
-    
+  
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+  
 WSGI_APPLICATION = 'gymonline.wsgi.application'
 
 
@@ -133,12 +135,20 @@ USE_L10N = True
 
 USE_TZ = True
 
+LOGIN_URL = '/accounts/login/'
 # Needed by allauth
 SITE_ID = 3
 ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_EMAIL_VERIFICATION = "none"
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_AUTHENTICATION_METHOD = "email"
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7
+ACCOUNT_SIGNUP_FORM_CLASS = 'gymonline.apps.gymclient.forms.MySignupForm'
+ACCOUNT_AUTHENTICATED_LOGIN_REDIRECTS = True
+LOGIN_REDIRECT_URL = '/gymclient/'
 SOCIALACCOUNT_QUERY_EMAIL = True
-LOGIN_REDIRECT_URL = "/"
+ACCOUNT_LOGOUT_REDIRECT_URL = "/"
+ACCOUNT_USER_DISPLAY = 'gymonline.apps.gymclient.managers.getUserDisplay'
 
 # Send Mail configuration
 EMAIL_HOST = django_secret_key.EMAIL_HOST     
@@ -162,6 +172,7 @@ LANGUAGES = (
     ('es', _('Spanish')),
     ('ca', _('Catalan')),
 )
+
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
 )

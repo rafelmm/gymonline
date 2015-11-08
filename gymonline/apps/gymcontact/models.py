@@ -4,6 +4,7 @@ from django.utils.translation import ugettext_lazy as _
 
 class GymContact(models.Model):
     # Relations
+    
     # Attributes - Mandatory
     company = models.CharField(max_length=150,
                                verbose_name=_("Your company"))

@@ -5,6 +5,9 @@
 	margin-bottom:0px;
 }
 
+.navbar-form {
+	margin-top: 12px;
+}
 /* ==========================================================================
    Pie de página
    ========================================================================== */
@@ -29,6 +32,80 @@ footer .social-buttons{
 footer .footer-contact{
 	text-align: right;
 }
+
+/* ==========================================================================
+  Error template
+   ========================================================================== */
+.error-template h1 {
+	text-align: center;
+}
+
+/* ==========================================================================
+   Formulario de login
+   ========================================================================== */
+.form-login .row {
+	margin-top:5px;
+}
+
+.form-login-heading {
+	text-align: center;
+}
+
+.form-login input[type="email"],
+.form-login input[type="password"] {
+	font-size: 15px;
+	padding: 7px 9px;
+	float: right;
+	width: 100%;
+}
+
+.form-login button{
+	float: right;
+	width: 100%;
+}
+
+.form-login .not-registered{
+	margin-top:10px;
+}
+
+.form-login-resetpassword{
+	text-align:right;
+}
+/* ==========================================================================
+   Formulario de signup
+   ========================================================================== */
+
+.form-signup input[type="text"], 
+.form-signup input[type="email"],
+.form-signup input[type="password"],
+.form-signup select {
+	font-size: 15px;
+	padding: 7px 9px;
+	float: right;
+	width: 100%;
+}
+
+.form-signup .row{
+	margin-top: 5px;
+}
+
+.form-signup button{
+	float: right;
+	width: 100%;
+}
+
+.form-signup-heading {
+	text-align: center;
+}
+
+.form-signup .have-account{
+	margin-top:10px;
+}
+
+.verification_send h1{
+	text-align: center;
+}
+
 /* ==========================================================================
    Formulario de contacto
    ========================================================================== */
@@ -62,20 +139,17 @@ footer .footer-contact{
 .form-contact button{
 	margin-top:20px;
 }
+
 .form-contact-message{
 	font-size: 16px;
 	margin-top:30px;
 	text-align: center;
 }
 
-.form-contact .form-contact-field-error{
-	margin:0;
+.form-contact .form-field-alert{
+	margin-top:15px;
 }
 
-.form-contact .form-contact-field-error::before{
-	content: "* ";
-	color:red;
-}
 /* ==========================================================================
    Redes sociales
    ========================================================================== */
@@ -118,6 +192,7 @@ footer .footer-contact{
 .btn-googleplus:link, .btn-googleplus:visited {
     color: #fff;
 }
+
 .btn-googleplus:active, .btn-googleplus:hover {
     background: #ba3225;
     color: #fff;
@@ -135,4 +210,29 @@ footer .footer-contact{
 .btn-linkedin:active, .btn-linkedin:hover {
     background: #0b6087;
     color: #fff;
+}
+
+/* ==========================================================================
+   Common forms fields
+   ========================================================================== */
+.form-field-alert::before {
+	content: "*";
+}
+	
+.form-field-alert {
+	padding: 9px;
+	font-height: 15px;
+	border:0;
+	background-color: rgba(255,255,255,0);
+	background-image: none;
+	box-shadow: none;
+	margin-left: -20px;
+	margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Jquery - datepicker
+   ========================================================================== */
+.ui-datepicker-year {
+	color: #2E6E9E;
 }

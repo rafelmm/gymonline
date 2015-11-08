@@ -3,6 +3,9 @@
 from django.db import models
 from django.db.models.query import QuerySet
 
+def getUserDisplay(user):
+    return user.get_full_name()
+
 class CustomQuerySet(QuerySet):
     def delete(self):
         self.update(active=False)

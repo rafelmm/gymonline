@@ -19,3 +19,7 @@ DATABASES = {
 FIXTURE_DIRS = (
     os.path.join(BASE_DIR, 'fixtures'),
     )
+
+SITE_ID = 3
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

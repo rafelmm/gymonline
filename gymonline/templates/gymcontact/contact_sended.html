@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% load l10n %}
+
+{% load tz %}
+
+{% block head_title %}{% trans "Contact sended" %}{% endblock %}
+
+{% block content %}
+    <div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 form-contact-message alert alert-success">
+				{% blocktrans %}<p>Your message has been successfully send. We will contact you as soon as possible.<br />Thank you very much</p>{% endblocktrans %}
+			</div>
+    	</div>
+    </div> <!-- /container --> 
+{% endblock %}

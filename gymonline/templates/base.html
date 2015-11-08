@@ -9,27 +9,28 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    	<meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <title>{% block head_title %}{% endblock %}</title>
-        <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
-        <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}" alt="apple-touch-icon">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        
-        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-
-        
-        <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
-        <link rel="stylesheet" href="{% static 'cookielaw/css/cookielaw.css' %}">
-        <link rel="stylesheet" href="{% static 'css/main.css' %}">
-       
-        {% block head_css %}{% endblock %}
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  	<meta name="description" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	      
+	    <title>{% block head_title %}{% endblock %}</title>
+	      
+	    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+	    <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}" alt="apple-touch-icon">
+	    <link rel="stylesheet" href="{% static 'js/vendor/jquery-ui-1.11.4/jquery-ui.min.css' %}">
+	    <link rel="stylesheet" href="{% static 'font-awesome-4.4.0/css/font-awesome.min.css' %}">
+	    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+	    <link rel="stylesheet" href="{% static 'cookielaw/css/cookielaw.css' %}">
+	    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+	      
+	    {% block head_css %}{% endblock %}
+	    
 		{% block head_javascript %}{% endblock %}
-    </head>
+		
+	</head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -38,63 +39,71 @@
     
     {% cookielaw_banner %}
 	
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{% url 'home' %}">{% trans "TuGymOnline" %}</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <!-- 
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">{% trans "Sign in" %}</button>
-          </form>
-          
-          <div class="navbar-form navbar-right">
-          	{% if user.is_authenticated %}
-          		<a id="logout" href="/accounts/logout" class="btn btn-success">{% trans "Logout" %}</a>
-          	{% else %}
-          		<a id="google_login" href="/accounts/google/login" class="btn btn-success">
-          			{% trans "Sign in with Google" %}
-          		</a>
-          		<a id="twitter_login" href="/accounts/twitter/login" class="btn btn-success">
-          			{% trans "Sign in with Twitter" %}
-          		</a>
-          	{% endif %}
-          </div>
-          -->
-          <div class="navbar-form navbar-right">
-          	<form action="{% url 'set_language' %}" method="post">
-          		{% csrf_token %}
-          		<input name="next" type="hidden" value="/" />
-          		<select name="language">
-          			{% get_current_language as LANGUAGE_CODE %}
-          			{% get_available_languages as LANGUAGES %}
-          			{% get_language_info_list for LANGUAGES as languages %}
-          			{% for language in languages %}
-          				<option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected" {% endif %}>
-          					{{ language.name_local }} ({{ language.code }})
-          				</option>
-          			{% endfor %}
-          		</select>
-          		<input type="submit" value="{% trans 'Go' %}" />
-          	</form>
-          </div> <!-- form-language -->
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
-    
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      	<div class="container">
+        	<div class="navbar-header">
+          		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            		<span class="sr-only">Toggle navigation</span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+          		</button>
+          		{% if request.user.is_authenticated %}
+          			<a class="navbar-brand" href="{% url 'gymclient:home' %}">{% trans "TuGymOnline" %}</a>
+          		{% else %}
+          			<a class="navbar-brand" href="{% url 'home' %}">{% trans "TuGymOnline" %}</a>
+          		{% endif %}
+        	</div>
+        	
+	        <div id="navbar" class="navbar-collapse collapse">
+		        {% if request.user.is_authenticated %}
+			        	<ul class="nav navbar-nav navbar-right">
+			        		<li class="dropdown">
+			        			<a class="dropdown-toggle" aria-haspopup="true" role="button" data-toggle="dropdown" href="#" aria-expanded="false">
+					        		{% trans 'Welcome' %},&nbsp;
+					        		{% if request.user.first_name or request.user.last_name %}
+					        			{{ request.user.first_name }} {{ request.user.last_name }}
+					    			{% else %}
+					        			{{ request.user.username }}
+					    			{% endif %}
+					    			<span class="caret"></span>
+			        			</a>
+			        			<ul class="dropdown-menu">
+			        				<li><a href="{% url 'gymclient:profile_detail' %}">{% trans 'Settings' %}</a>
+			        				<li><a href="/accounts/logout/">Logout</a></li>
+			        			</ul>
+			    			</li>
+			    			
+			        	</ul>
+			        
+				{% else %}
+			        <div class="navbar-form navbar-right">
+			        	<form action="{% url 'set_language' %}" method="post">
+						{% csrf_token %}
+				          	<input name="next" type="hidden" value="/" />
+				          	<select name="language">
+				          		{% get_current_language as LANGUAGE_CODE %}
+				          		{% get_available_languages as LANGUAGES %}
+				          		{% get_language_info_list for LANGUAGES as languages %}
+				          		{% for language in languages %}
+				          		<option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected" {% endif %}>
+				          			{{ language.name_local|capfirst }} ({{ language.code }})
+				          		</option>
+				          		{% endfor %}
+				          	</select>
+				          	<input type="submit" value="{% trans 'Go' %}" />
+				     	</form>
+					</div>
+					<div class="navbar-right">
+			        	<ul class="navbar-nav">
+			        		<li><a href="/accounts/login/" class="btn btn-link pull-right">Login</a></li>  
+						</ul>
+			    	</div>
+				{% endif %}
+			</div><!--/.navbar-collapse -->
+      	</div>
+	</nav>
+	
 	{% endblock %}
 	
 	{% block content %} {% endblock %}   
@@ -129,17 +138,21 @@
 	    </div>
       </footer>
     </div> <!-- /container -->
-    
-	{% block footer_javascript %} {% endblock %} 
+	
+	<!--  
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+	-->
+	<script src="{% static 'js/vendor/jquery-ui-1.11.4/external/jquery/jquery.js' %}"></script>
+	<script src="{% static 'js/vendor/jquery-ui-1.11.4/jquery-ui.min.js' %}"></script>
     <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
-
     <script src="{% static 'js/plugins.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
     <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
 	<script src="{% static 'cookielaw/js/cookielaw.js' %}"></script>
+	
+	{% block footer_javascript %} {% endblock %} 
+	
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 	<!--
         <script>
