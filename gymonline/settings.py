@@ -105,7 +105,8 @@ SOCIALACCOUNT_PROVIDERS = { 'google':
 }
   
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-  
+DEFAULT_FROM_EMAIL = 'info@tugymonline.com'
+ADMINS = (('Rafel', 'rmormeneo@tugymonline.com'), ) 
 WSGI_APPLICATION = 'gymonline.wsgi.application'
 
 
@@ -149,6 +150,7 @@ LOGIN_REDIRECT_URL = '/gymclient/'
 SOCIALACCOUNT_QUERY_EMAIL = True
 ACCOUNT_LOGOUT_REDIRECT_URL = "/"
 ACCOUNT_USER_DISPLAY = 'gymonline.apps.gymclient.managers.getUserDisplay'
+ACCOUNT_EMAIL_SUBJECT_PREFIX = "[www.tugymonline.com]"
 
 # Send Mail configuration
 EMAIL_HOST = django_secret_key.EMAIL_HOST     
