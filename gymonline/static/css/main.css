@@ -41,113 +41,51 @@ footer .footer-contact{
 }
 
 /* ==========================================================================
-   Formulario de login
+   Account forms
    ========================================================================== */
-.form-login .row {
+.form-gymaccount .row {
 	margin-top:5px;
 }
 
-.form-login-heading {
+.form-gymaccount-heading {
 	text-align: center;
 }
 
-.form-login input[type="email"],
-.form-login input[type="password"] {
+.form-gymaccount input[type="text"], 
+.form-gymaccount input[type="email"],
+.form-gymaccount input[type="password"],
+.form-gymaccount select {
 	font-size: 15px;
 	padding: 7px 9px;
 	float: right;
 	width: 100%;
 }
 
-.form-login button{
-	float: right;
-	width: 100%;
-}
-
-.form-login .not-registered{
-	margin-top:10px;
-}
-
-.form-login-resetpassword{
-	text-align:right;
-}
-/* ==========================================================================
-   Formulario de signup
-   ========================================================================== */
-
-.form-signup input[type="text"], 
-.form-signup input[type="email"],
-.form-signup input[type="password"],
-.form-signup select {
-	font-size: 15px;
-	padding: 7px 9px;
-	float: right;
-	width: 100%;
-}
-
-.form-signup .row{
-	margin-top: 5px;
-}
-
-.form-signup button{
-	float: right;
-	width: 100%;
-}
-
-.form-signup-heading {
-	text-align: center;
-}
-
-.form-signup .have-account{
-	margin-top:10px;
-}
-
-.verification_send h1{
-	text-align: center;
-}
-
-/* ==========================================================================
-   Formulario de contacto
-   ========================================================================== */
-
-.form-contact {
-	background-color: #fff;
-}
-
-.form-contact .form-contact-heading {
-	margin-bottom: 10px;
-}
-
-.form-contact .input-group{
-	margin-top: 20px;
-}
-
-.form-contact input[type="text"], .form-contact input[type="email"] {
-	font-size: 15px;
-	padding: 7px 9px;
-	float: right;
-	width: 100%;
-}
-
-.form-contact textarea {
+.form-gymaccount textarea {
 	font-size: 15px;
 	height: 140px;
 	padding: 7px 9px;
 	float: left;
 	width: 100%;
 }
-.form-contact button{
-	margin-top:20px;
+
+.form-gymaccount button{
+	float: right;
+	width: 100%;
 }
 
-.form-contact-message{
-	font-size: 16px;
-	margin-top:30px;
-	text-align: center;
+.form-gymaccount .bottom-message{
+	margin-top:10px;
 }
 
-.form-contact .form-field-alert{
-	margin-top:15px;
+.form-gymaccount-resetpassword{
+	text-align:right;
+}
+.form-gymaccount .auto-width{
+	width: auto;
+}
+.form-gymaccount .float-left{
+	float:left;	
 }
 
 /* ==========================================================================
@@ -233,6 +171,7 @@ footer .footer-contact{
 /* ==========================================================================
    Jquery - datepicker
    ========================================================================== */
-.ui-datepicker-year {
+.ui-datepicker-year,
+.ui-datepicker-month{
 	color: #2E6E9E;
 }

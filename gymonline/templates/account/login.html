@@ -37,7 +37,7 @@
 	  	</div>
 	</div>
 	-->
-	<form class="login form-login" method="POST" action="{% url 'account_login' %}">
+	<form class="login form-gymaccount" method="POST" action="{% url 'account_login' %}">
 		{% csrf_token %}
 	  	
 	  	{% if form.non_field_errors %}

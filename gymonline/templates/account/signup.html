@@ -10,7 +10,7 @@
 
 {% block content %}
     <div class="container">
-   		<form id="signup_form" action="{% url 'account_signup' %}" method="post" class="form-signup">
+   		<form id="signup_form" action="{% url 'account_signup' %}" method="post" class="form-gymaccount">
    			{% csrf_token %}
    			
    			<div class="row">
@@ -184,6 +184,9 @@ $(function() {
 	$('.datepicker').datepicker({
 			dateFormat: "dd/mm/yy",
 			changeYear: true,
+			changeMonth: true,
+			firstDay: 1,
+			yearRange: "c-100:c",
 	});
 });
 </script>
