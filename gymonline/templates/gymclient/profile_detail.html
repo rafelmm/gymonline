@@ -9,17 +9,64 @@
 {% block content %}
 
 <div class="container">
-	<div class="row">
-		<h1 class="col-md-4 col-md-offset-1"> {% trans 'My Profile' %}</h1>
-	</div>
-	<div class="row">
-		<p class="col-md-4 col-md-offset-1">{{ profile.user.first_name }} {{ profile.user.last_name }}</p>
-	</div>
-	<div class="row">
-		<p class="col-md-4 col-md-offset-1">{{ profile.user.email }}</p>
-	</div>
-	<div class="row">
-		<p class="col-md-4 col-md-offset-1">{{ profile.birthday }}</p>
-	</div>
-</div>
+	<form action="{% url 'gymclient:profile_form'%}" method="POST" class="app_form">
+	{% csrf_token %}
+	
+		<div class="row">
+			<h1 class="col-md-4 col-md-offset-4"> {% trans 'My Profile' %}</h1>
+		</div>
+	
+		{% for field in user %}
+			<div class="row">
+				<div class="col-md-3 col-md-offset-1">
+					<label for="id_user-{{ field.name}}">{{ field.label }}</label>
+				</div>
+				<div class="col-md-3 app_form-field">{{ field }}</div>	
+			
+				{% if field.errors %}
+					<div class="col-md-4 app_form-error">
+					{% for error in field.errors %}
+						{{ error }}
+					{% endfor %}
+					</div>	
+				{% endif %}
+			</div>
+		{% endfor %}
+		{% for field in profile %}
+			<div class="row">
+				<div class="col-md-3 col-md-offset-1">
+					<label for="id_profile-	{{ field.name}}">{{ field.label }}</label>
+				</div>
+				<div class="col-md-3">{{ field }}</div>	
+				{% if field.errors %}
+					<div class="col-md-4 app_form-error">
+					{% for error in field.errors %}
+						{{ error }}
+					{% endfor %}
+					</div>	
+				{% endif %}
+			</div>
+		{% endfor %}
+    		
+    	<div class="row">
+			<div class="col-md-3 col-md-offset-4">
+				<button class="btn btn-large btn-primary" type="submit">{% trans "Submit" %}</button>
+			</div>
+    	</div>
+	</form>
+</div> <!-- container -->
+{% endblock %}
+
+{% block footer_javascript %}
+<script>
+$(function() {
+	$('#id_profile-birthday').datepicker({
+			dateFormat: "dd/mm/yy",
+			changeYear: true,
+			changeMonth: true,
+			firstDay: 1,
+			yearRange: "c-100:c",
+	});
+});
+</script>
 {% endblock %}

@@ -2,6 +2,7 @@
 from django import forms
 from gymonline.apps.gymclient import models
 from django.contrib.auth.models import Group
+from django.contrib.auth import get_user_model
 
 class ClassForm(forms.ModelForm):
     class Meta:
@@ -11,8 +12,13 @@ class ClassForm(forms.ModelForm):
 class ProfileForm(forms.ModelForm):
     class Meta:
         model = models.Profile
-        fields = '__all__'
-              
+        exclude = ['user',]
+  
+class UserForm(forms.ModelForm): 
+    class Meta:
+        model = get_user_model()
+        fields = ['first_name', 'last_name', 'email', ]
+             
 class MySignupForm(forms.ModelForm):
     email = forms.EmailField()
     password1 = forms.CharField(widget=forms.PasswordInput())

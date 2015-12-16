@@ -5,7 +5,7 @@ from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.decorators import permission_required
-
+from django.contrib.auth import get_user_model
 from gymonline.apps.gymclient import models
 from gymonline.apps.gymclient import forms
 
@@ -15,26 +15,38 @@ def home(request):
                   "gymclient/home.html",
                   {}
                   )
-@login_required
-def profile_detail(request):
-    profile = models.Profile.objects.get(user=request.user)
-    return render(request,
-                      "gymclient/profile_detail.html",
-                      {'profile': profile}
-                      )
     
 @login_required
-def profile_edit(request):
+def profile_form(request):
     if request.method == "POST":
-        profile_form = forms.ProfileForm(request.POST)
-        if profile_form.is_valid():
-            profile = profile_form.save()
+        profile_form = forms.ProfileForm(request.POST, prefix = "profile")
+        user_form = forms.UserForm(request.POST, prefix = "user")
+        
+        if profile_form.is_valid() and user_form.is_valid():
+            user = get_user_model().objects.get(id=request.user.id)
+            user.email = user_form.cleaned_data['email']
+            user.first_name = user_form.cleaned_data['first_name']
+            user.last_name = user_form.cleaned_data['last_name']
+            user.save()
+            
+            profile = user.profile
+            profile.birthday = profile_form.cleaned_data['birthday']
+            profile.gender = profile_form.cleaned_data['gender']
+            profile.postal_code = profile_form.cleaned_data['postal_code']
+            profile.phone = profile_form.cleaned_data['phone']                 
+            profile.nif = profile_form.cleaned_data['nif']
+            profile.city = profile_form.cleaned_data['city']
+            profile.address = profile_form.cleaned_data['address']
+            profile.save()
+            
             return HttpResponseRedirect(reverse('gymclient:home'))
     else:
-        profile_form = forms.ProfileForm(instance=request.user.profile)
+        profile_form = forms.ProfileForm(instance=request.user.profile, prefix="profile")
+        user_form = forms.UserForm(instance=request.user, prefix="user")
         return render(request,
                       "gymclient/profile_detail.html",
-                      {'profile_form': profile_form}
+                      {'profile': profile_form,
+                       'user': user_form}
                       )
 @login_required 
 def class_list(request):

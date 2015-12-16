@@ -12,3 +12,4 @@ htmlcov
 gymonline/fixtures/*
 gymonline/staticfiles/
 gymonline/wsgi.py
+gymonline/plantilla/

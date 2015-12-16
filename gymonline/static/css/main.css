@@ -89,6 +89,41 @@ footer .footer-contact{
 }
 
 /* ==========================================================================
+   Application form
+   ========================================================================== */
+.app_form .row {
+	margin-top:5px;
+}
+.app_form label{
+	float:right;
+	font-size: 15px;
+	font-weight: normal;
+	padding: 7px 9px;
+	
+}
+.app_form input[type=text],
+.app_form input[type=number],
+.app_form input[type=email],
+.app_form select{
+	font-size: 15px;
+	padding: 7px 9px;
+	float: left;
+	width: 100%;
+}
+
+.app_form input[type="number"]::-webkit-outer-spin-button,
+.app_form input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.app_form input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.app_form button{
+	width: 100%;
+}
+/* ==========================================================================
    Redes sociales
    ========================================================================== */
    
