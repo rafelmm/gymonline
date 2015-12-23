@@ -1,0 +1,212 @@
+/* ==========================================================================
+   Barra de navegación
+   ========================================================================== */
+.navbar {
+	margin-bottom:0px;
+}
+
+.navbar-form {
+	margin-top: 12px;
+}
+/* ==========================================================================
+   Pie de página
+   ========================================================================== */
+   
+footer {
+	margin:0px 0px 10px;
+	color: rgba(90,90,90,1);
+}
+
+footer p{
+	line-height:40px;
+}
+
+footer .share-text{
+	padding-bottom:2px;
+	text-align:center;
+}
+footer .social-buttons{
+	text-align: center;
+}
+
+footer .footer-contact{
+	text-align: right;
+}
+
+/* ==========================================================================
+  Error template
+   ========================================================================== */
+.error-template h1 {
+	text-align: center;
+}
+
+/* ==========================================================================
+   Account forms
+   ========================================================================== */
+.form-gymaccount .row {
+	margin-top:5px;
+}
+
+.form-gymaccount-heading {
+	text-align: center;
+}
+
+.form-gymaccount input[type="text"], 
+.form-gymaccount input[type="email"],
+.form-gymaccount input[type="password"],
+.form-gymaccount select {
+	font-size: 15px;
+	padding: 7px 9px;
+	float: right;
+	width: 100%;
+}
+
+.form-gymaccount textarea {
+	font-size: 15px;
+	height: 140px;
+	padding: 7px 9px;
+	float: left;
+	width: 100%;
+}
+
+.form-gymaccount button{
+	float: right;
+	width: 100%;
+}
+
+.form-gymaccount .bottom-message{
+	margin-top:10px;
+}
+
+.form-gymaccount-resetpassword{
+	text-align:right;
+}
+.form-gymaccount .auto-width{
+	width: auto;
+}
+.form-gymaccount .float-left{
+	float:left;	
+}
+
+/* ==========================================================================
+   Application form
+   ========================================================================== */
+.app_form .row {
+	margin-top:5px;
+}
+.app_form label{
+	float:right;
+	font-size: 15px;
+	font-weight: normal;
+	padding: 7px 9px;
+	
+}
+.app_form input[type=text],
+.app_form input[type=number],
+.app_form input[type=email],
+.app_form select{
+	font-size: 15px;
+	padding: 7px 9px;
+	float: left;
+	width: 100%;
+}
+
+.app_form input[type="number"]::-webkit-outer-spin-button,
+.app_form input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.app_form input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.app_form button{
+	width: 100%;
+}
+/* ==========================================================================
+   Redes sociales
+   ========================================================================== */
+   
+.btn-twitter {
+    background: #00acee;
+    border-radius: 0;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+}
+.btn-twitter:link, .btn-twitter:visited {
+    color: #fff;
+}
+.btn-twitter:active, .btn-twitter:hover {
+    background: #0087bd;
+    color: #fff;
+}
+.btn-facebook {
+    background: #3b5998;
+    border-radius: 0;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+}
+.btn-facebook:link, .btn-facebook:visited {
+    color: #fff;
+}
+.btn-facebook:active, .btn-facebook:hover {
+    background: #30477a;
+    color: #fff;
+}
+.btn-googleplus {
+    background: #e93f2e;
+    border-radius: 0;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+}
+.btn-googleplus:link, .btn-googleplus:visited {
+    color: #fff;
+}
+
+.btn-googleplus:active, .btn-googleplus:hover {
+    background: #ba3225;
+    color: #fff;
+}
+.btn-linkedin {
+    background: #0e76a8;
+    border-radius: 0;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+}
+.btn-linkedin:link, .btn-linkedin:visited {
+    color: #fff;
+}
+.btn-linkedin:active, .btn-linkedin:hover {
+    background: #0b6087;
+    color: #fff;
+}
+
+/* ==========================================================================
+   Common forms fields
+   ========================================================================== */
+.form-field-alert::before {
+	content: "*";
+}
+	
+.form-field-alert {
+	padding: 9px;
+	font-height: 15px;
+	border:0;
+	background-color: rgba(255,255,255,0);
+	background-image: none;
+	box-shadow: none;
+	margin-left: -20px;
+	margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Jquery - datepicker
+   ========================================================================== */
+.ui-datepicker-year,
+.ui-datepicker-month{
+	color: #2E6E9E;
+}

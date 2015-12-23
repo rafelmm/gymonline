@@ -17,7 +17,7 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.conf.urls.i18n import i18n_patterns
-from .views import home, home_files
+from .views import home, home_files, mision_vision
 
 urlpatterns = [
     url(r'^(?P<filename>(robots.txt)|(humans.txt))$',
@@ -29,6 +29,7 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     url(r'^$', home, name='home'),
+    url(r'^mision-vision/$', mision_vision, name='mision-vision'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^accounts/', include('allauth.urls')),
     url(r'^gymclient/', include('gymonline.apps.gymclient.urls',namespace="gymclient")),   

@@ -11,9 +11,11 @@ from django.utils.translation import ugettext_lazy as _
 def home(request):
     today = date.today()
     return render(request, "gymonline/index.html", {'today': today, 'now': now()})
-
+    
 def home_files(request, filename):
     return render(request, filename, {}, content_type="text/plain")
 
+def mision_vision(request):
+    return render(request, "gymonline/mision-vision.html", {})
 
         

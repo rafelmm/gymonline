@@ -1,0 +1,170 @@
+{% load staticfiles %}
+
+{% load i18n %}
+
+{% load cookielaw_tags %}
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  	<meta name="description" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	      
+	    <title>{% block head_title %}{% endblock %}</title>
+	      
+	    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+	    <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}" alt="apple-touch-icon">
+	    <link rel="stylesheet" href="{% static 'js/vendor/jquery-ui-1.11.4/jquery-ui.min.css' %}">
+	    <link rel="stylesheet" href="{% static 'js/vendor/jquery-ui-1.11.4/jquery-ui.theme.min.css' %}">
+	    <link rel="stylesheet" href="{% static 'font-awesome-4.4.0/css/font-awesome.min.css' %}">
+	    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+	    <link rel="stylesheet" href="{% static 'cookielaw/css/cookielaw.css' %}">
+	    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+	      
+	    {% block head_css %}{% endblock %}
+	    
+		{% block head_javascript %}{% endblock %}
+		
+	</head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    {% block navbar %}
+    
+    {% cookielaw_banner %}
+	
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      	<div class="container">
+        	<div class="navbar-header">
+          		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            		<span class="sr-only">Toggle navigation</span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+          		</button>
+          		{% if request.user.is_authenticated %}
+          			<a class="navbar-brand" href="{% url 'gymclient:home' %}">{% trans "TuGymOnline" %}</a>
+          		{% else %}
+          			<a class="navbar-brand" href="{% url 'home' %}">{% trans "TuGymOnline" %}</a>
+          		{% endif %}
+        	</div>
+        	
+	        <div id="navbar" class="navbar-collapse collapse">
+		        {% if request.user.is_authenticated %}
+			        	<ul class="nav navbar-nav navbar-right">
+			        		<li class="dropdown">
+			        			<a class="dropdown-toggle" aria-haspopup="true" role="button" data-toggle="dropdown" href="#" aria-expanded="false">
+					        		{% trans 'Welcome' %},&nbsp;
+					        		{% if request.user.first_name or request.user.last_name %}
+					        			{{ request.user.first_name }} {{ request.user.last_name }}
+					    			{% else %}
+					        			{{ request.user.username }}
+					    			{% endif %}
+					    			<span class="caret"></span>
+			        			</a>
+			        			<ul class="dropdown-menu">
+			        				<li><a href="{% url 'gymclient:profile_form' %}">{% trans 'Settings' %}</a>
+			        				<li><a href="/accounts/logout/">Logout</a></li>
+			        			</ul>
+			    			</li>
+			    			
+			        	</ul>
+			        
+				{% else %}
+			        <div class="navbar-form navbar-right">
+			        	<form action="{% url 'set_language' %}" method="post">
+						{% csrf_token %}
+				          	<input name="next" type="hidden" value="/" />
+				          	<select name="language">
+				          		{% get_current_language as LANGUAGE_CODE %}
+				          		{% get_available_languages as LANGUAGES %}
+				          		{% get_language_info_list for LANGUAGES as languages %}
+				          		{% for language in languages %}
+				          		<option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected" {% endif %}>
+				          			{{ language.name_local|capfirst }} ({{ language.code }})
+				          		</option>
+				          		{% endfor %}
+				          	</select>
+				          	<input type="submit" value="{% trans 'Go' %}" />
+				     	</form>
+					</div>
+					<div class="navbar-right">
+			        	<ul class="navbar-nav">
+			        		<li><a href="/accounts/login/" class="btn btn-link pull-right">Login</a></li>  
+						</ul>
+			    	</div>
+				{% endif %}
+			</div><!--/.navbar-collapse -->
+      	</div>
+	</nav>
+	
+	{% endblock %}
+	
+	{% block content %} {% endblock %}   
+	
+	<hr>
+	<div class="container">
+      <footer>
+        <div class="row">
+	        <div class="col-md-3">
+	        	<p>&copy; {% trans "TuGymOnline" %} 2015</p>
+	        </div>
+	        <div class="col-md-5">
+	        	<div class="share-text">{% trans "Share TuGymOnline in:" %}</div>
+	        	<div class="social-buttons">
+			        <a class="btn btn-facebook" target="_blank" title="{% trans 'Share on' %} Facebook" href="https://www.facebook.com/sharer/sharer.php?u=www.tugymonline.com">
+			    		<i class="fa fa-facebook"></i>
+			    	</a>
+			    	<a class="btn btn-twitter" target="_blank" title="{% trans 'Share on' %} Twitter" href="http://twitter.com/home?status=www.tugymonline.com">
+			    		<i class="fa fa-twitter"></i>
+			    	</a>
+			    	<a class="btn btn-googleplus" target="_blank" title="{% trans 'Share on' %} Google" href="https://plus.google.com/share?url=www.tugymonline.com">
+			    		<i class="fa fa-google-plus"></i>
+			    	</a>
+			    	<a class="btn btn-linkedin" target="_blank" title="{% trans 'Share on' %} Linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=www.tugymonline.com&title=tugymonline&summary=Clases dirigidas por internet">
+			    		<i class="fa fa-linkedin"></i>
+			    	</a>
+		    	</div>
+	    	</div>
+	    	<div class="col-md-4">
+	    		<p class="footer-contact">{% trans "Contact email" %}: info@tugymonline.com</p>
+	    	</div>
+	    </div>
+      </footer>
+    </div> <!-- /container -->
+	
+	<!--  
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+	-->
+	<script src="{% static 'js/vendor/jquery-ui-1.11.4/external/jquery/jquery.js' %}"></script>
+	<script src="{% static 'js/vendor/jquery-ui-1.11.4/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
+	<script src="{% static 'cookielaw/js/cookielaw.js' %}"></script>
+	
+	{% block footer_javascript %} {% endblock %} 
+	
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+	<!--
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+	-->
+	  
+    </body>
+</html>
