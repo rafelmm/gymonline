@@ -1,0 +1,38 @@
+/* Logo barra de navegacio */
+.navbar-logo{
+	width:75px;
+	height:75px;
+	padding:5px;
+	margin-top:5px;
+	display:inline;
+	margin-left:-10px;
+}
+
+/* Banderes selector idioma */
+#set_language {
+	display:inline-block;
+	margin-bottom:-30px;
+	margin-right:-33px;
+}
+a#set_language:hover{
+	background-image: none !important;
+	background-color: rgba(0,0,0,0) !important;
+	box-shadow: none !important;
+}
+.set_language-flag{
+	width:20px;
+	height:15px;
+	margin-bottom:8px;
+	display:block;
+	cursor:pointer;
+}
+
+/* Formularis */
+.gymclient_form label {
+	margin-right:10px;
+}
+
+.gymclient_form select,
+.gymclient_form input {
+	width:150px;
+}

@@ -1,4 +1,30 @@
 {% extends "base.html" %}
 {% block content %}
 {{clase.nombre}}
+<div class="container">
+	{% for class in class_detail %}
+		<div class="row">
+			<h1 class="col-md-4 col-md-offset-4"> {% class.name %}</h1>			
+		</div>
+		<div class="row">
+			<a id="video">
+			    <!-- Aquí s'ha de canviar src per la direcció streaming de la classe -->
+				<video src={{class.streaming}} controls autoplay></video>
+			</a>	
+		</div>
+		<div class="row">
+		<!-- En aquest label s'ha de posar el literal descripció -->
+			<label for="descripcio">{class.description}</label>		
+		</div>
+		<div class="row">
+			<label for="intensitat">{class.intensity}</label>
+		</div>
+		<div class="row">
+			<label for="#_visualizaciones">{class.number_of_views}</label>
+		</div>
+		<div class="row">
+			<label for="valoracion">{class.mark}</label>
+		</div>
+	{%end for%}
+</div>
 {% endblock %}
