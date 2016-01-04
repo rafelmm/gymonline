@@ -51,6 +51,7 @@ INSTALLED_APPS = (
     # My apps
     'gymonline.apps.gymclient',
     'gymonline.apps.gymcontact',
+    'gymonline.apps.gymadmin',
 )
 
 MIDDLEWARE_CLASSES = (
