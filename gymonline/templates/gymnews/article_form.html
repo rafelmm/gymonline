@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Gym News" %}{% endblock %}
+
+{% block content %}
+<div id="main">	
+    <div class="container">
+    	<form action="{% url 'gymnews:article_form' %}" method="post" class="article_form">
+   			{% csrf_token %}
+   			<div class="row">
+   				<div class="8u -2u 12u(mobile)">
+   					{{ article_form.title.label_tag }} 
+   					{{ article_form.title }}
+   					{{ article_form.title.errors }}
+   				</div>
+   			
+   			</div>
+   			<div class="row">
+   				<div class="8u -2u 12u(mobile)">
+    				{{ article_form.text.label_tag }}
+    				<textarea name="{{ article_form.text.html_name }}">
+    					{{ article_form.text.value|default_if_none:'' }}
+    				</textarea>
+    				{{ article_form.title.errors }}
+    			</div>
+    		</div>
+   			<div class="row">
+   				<div class="8u -2u 12u(mobile)">
+		    		{{ article_form.tags.label_tag }} 
+		    		{{ article_form.tags }}
+		    		{{ article_form.title.errors }}
+		    	</div>
+		    </div>
+   			<div class="row">
+   				<div class="8u -2u 12u(mobile)">
+		    		{{ article_form.author.label_tag }} 
+		    		{{ article_form.author}}
+		    		{{ article_form.title.errors }}
+		    	</div>
+		    </div>
+		    <div class="row">
+   				<div class="4u -2u 12u(mobile)">
+		    		<input type="submit" value="Submit" />
+		    	</div>
+		    </div>	
+	    </form>
+    </div> <!-- /container --> 
+</div> <!-- main -->
+{% endblock %}

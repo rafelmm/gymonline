@@ -11,7 +11,7 @@
 {% block head_title %}{% trans "tugymonline" %}{% endblock %}
 
 {% block head_css %}
-<link rel="stylesheet" href="{% static 'css/carousel.css' %}">
+<!-- <link rel="stylesheet" href="{% static 'css/carousel.css' %}"> -->
 {% endblock %}
 
 {% block content %}
@@ -76,10 +76,10 @@
     	</div>
     </div> <!-- /#banner-wrapper -->
     
-    <div id="main">
-    	<div class="container">
-		      <div class="row main-row">
-		        <div class="4u 12u(mobile)">
+    <div id="content-wrapper">
+	    <div class="container-fluid">
+			<div class="row">
+		        <div class="col-md-4">
 		        	<section>
 		          		<h2>{% trans "Gain visibility"%}</h2>
 		          		<p>{% trans "With TuGymOnline you can record and broadcast your sessions online so that millions of users can follow and share them."%}</p>
@@ -88,7 +88,7 @@
 		          		</footer>
 		        	</section>
 		        </div>
-		        <div class="4u 12u(mobile)">
+		        <div class="col-md-4">
 		        	<section>
 				    	<h2>{% trans "Adapt yourself" %}</h2>
 		          		<p>{% trans "The platform computes statistics to prepare sessions adapted to your customers needs." %}</p>
@@ -97,7 +97,7 @@
 		          		</footer>
 		        	</section>
 		       </div>
-		        <div class="4u 12u(mobile)">
+		        <div class="col-md-4">
 		        	<section>
 			          	<h2>{% trans "Make the difference" %}</h2>
 			          	<p>{% trans "TuGymOnline gives you added value for your current clients and an strategy to get new ones." %}</p>
@@ -106,7 +106,7 @@
 			          	</footer>
 		          	</section>
 		        </div>
-		      </div>
-      	</div>
-    </div> <!-- /container --> 
+		  	</div>
+		</div> <!-- div.container-fluid -->
+	</div>
 {% endblock %}

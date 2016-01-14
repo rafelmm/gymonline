@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-31 14:31+0100\n"
+"POT-Creation-Date: 2016-01-14 18:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -434,6 +434,7 @@ msgid "Small integer"
 msgstr ""
 
 #: devenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2152
+#: gymonline/apps/gymnews/models.py:20
 #: prodenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2152
 #: testenv/lib/python3.4/site-packages/django/db/models/fields/__init__.py:2152
 msgid "Text"
@@ -1843,7 +1844,7 @@ msgid ""
 "spelled correctly and that you've selected enough categories."
 msgstr ""
 
-#: gymonline/apps/gymclient/admin.py:13 gymonline/apps/gymclient/models.py:84
+#: gymonline/apps/gymclient/admin.py:13 gymonline/apps/gymclient/models.py:85
 msgid "Profiles"
 msgstr "Perfiles"
 
@@ -1860,7 +1861,7 @@ msgid "Female"
 msgstr "Mujer"
 
 #: gymonline/apps/gymclient/models.py:24
-#: gymonline/apps/gymclient/models.py:230
+#: gymonline/apps/gymclient/models.py:240
 msgid "user"
 msgstr "usuario"
 
@@ -1877,276 +1878,529 @@ msgid "Postal code"
 msgstr "Código postal"
 
 #: gymonline/apps/gymclient/models.py:35
-#: gymonline/apps/gymclient/models.py:105
-#: gymonline/apps/gymclient/models.py:173
-#: gymonline/apps/gymclient/models.py:240
-#: gymonline/apps/gymclient/models.py:287
-#: gymonline/apps/gymclient/models.py:333
+#: gymonline/apps/gymclient/models.py:115
+#: gymonline/apps/gymclient/models.py:183
+#: gymonline/apps/gymclient/models.py:250
+#: gymonline/apps/gymclient/models.py:297
+#: gymonline/apps/gymclient/models.py:343
 msgid "Updated at"
 msgstr "Modificado en"
 
-#: gymonline/apps/gymclient/models.py:37
-#: gymonline/apps/gymclient/models.py:116
-#: gymonline/apps/gymclient/models.py:187
-#: gymonline/apps/gymclient/models.py:253
-#: gymonline/apps/gymclient/models.py:299
-#: gymonline/apps/gymclient/models.py:345
+#: gymonline/apps/gymclient/models.py:38
+#: gymonline/apps/gymclient/models.py:126
+#: gymonline/apps/gymclient/models.py:197
+#: gymonline/apps/gymclient/models.py:263
+#: gymonline/apps/gymclient/models.py:309
+#: gymonline/apps/gymclient/models.py:355
 msgid "Deleted at"
 msgstr "Borrado en"
 
-#: gymonline/apps/gymclient/models.py:38
+#: gymonline/apps/gymclient/models.py:39
 msgid "Phone number"
 msgstr "Teléfono"
 
-#: gymonline/apps/gymclient/models.py:42
+#: gymonline/apps/gymclient/models.py:43
 msgid "NIF"
 msgstr "DNI"
 
-#: gymonline/apps/gymclient/models.py:46
+#: gymonline/apps/gymclient/models.py:47
 msgid "City"
 msgstr "Ciudad"
 
-#: gymonline/apps/gymclient/models.py:50
-#: gymonline/apps/gymclient/models.py:175
+#: gymonline/apps/gymclient/models.py:51
+#: gymonline/apps/gymclient/models.py:185
 msgid "Address"
 msgstr "Dirección"
 
-#: gymonline/apps/gymclient/models.py:83
-#: gymonline/apps/gymclient/models.py:102
+#: gymonline/apps/gymclient/models.py:84
+#: gymonline/apps/gymclient/models.py:112
 msgid "Profile"
 msgstr "Perfil"
 
-#: gymonline/apps/gymclient/models.py:95
+#: gymonline/apps/gymclient/models.py:105
 msgid "Gym Contact person"
 msgstr "Persona de contacto del gimnasio"
 
-#: gymonline/apps/gymclient/models.py:98
-#: gymonline/apps/gymclient/models.py:143
-#: gymonline/apps/gymclient/models.py:281
-#: gymonline/apps/gymclient/models.py:326
+#: gymonline/apps/gymclient/models.py:108
+#: gymonline/apps/gymclient/models.py:153
+#: gymonline/apps/gymclient/models.py:291
+#: gymonline/apps/gymclient/models.py:336
 msgid "Name"
 msgstr "Nombre"
 
-#: gymonline/apps/gymclient/models.py:100
+#: gymonline/apps/gymclient/models.py:110
 msgid "CIF"
 msgstr "CIF"
 
-#: gymonline/apps/gymclient/models.py:101
-#: gymonline/apps/gymclient/models.py:237
-#: gymonline/apps/gymclient/models.py:280
+#: gymonline/apps/gymclient/models.py:111
+#: gymonline/apps/gymclient/models.py:247
+#: gymonline/apps/gymclient/models.py:290
 msgid "Active"
 msgstr "Activo"
 
-#: gymonline/apps/gymclient/models.py:103
-#: gymonline/apps/gymclient/models.py:170
-#: gymonline/apps/gymclient/models.py:238
-#: gymonline/apps/gymclient/models.py:286
-#: gymonline/apps/gymclient/models.py:332
+#: gymonline/apps/gymclient/models.py:113
+#: gymonline/apps/gymclient/models.py:180
+#: gymonline/apps/gymclient/models.py:248
+#: gymonline/apps/gymclient/models.py:296
+#: gymonline/apps/gymclient/models.py:342
 #: gymonline/apps/gymcontact/models.py:18
 msgid "Created at"
 msgstr "Creado en"
 
-#: gymonline/apps/gymclient/models.py:107
-#: gymonline/apps/gymclient/models.py:178
-#: gymonline/apps/gymclient/models.py:242
-#: gymonline/apps/gymclient/models.py:288
-#: gymonline/apps/gymclient/models.py:334
+#: gymonline/apps/gymclient/models.py:117
+#: gymonline/apps/gymclient/models.py:188
+#: gymonline/apps/gymclient/models.py:252
+#: gymonline/apps/gymclient/models.py:298
+#: gymonline/apps/gymclient/models.py:344
 msgid "Number of views"
 msgstr "Número de reproducciones"
 
-#: gymonline/apps/gymclient/models.py:114
-#: gymonline/apps/gymclient/models.py:185
-#: gymonline/apps/gymclient/models.py:249
-#: gymonline/apps/gymclient/models.py:295
-#: gymonline/apps/gymclient/models.py:341
+#: gymonline/apps/gymclient/models.py:124
+#: gymonline/apps/gymclient/models.py:195
+#: gymonline/apps/gymclient/models.py:259
+#: gymonline/apps/gymclient/models.py:305
+#: gymonline/apps/gymclient/models.py:351
 msgid "Mark"
 msgstr "Puntuación"
 
-#: gymonline/apps/gymclient/models.py:133
-#: gymonline/apps/gymclient/models.py:157
-#: gymonline/apps/gymclient/models.py:233
+#: gymonline/apps/gymclient/models.py:143
+#: gymonline/apps/gymclient/models.py:167
+#: gymonline/apps/gymclient/models.py:243
 msgid "Gym"
 msgstr "Gimnasio"
 
-#: gymonline/apps/gymclient/models.py:134
+#: gymonline/apps/gymclient/models.py:144
 msgid "Gyms"
 msgstr "Gimnasios"
 
-#: gymonline/apps/gymclient/models.py:151
-#: gymonline/apps/gymclient/models.py:163
+#: gymonline/apps/gymclient/models.py:161
+#: gymonline/apps/gymclient/models.py:173
 msgid "Country"
 msgstr "País"
 
-#: gymonline/apps/gymclient/models.py:152
+#: gymonline/apps/gymclient/models.py:162
 msgid "Countries"
 msgstr "Paises"
 
-#: gymonline/apps/gymclient/models.py:160
+#: gymonline/apps/gymclient/models.py:170
 msgid "Center Contact person"
 msgstr "Persona de contacto del centro"
 
-#: gymonline/apps/gymclient/models.py:167
+#: gymonline/apps/gymclient/models.py:177
 msgid "Center Name"
 msgstr "Nombre del centro"
 
-#: gymonline/apps/gymclient/models.py:176
+#: gymonline/apps/gymclient/models.py:186
 msgid "Postal Code"
 msgstr "Código Postal"
 
-#: gymonline/apps/gymclient/models.py:177
+#: gymonline/apps/gymclient/models.py:187
 msgid "Region"
 msgstr "País"
 
-#: gymonline/apps/gymclient/models.py:203
+#: gymonline/apps/gymclient/models.py:213
 msgid "Gym Center"
 msgstr "Centor"
 
-#: gymonline/apps/gymclient/models.py:204
+#: gymonline/apps/gymclient/models.py:214
 msgid "Gym Centers"
 msgstr "Centros"
 
-#: gymonline/apps/gymclient/models.py:213
-#: gymonline/apps/gymclient/models.py:285
-#: gymonline/apps/gymclient/models.py:330
+#: gymonline/apps/gymclient/models.py:223
+#: gymonline/apps/gymclient/models.py:295
+#: gymonline/apps/gymclient/models.py:340
 msgid "Description"
 msgstr "Descripción"
 
-#: gymonline/apps/gymclient/models.py:221
-#: gymonline/apps/gymclient/models.py:275
+#: gymonline/apps/gymclient/models.py:231
+#: gymonline/apps/gymclient/models.py:285
 msgid "Intensity Level"
 msgstr "Nivel de intensidad"
 
-#: gymonline/apps/gymclient/models.py:222
+#: gymonline/apps/gymclient/models.py:232
 msgid "Intensity Levels"
 msgstr "Niveles de intensidad"
 
-#: gymonline/apps/gymclient/models.py:268
 #: gymonline/apps/gymclient/models.py:278
+#: gymonline/apps/gymclient/models.py:288
 msgid "Monitor"
 msgstr "Monitor"
 
-#: gymonline/apps/gymclient/models.py:269
+#: gymonline/apps/gymclient/models.py:279
 msgid "Monitors"
 msgstr "Monitores"
 
-#: gymonline/apps/gymclient/models.py:284
+#: gymonline/apps/gymclient/models.py:294
 msgid "Write a description for the class (optional)"
 msgstr "Escriba una descripción para la clase (opcional)"
 
-#: gymonline/apps/gymclient/models.py:302
-#: gymonline/apps/gymclient/models.py:348
+#: gymonline/apps/gymclient/models.py:312
+#: gymonline/apps/gymclient/models.py:358
 msgid "Popularity"
 msgstr "Popularidad"
 
-#: gymonline/apps/gymclient/models.py:317
-#: gymonline/apps/gymclient/models.py:325
+#: gymonline/apps/gymclient/models.py:327
+#: gymonline/apps/gymclient/models.py:335
 msgid "Class"
 msgstr "Clase"
 
-#: gymonline/apps/gymclient/models.py:318
+#: gymonline/apps/gymclient/models.py:328
 msgid "Classes"
 msgstr "Clases"
 
-#: gymonline/apps/gymclient/models.py:329
+#: gymonline/apps/gymclient/models.py:339
 msgid "Write a description for the session (optional)"
 msgstr "Escriba una descripción para la sesion (opcional)"
 
-#: gymonline/apps/gymclient/models.py:363
+#: gymonline/apps/gymclient/models.py:373
 msgid "Class Session"
 msgstr "Sesion"
 
-#: gymonline/apps/gymclient/models.py:364
+#: gymonline/apps/gymclient/models.py:374
 msgid "Class Sessions"
 msgstr "Sesiones"
 
-#: gymonline/apps/gymcontact/models.py:9
+#: gymonline/apps/gymcontact/models.py:10
 msgid "Your company"
 msgstr "Su empresa"
 
-#: gymonline/apps/gymcontact/models.py:11
+#: gymonline/apps/gymcontact/models.py:12
 msgid "Your name"
 msgstr "Su nombre"
 
-#: gymonline/apps/gymcontact/models.py:13
+#: gymonline/apps/gymcontact/models.py:14
 msgid "Your phone"
 msgstr "Su teléfono"
 
-#: gymonline/apps/gymcontact/models.py:14
+#: gymonline/apps/gymcontact/models.py:15
 msgid "Your email"
 msgstr "Su email"
 
-#: gymonline/apps/gymcontact/models.py:16
+#: gymonline/apps/gymcontact/models.py:21
 msgid "Your message"
 msgstr "Su mensaje"
 
-#: gymonline/apps/gymcontact/views.py:38
-msgid ""
-"Your message has been successfully send. We will contact you as soon as "
-"possible.\n"
-"Thank you very much"
+#: gymonline/apps/gymnews/admin.py:11 gymonline/apps/gymnews/models.py:62
+msgid "Comments"
 msgstr ""
-"Su mensaje se ha enviado correctamente. El equipo de TuGymOnline se pondrá "
-"en contacto con usted en la mayor brevedad posible.\n"
-"Muchas gracias"
 
-#: gymonline/settings.py:161
+#: gymonline/apps/gymnews/models.py:13
+msgid "Author"
+msgstr ""
+
+#: gymonline/apps/gymnews/models.py:17
+msgid "Title"
+msgstr ""
+
+#: gymonline/apps/gymnews/models.py:18 gymonline/apps/gymnews/models.py:47
+msgid "Published at"
+msgstr ""
+
+#: gymonline/apps/gymnews/models.py:23
+msgid "Tags"
+msgstr ""
+
+#: gymonline/apps/gymnews/models.py:34
+msgid "Article"
+msgstr ""
+
+#: gymonline/apps/gymnews/models.py:35
+msgid "Articles"
+msgstr ""
+
+#: gymonline/apps/gymnews/models.py:43 gymonline/apps/gymnews/models.py:61
+msgid "Comment"
+msgstr ""
+
+#: gymonline/settings.py:174
 msgid "English"
 msgstr "Inglés"
 
-#: gymonline/settings.py:162
+#: gymonline/settings.py:175
 msgid "Spanish"
 msgstr "Español"
 
-#: gymonline/settings.py:163
+#: gymonline/settings.py:176
 msgid "Catalan"
 msgstr "Catalán"
 
-#: gymonline/templates/404.html:7 gymonline/templates/404.html.py:58
-msgid "Page Not Found"
+#: gymonline/templates/403.html:5 gymonline/templates/404.html:5
+msgid "Access denied"
+msgstr ""
+
+#: gymonline/templates/403.html:11
+msgid "Acess denied (403 Error)"
+msgstr ""
+
+#: gymonline/templates/403.html:12
+msgid ""
+"Sorry, but you do not have the right permission to access this page. If you "
+"need this functionality, pelase contact our administrator at "
+"info@tugymonline.com."
+msgstr ""
+
+#: gymonline/templates/404.html:11
+#, fuzzy
+#| msgid "Page Not Found"
+msgid "Page Not Found (404 Error)"
 msgstr "La página no existe"
 
-#: gymonline/templates/404.html:59
+#: gymonline/templates/404.html:12
 msgid "Sorry, but the page you were trying to view does not exist."
 msgstr "La página que esta intentando cargar no existe."
 
-#: gymonline/templates/base.html:50 gymonline/templates/base.html.py:107
-#: gymonline/templates/gymcontact/contact.html:9
-#: gymonline/templates/gymonline/index.html:11
-msgid "TuGymOnline"
-msgstr "TuGymOnline"
+#: gymonline/templates/account/email/email_confirmation_message.txt:9
+#, python-format
+msgid ""
+"Hello from TuGymOnline!\n"
+"\n"
+"You're receiving this e-mail because user %(user_display)s at www."
+"tugymonline.com has given yours as an e-mail address to connect their "
+"account.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s\n"
+msgstr ""
 
-#: gymonline/templates/base.html:61
-msgid "Sign in"
+#: gymonline/templates/account/email/email_confirmation_message.txt:18
+msgid ""
+"\n"
+"Thank you from www.tugymonline.com!\n"
+"\n"
+"TuGymOnline\n"
+msgstr ""
+
+#: gymonline/templates/account/email/email_confirmation_subject.txt:3
+msgid "Please Confirm Your E-mail Address"
+msgstr ""
+
+#: gymonline/templates/account/email/password_reset_key_message.txt:3
+msgid ""
+"\n"
+"Hello from www.tugymonline.com!\n"
+"\n"
+"You're receiving this e-mail because you or someone else has requested a "
+"password for your user account at www.tugymonline.com.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password.\n"
+msgstr ""
+
+#: gymonline/templates/account/email/password_reset_key_message.txt:13
+#, python-format
+msgid "In case you forgot, your username is %(username)s."
+msgstr ""
+
+#: gymonline/templates/account/email/password_reset_key_message.txt:16
+msgid ""
+"\n"
+"Thank you for using www.tugymonline.com!\n"
+"TuGymOnline\n"
+msgstr ""
+
+#: gymonline/templates/account/email/password_reset_key_subject.txt:3
+msgid "Password Reset E-mail"
+msgstr ""
+
+#: gymonline/templates/account/email_confirm.html:6
+#: gymonline/templates/account/email_confirm.html:12
+msgid "Confirm E-mail Address"
+msgstr ""
+
+#: gymonline/templates/account/email_confirm.html:18
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is your e-"
+"mail address."
+msgstr ""
+
+#: gymonline/templates/account/email_confirm.html:25
+msgid "Confirm"
+msgstr ""
+
+#: gymonline/templates/account/email_confirm.html:35
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+
+#: gymonline/templates/account/login.html:6
+#: gymonline/templates/account/login.html:12
+#: gymonline/templates/account/login.html:93
+#, fuzzy
+#| msgid "Sign in"
+msgid "Sign In"
 msgstr "Identifícate"
 
-#: gymonline/templates/base.html:66
-msgid "Logout"
-msgstr "Salir"
+#: gymonline/templates/account/login.html:17
+msgid "Please sign in with your social account"
+msgstr ""
 
-#: gymonline/templates/base.html:69
+#: gymonline/templates/account/login.html:24
 msgid "Sign in with Google"
 msgstr "Entra con Google"
 
-#: gymonline/templates/base.html:72
+#: gymonline/templates/account/login.html:29
 msgid "Sign in with Twitter"
 msgstr "Entra con Twitter"
 
-#: gymonline/templates/base.html:91
-msgid "Go"
-msgstr "Ir"
+#: gymonline/templates/account/login.html:36
+#, fuzzy
+#| msgid "Sign in"
+msgid "Sign in "
+msgstr "Identifícate"
+
+#: gymonline/templates/account/login.html:101
+msgid "Forgot Password?"
+msgstr ""
+
+#: gymonline/templates/account/login.html:108
+#, python-format
+msgid ""
+"Please, <a href=\"%(signup_url)s\">sign up</a> here if you don't have an "
+"account in TuGymOnline."
+msgstr ""
+
+#: gymonline/templates/account/password_reset.html:7
+#: gymonline/templates/account/password_reset.html:12
+#: gymonline/templates/account/password_reset_done.html:7
+#: gymonline/templates/account/password_reset_done.html:12
+msgid "Password Reset"
+msgstr ""
+
+#: gymonline/templates/account/password_reset.html:18
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+
+#: gymonline/templates/account/password_reset.html:44
+msgid "Reset My Password"
+msgstr ""
+
+#: gymonline/templates/account/password_reset.html:49
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+
+#: gymonline/templates/account/password_reset_done.html:18
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: gymonline/templates/account/password_reset_from_key.html:5
+#: gymonline/templates/account/password_reset_from_key.html:19
+#: gymonline/templates/account/password_reset_from_key_done.html:4
+#: gymonline/templates/account/password_reset_from_key_done.html:9
+msgid "Change Password"
+msgstr ""
+
+#: gymonline/templates/account/password_reset_from_key.html:12
+msgid "Bad Token"
+msgstr ""
+
+#: gymonline/templates/account/password_reset_from_key.html:15
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+
+#: gymonline/templates/account/password_reset_from_key.html:62
+msgid "Change password"
+msgstr ""
+
+#: gymonline/templates/account/password_reset_from_key.html:69
+#: gymonline/templates/account/password_reset_from_key_done.html:12
+msgid "Your password is now changed."
+msgstr ""
+
+#: gymonline/templates/account/signup.html:9
+#, fuzzy
+#| msgid "Sign in"
+msgid "Signup"
+msgstr "Identifícate"
+
+#: gymonline/templates/account/signup.html:17
+#, fuzzy
+#| msgid "TuGymOnline"
+msgid "Join now TuGymOnline"
+msgstr "TuGymOnline"
+
+#: gymonline/templates/account/signup.html:170
+#, fuzzy
+#| msgid "Sign in"
+msgid "Sign up"
+msgstr "Identifícate"
+
+#: gymonline/templates/account/signup.html:174
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+
+#: gymonline/templates/account/snippet/already_logged_in.html:6
+msgid "Note"
+msgstr ""
+
+#: gymonline/templates/account/snippet/already_logged_in.html:6
+#, python-format
+msgid "you are already logged in as %(user_display)s."
+msgstr ""
+
+#: gymonline/templates/account/verification_sent.html:5
+#: gymonline/templates/account/verification_sent.html:10
+msgid "Verify Your E-mail Address"
+msgstr ""
+
+#: gymonline/templates/account/verification_sent.html:13
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: gymonline/templates/base.html:77
+msgid "news"
+msgstr ""
+
+#: gymonline/templates/base.html:79
+#, fuzzy
+#| msgid "Contact us"
+msgid "contact"
+msgstr "Contacta con nosotros"
+
+#: gymonline/templates/base.html:104
+msgid "Llevamos el gimnasio a tu casa"
+msgstr ""
+
+#: gymonline/templates/base.html:108
+#: gymonline/templates/gymonline/mision-vision.html:7
+msgid "Mision & Vision"
+msgstr ""
+
+#: gymonline/templates/base.html:109
+#, fuzzy
+#| msgid "Contact us"
+msgid "Contact"
+msgstr "Contacta con nosotros"
 
 #: gymonline/templates/base.html:110
+msgid "Contact email"
+msgstr "Email de contacto"
+
+#: gymonline/templates/base.html:118
 msgid "Share TuGymOnline in:"
 msgstr "Comparte TuGymOnline en:"
 
-#: gymonline/templates/base.html:112 gymonline/templates/base.html.py:115
-#: gymonline/templates/base.html:118 gymonline/templates/base.html.py:121
+#: gymonline/templates/base.html:120 gymonline/templates/base.html.py:123
+#: gymonline/templates/base.html:126 gymonline/templates/base.html.py:129
 msgid "Share on"
 msgstr "Comparte en"
 
-#: gymonline/templates/base.html:127
-msgid "Contact email"
-msgstr "Email de contacto"
+#: gymonline/templates/base.html:139
+msgid "TuGymOnline 2016. All rights reserved."
+msgstr ""
 
 #: gymonline/templates/cookielaw/banner.html:5
 msgid "COOKIE_INFO_HEADER"
@@ -2165,33 +2419,96 @@ msgstr ""
 "navegando en TyGymOnline sin cambiar la configuración del navegador nos "
 "autoriza a grabar esta información en su dispositivo."
 
-#: gymonline/templates/gymcontact/contact.html:24
-#: gymonline/templates/gymonline/index.html:40
-#: gymonline/templates/gymonline/index.html:50
-#: gymonline/templates/gymonline/index.html:60
-#: gymonline/templates/gymonline/index.html:80
-#: gymonline/templates/gymonline/index.html:85
-#: gymonline/templates/gymonline/index.html:90
+#: gymonline/templates/gymclient/home.html:11
+#: gymonline/templates/gymcontact/contact.html:9
+msgid "TuGymOnline"
+msgstr "TuGymOnline"
+
+#: gymonline/templates/gymclient/profile_detail.html:7
+#: gymonline/templates/gymclient/profile_detail.html:16
+#, fuzzy
+#| msgid "Profile"
+msgid "My Profile"
+msgstr "Perfil"
+
+#: gymonline/templates/gymclient/profile_detail.html:53
+msgid "Submit"
+msgstr ""
+
+#: gymonline/templates/gymcontact/contact.html:16
+#: gymonline/templates/gymonline/index.html:41
+#: gymonline/templates/gymonline/index.html:51
+#: gymonline/templates/gymonline/index.html:61
+#: gymonline/templates/gymonline/index.html:87
+#: gymonline/templates/gymonline/index.html:96
+#: gymonline/templates/gymonline/index.html:105
 msgid "Contact us"
 msgstr "Contacta con nosotros"
 
-#: gymonline/templates/gymcontact/contact.html:27
+#: gymonline/templates/gymcontact/contact.html:19
 msgid ""
 "Wanting to know more about TuGymOnline? <br />Complete the following fields "
 "and we will contact you as soon as possible."
 msgstr ""
-"Si quiere saber más sobre TuGymOnline, rellene los siguientes campos "
-"y nos pondremos en contacto con usted en la mayor brevedad posible."
+"Si quiere saber más sobre TuGymOnline, rellene los siguientes campos y nos "
+"pondremos en contacto con usted en la mayor brevedad posible."
 
-#: gymonline/templates/gymcontact/contact.html:102
+#: gymonline/templates/gymcontact/contact.html:115
 msgid "Contact now"
 msgstr "Contacta ahora"
 
-#: gymonline/templates/gymonline/index.html:38
+#: gymonline/templates/gymcontact/contact_sended.html:9
+#, fuzzy
+#| msgid "Contact us"
+msgid "Contact sended"
+msgstr "Contacta con nosotros"
+
+#: gymonline/templates/gymcontact/contact_sended.html:15
+#, fuzzy
+#| msgid ""
+#| "Your message has been successfully send. We will contact you as soon as "
+#| "possible.\n"
+#| "Thank you very much"
+msgid ""
+"<p>Your message has been successfully send. We will contact you as soon as "
+"possible.<br />Thank you very much</p>"
+msgstr ""
+"Su mensaje se ha enviado correctamente. El equipo de TuGymOnline se pondrá "
+"en contacto con usted en la mayor brevedad posible.\n"
+"Muchas gracias"
+
+#: gymonline/templates/gymnews/article_detail.html:7
+msgid "News Article"
+msgstr ""
+
+#: gymonline/templates/gymnews/article_form.html:5
+#: gymonline/templates/gymnews/article_list.html:7
+#, fuzzy
+#| msgid "Gym Centers"
+msgid "Gym News"
+msgstr "Centros"
+
+#: gymonline/templates/gymnews/article_list.html:13
+#, fuzzy
+#| msgid "TuGymOnline"
+msgid "tugymonline news"
+msgstr "TuGymOnline"
+
+#: gymonline/templates/gymnews/article_list.html:23
+msgid "Sorry, we don't have any news yet. Come again to read our updates."
+msgstr ""
+
+#: gymonline/templates/gymonline/index.html:11
+#, fuzzy
+#| msgid "TuGymOnline"
+msgid "tugymonline"
+msgstr "TuGymOnline"
+
+#: gymonline/templates/gymonline/index.html:39
 msgid "Welcome to TuGymOnline!"
 msgstr "Bienvenido a TuGymOnline!"
 
-#: gymonline/templates/gymonline/index.html:39
+#: gymonline/templates/gymonline/index.html:40
 msgid ""
 "TuGymOnline is a system that records classes in your gym, it broadcasts and "
 "publishes them in Internet"
@@ -2199,30 +2516,30 @@ msgstr ""
 "TuGymOnline es un sistema integral que graba las clases dirigidas de tu "
 "gimnasio, las publica y las emite en directo en Internet"
 
-#: gymonline/templates/gymonline/index.html:48
+#: gymonline/templates/gymonline/index.html:49
 msgid "Get customers easily"
 msgstr "Gana usuario fácilmente"
 
-#: gymonline/templates/gymonline/index.html:49
+#: gymonline/templates/gymonline/index.html:50
 msgid "Hundreds of users will view your classes at any site and at any hour."
 msgstr ""
 "Cientos de usuarios veran sus clases en cualquier lugar y a cualquier hora."
 
-#: gymonline/templates/gymonline/index.html:58
+#: gymonline/templates/gymonline/index.html:59
 msgid "Start now!"
 msgstr "¡Empieza ahora!"
 
-#: gymonline/templates/gymonline/index.html:59
+#: gymonline/templates/gymonline/index.html:60
 msgid "Wanting to know more about TuGymOnline, contact with us."
 msgstr ""
-"Si desea conocer más detalles sobre TuGymOnline no dude en ponerse en contacto "
-"con nosotros."
+"Si desea conocer más detalles sobre TuGymOnline no dude en ponerse en "
+"contacto con nosotros."
 
-#: gymonline/templates/gymonline/index.html:78
+#: gymonline/templates/gymonline/index.html:84
 msgid "Gain visibility"
 msgstr "Gana visibilidad"
 
-#: gymonline/templates/gymonline/index.html:79
+#: gymonline/templates/gymonline/index.html:85
 msgid ""
 "With TuGymOnline you can record and broadcast your sessions online so that "
 "millions of users can follow and share them."
@@ -2230,11 +2547,11 @@ msgstr ""
 "Con TuGymOnline puedes grabar y publicar tus clases dirigidas en Internet "
 "para que millones de usuarios las puedan seguir y compartir."
 
-#: gymonline/templates/gymonline/index.html:83
+#: gymonline/templates/gymonline/index.html:93
 msgid "Adapt yourself"
 msgstr "Adáptate"
 
-#: gymonline/templates/gymonline/index.html:84
+#: gymonline/templates/gymonline/index.html:94
 msgid ""
 "The platform computes statistics to prepare sessions adapted to your "
 "customers needs."
@@ -2242,14 +2559,48 @@ msgstr ""
 "La plataforma te enseña estadísticas para que puedas adaptar tus sesiones "
 "dirigidas a las necesidades y las preferencias de tus usuarios."
 
-#: gymonline/templates/gymonline/index.html:88
+#: gymonline/templates/gymonline/index.html:102
 msgid "Make the difference"
 msgstr "Diferénciate"
 
-#: gymonline/templates/gymonline/index.html:89
+#: gymonline/templates/gymonline/index.html:103
 msgid ""
 "TuGymOnline gives you added value for your current clients and an strategy "
 "to get new ones."
 msgstr ""
 "TyGymOnline te da valor añadido para tus actuales clientes y te ayuda a "
 "preparar una estrategia adecuada para ganar nuevos usuarios."
+
+#: gymonline/templates/gymonline/mision-vision.html:15
+msgid "Mision"
+msgstr ""
+
+#: gymonline/templates/gymonline/mision-vision.html:17
+msgid ""
+"Nuestra misión consiste en proporcionar una plataforma que sirva de guía y "
+"motivación para mejorar la calidad de vida de las personas estén dónde "
+"estén.\n"
+"\t\t\t\t\t\t\t"
+msgstr ""
+
+#: gymonline/templates/gymonline/mision-vision.html:26
+msgid "Vision"
+msgstr ""
+
+#: gymonline/templates/gymonline/mision-vision.html:28
+msgid ""
+"Cada vez más gente tiene trabajos sedentarios que les obligan a permanecer "
+"muchas horas sentados. Además en la sociedad en la que vivimos el tiempo es "
+"un recurso fundamental. En TuGymOnline creemos que las personas necesitaran "
+"un medio para poder escapar de sus rutinas y practicar deporte. Además "
+"pensamos que es importante que lo puedan practicar en el lugar que deseen o "
+"dónde más cómodos se sientan.<br/>Por esto TuGymOnline quiere traer a los "
+"gimnasios a las casas de las personas.\n"
+"\t\t\t\t\t\t\t"
+msgstr ""
+
+#~ msgid "Logout"
+#~ msgstr "Salir"
+
+#~ msgid "Go"
+#~ msgstr "Ir"

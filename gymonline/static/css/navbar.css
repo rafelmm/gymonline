@@ -1,0 +1,110 @@
+
+/* ----- NAVBAR CUSTOMIZATION -----*/
+.navbar-wrapper {
+	background: #8487C9; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#5D93A2, #8487C9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#5D93A2, #8487C9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#5D93A2, #8487C9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#5D93A2, #8487C9); /* Standard syntax */
+}
+
+.navbar {
+	margin-bottom: 0px;
+	background-color: white;
+}
+
+.navbar .container{
+	min-height:60px;
+}
+
+.navbar-toggle {
+	margin-top:13px;
+}
+.navbar-default .navbar-nav>li.active>a,
+.navbar-default .navbar-nav>li.active>a:hover {
+	background-color:transparent;
+}
+.navbar-default .navbar-header>a,
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-header>a:link,
+.navbar-default .navbar-nav>li>a:link,
+.navbar-default .navbar-nav>.active>a:link,
+.navbar-default .navbar-header>a:visited,
+.navbar-default .navbar-nav>li>a:visited,
+.navbar-default .navbar-nav>.active>a:visited,
+.navbar-default .navbar-header>a:active,
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-nav>.active>a:active {
+	color: #5d93a2;
+	text-decoration:none;
+	font-size:1.1em;
+}
+
+.navbar-default .navbar-header>a:hover,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a:hover {
+	color:#007897;
+	text-decoration:underline;
+}
+
+.navbar-nav .set_language-flag{
+	width: 20px;
+	height: 15px;
+	margin-right:5px;
+}
+
+.navbar-brand>img,
+.navbar-brand>span {
+	display:inline-block;
+}
+.navbar-header a.navbar-brand:hover{
+	text-decoration:none;
+}
+.navbar-brand span {
+	font-size: 36px;
+}
+.navbar-brand img {
+	margin-right:10px;
+	width:40px;
+	height:40px;
+	margin-top:-8px;
+}
+
+@media screen and (min-width: 768px) {
+	.navbar-wrapper {
+		padding:15px 30px;
+	}
+	.navbar .container{
+		min-height:70px;
+	}
+	.navbar-default .navbar-nav>li>a {
+		padding-top:25px;
+		padding-bottom:25px;
+	}
+	
+	.navbar-toggle {
+		margin-top:8px;
+		margin-bottom:8px;
+	}
+	.navbar-nav>li:last-of-type{
+		padding-left:5px;
+	}
+	.navbar-nav>li:last-of-type>a{
+		padding:0
+	}
+	.navbar-nav>li>a>img{
+		display:block;
+		margin-top: 5px;
+	}
+	.navbar-nav>li>a>img:first-of-type{
+		margin-top: 6px;
+	}
+	.navbar-brand span {
+		padding-top: 8px;
+	}
+	
+	.navbar-brand img {
+		margin-top:-8px;
+	}
+}

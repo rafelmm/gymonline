@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Gym News" %}{% endblock %}
+
+{% block content %}
+<div id="main">	
+    <div class="container">
+    	<div class="row">
+    		<h2 class="col-md-8 col-md-offset-2">{% trans 'tugymonline news' %}</h2>
+    	</div>
+    	{% if articlelist %}
+	    	{% for article in articlelist  %}
+	    		{% include "gymnews/article_snippet.html" with with_link="yes"%}
+		    {% endfor %}
+		{% else %}
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<p>
+					{% blocktrans %}Sorry, we don't have any news yet. Come again to read our updates.{% endblocktrans %}
+				</p>
+			</div>
+		</div>
+		{% endif %}
+    </div> <!-- /container --> 
+</div> <!-- main -->
+{% endblock %}

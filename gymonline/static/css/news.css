@@ -1,0 +1,28 @@
+/* ----- NEWS CUSTOMIZATION -----*/
+
+.article_wrapper {
+	margin-bottom:20px;
+}
+.article_wrapper .row {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.article_wrapper .row > *{
+	padding-top:0px;
+}
+
+.article_wrapper h2 {
+	text-transform: none;
+	margin-bottom:0.75em;
+}
+.article_wrapper ul {
+	margin-bottom:0px;
+}
+.article_form input {
+	width:100%;
+}
+
+.article_form textarea{
+	width:100%;
+	height:250px;
+}

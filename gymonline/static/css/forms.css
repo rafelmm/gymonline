@@ -1,0 +1,33 @@
+/* ----- FORMS CUSTOMIZATION -----*/
+
+.gymclient_form .row > *{
+	padding-top: 20px;
+	padding-bottom:0;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.gymclient_form{
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+
+.gymclient_form label {
+	margin-right:10px;
+}
+
+.gymclient_form select,
+.gymclient_form input {
+	width:150px;
+}
+
+.gymclient_form textarea {
+	height:8em;
+}
+
+.gymclient_form .alert-danger:before {
+	content: '*';
+}
+.gymclient_form .alert-danger {
+	background: transparent;
+}

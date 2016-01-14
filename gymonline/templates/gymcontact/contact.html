@@ -9,19 +9,18 @@
 {% block head_title %}{% trans "TuGymOnline" %}{% endblock %}
 
 {% block content %}
-<div id="main">	
-    <div class="container">
+	<div class="container">
    		<form action="{% url 'gymcontact:sendcontact' %}" method="post" class="gymclient_form">
    			{% csrf_token %}
 	    	<div class="row">
-		      	<h2 class="5u -3u 12u(mobile) form-contact-heading">{% trans "Contact us" %}</h2>
+		      	<h2 class="col-md-6 col-md-offset-3 form-contact-heading">{% trans "Contact us" %}</h2>
 	      	</div>
 	      	<div class="row">
-		      	<p class="5u -3u 12u(mobile) form-contact-text">{% trans "Wanting to know more about TuGymOnline? <br />Complete the following fields and we will contact you as soon as possible." %}</p>
+		      	<p class="col-md-6 col-md-offset-3 form-contact-text">{% trans "Wanting to know more about TuGymOnline? <br />Complete the following fields and we will contact you as soon as possible." %}</p>
 	      	</div>
 
    			<div class="row">
-   				<div class="5u -3u 12u(mobile)">
+   				<div class="col-md-6 col-md-offset-3">
    					<div class="input-group">
    						<span class="input-group-addon">
    							<i class="glyphicon glyphicon-home"></i>
@@ -30,8 +29,8 @@
    					</div>
    				</div>
    				{% if form.company.errors %}
-			  		<div class="col-md-4">
-			  			<p class="alert alert-danger form-field-alert">
+			  		<div class="col-md-3">
+			  			<p class="alert-danger">
 				  			{% for error in form.company.errors %}
 				  				{{ error }}
 				  			{% endfor %}
@@ -41,7 +40,7 @@
    			</div>
    			
    			<div class="row">
-   				<div class="5u -3u 12u(mobile)">
+   				<div class="col-md-6 col-md-offset-3">
    					<div class="input-group">
    						<span class="input-group-addon">
    							<i class="glyphicon glyphicon-user"></i>
@@ -50,8 +49,8 @@
    					</div>
    				</div>
    				{% if form.name.errors %}
-			  		<div class="4u">
-			  			<p class="alert alert-danger form-field-alert">
+			  		<div class="col-md-3">
+			  			<p class="alert-danger">
 				  			{% for error in form.name.errors %}
 				  				{{ error }}
 				  			{% endfor %}
@@ -61,7 +60,7 @@
    			</div>
    			
    			<div class="row">
-   				<div class="5u -3u 12u(mobile)">
+   				<div class="col-md-6 col-md-offset-3">
    					<div class="input-group">
    						<span class="input-group-addon">
    							<i class="glyphicon glyphicon-phone"></i>
@@ -70,8 +69,8 @@
    					</div>
    				</div>
    				{% if form.phone.errors %}
-			  		<div class="4u">
-			  			<p class="alert alert-danger form-field-alert">
+			  		<div class="col-md-3">
+			  			<p class="alert-danger">
 				  			{% for error in form.phone.errors %}
 				  				{{ error }}
 				  			{% endfor %}
@@ -81,7 +80,7 @@
    			</div>
    			
    			<div class="row">
-   				<div class="5u -3u 12u(mobile)">
+   				<div class="col-md-6 col-md-offset-3">
    					<div class="input-group">
    						<span class="input-group-addon">
    							<i class="glyphicon glyphicon-envelope"></i>
@@ -90,8 +89,8 @@
    					</div>
    				</div>
    				{% if form.email.errors %}
-			  		<div class="4u">
-			  			<p class="alert alert-danger form-field-alert">
+			  		<div class="col-md-3">
+			  			<p class="alert-danger">
 				  			{% for error in form.email.errors %}
 				  				{{ error }}
 				  			{% endfor %}
@@ -101,7 +100,7 @@
    			</div>
    			
    			<div class="row">
-   				<div class="5u -3u 12u(mobile)">
+   				<div class="col-md-6 col-md-offset-3">
    					<div class="input-group">
    						<span class="input-group-addon">
    							<i class="glyphicon glyphicon-list-alt"></i>
@@ -112,11 +111,11 @@
    			</div>
    			
    	 		<div class="row">
-   				<div class="5u -3u 12u(mobile)">
+   				<div class="col-md-6 col-md-offset-3">
 	    			<button class="btn btn-large btn-primary auto-width float-left" type="submit">{% trans "Contact now" %}</button>
 	    		</div>
 	    	</div>
 		</form>
     </div> <!-- /container --> 
-</div> <!-- main -->
+
 {% endblock %}

@@ -35,4 +35,5 @@ urlpatterns += i18n_patterns(
     url(r'^gymclient/', include('gymonline.apps.gymclient.urls',namespace="gymclient")),   
     url(r'^contact/', include('gymonline.apps.gymcontact.urls', namespace="gymcontact")),
     url(r'^gymadmin/', include('gymonline.apps.gymadmin.urls', namespace="gymadin")),
+    url(r'^news/', include('gymonline.apps.gymnews.urls', namespace="gymnews")),
 )
