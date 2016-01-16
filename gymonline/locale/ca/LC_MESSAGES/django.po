@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-14 18:22+0100\n"
+"POT-Creation-Date: 2016-01-16 12:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2083,35 +2083,35 @@ msgstr "El teu missatge"
 
 #: gymonline/apps/gymnews/admin.py:11 gymonline/apps/gymnews/models.py:62
 msgid "Comments"
-msgstr ""
+msgstr "Comentaris"
 
 #: gymonline/apps/gymnews/models.py:13
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: gymonline/apps/gymnews/models.py:17
 msgid "Title"
-msgstr ""
+msgstr "Títol"
 
 #: gymonline/apps/gymnews/models.py:18 gymonline/apps/gymnews/models.py:47
 msgid "Published at"
-msgstr ""
+msgstr "Publicat a"
 
 #: gymonline/apps/gymnews/models.py:23
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #: gymonline/apps/gymnews/models.py:34
 msgid "Article"
-msgstr ""
+msgstr "Artícle"
 
 #: gymonline/apps/gymnews/models.py:35
 msgid "Articles"
-msgstr ""
+msgstr "Artícles"
 
 #: gymonline/apps/gymnews/models.py:43 gymonline/apps/gymnews/models.py:61
 msgid "Comment"
-msgstr ""
+msgstr "Comentari"
 
 #: gymonline/settings.py:174
 msgid "English"
@@ -2141,8 +2141,6 @@ msgid ""
 msgstr ""
 
 #: gymonline/templates/404.html:11
-#, fuzzy
-#| msgid "Page Not Found"
 msgid "Page Not Found (404 Error)"
 msgstr "La página no existeix"
 
@@ -2227,8 +2225,6 @@ msgstr ""
 #: gymonline/templates/account/login.html:6
 #: gymonline/templates/account/login.html:12
 #: gymonline/templates/account/login.html:93
-#, fuzzy
-#| msgid "Sign in"
 msgid "Sign In"
 msgstr "Identificat"
 
@@ -2245,8 +2241,6 @@ msgid "Sign in with Twitter"
 msgstr "Registra't amb Twitter"
 
 #: gymonline/templates/account/login.html:36
-#, fuzzy
-#| msgid "Sign in"
 msgid "Sign in "
 msgstr "Identificat"
 
@@ -2309,50 +2303,46 @@ msgstr ""
 
 #: gymonline/templates/account/password_reset_from_key.html:62
 msgid "Change password"
-msgstr ""
+msgstr "Canvi de password"
 
 #: gymonline/templates/account/password_reset_from_key.html:69
 #: gymonline/templates/account/password_reset_from_key_done.html:12
 msgid "Your password is now changed."
-msgstr ""
+msgstr "El teu password s'ha canviat correctament."
 
 #: gymonline/templates/account/signup.html:9
-#, fuzzy
-#| msgid "Sign in"
 msgid "Signup"
-msgstr "Identificat"
+msgstr "Identifica't"
 
 #: gymonline/templates/account/signup.html:17
-#, fuzzy
-#| msgid "TuGymOnline"
 msgid "Join now TuGymOnline"
-msgstr "TuGymOnline"
+msgstr "Crea el teu compte a TuGymOnline"
 
 #: gymonline/templates/account/signup.html:170
-#, fuzzy
-#| msgid "Sign in"
 msgid "Sign up"
-msgstr "Identificat"
+msgstr "Identifica't"
 
 #: gymonline/templates/account/signup.html:174
 #, python-format
 msgid ""
 "Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
 msgstr ""
+"Ja tens un compte? Llavors <a href=\"%(login_url)s\">identifica't</a>, si us "
+"plau."
 
 #: gymonline/templates/account/snippet/already_logged_in.html:6
 msgid "Note"
-msgstr ""
+msgstr "Nota"
 
 #: gymonline/templates/account/snippet/already_logged_in.html:6
 #, python-format
 msgid "you are already logged in as %(user_display)s."
-msgstr ""
+msgstr "ja estás autenticat com %(user_display)s."
 
 #: gymonline/templates/account/verification_sent.html:5
 #: gymonline/templates/account/verification_sent.html:10
 msgid "Verify Your E-mail Address"
-msgstr ""
+msgstr "Verifica el teu emial"
 
 #: gymonline/templates/account/verification_sent.html:13
 msgid ""
@@ -2360,29 +2350,32 @@ msgid ""
 "finalize the signup process. Please contact us if you do not receive it "
 "within a few minutes."
 msgstr ""
+"Hem enviat un email de verificació. Segueix el link que t'hem proporcionat "
+"per finalitzar el procés d'alta. Si us plau, contacta amb nosaltres si no "
+"reps el correu amb un minuts."
+
+#: gymonline/templates/base.html:72 gymonline/templates/base.html.py:74
+msgid "homepage"
+msgstr ""
 
 #: gymonline/templates/base.html:77
 msgid "news"
-msgstr ""
+msgstr "noticies"
 
 #: gymonline/templates/base.html:79
-#, fuzzy
-#| msgid "Contact us"
 msgid "contact"
-msgstr "Contacta'ns"
+msgstr "contacte"
 
 #: gymonline/templates/base.html:104
 msgid "Llevamos el gimnasio a tu casa"
-msgstr ""
+msgstr "Portem el gimnàs a casa teva"
 
 #: gymonline/templates/base.html:108
 #: gymonline/templates/gymonline/mision-vision.html:7
 msgid "Mision & Vision"
-msgstr ""
+msgstr "Missió & Visió"
 
 #: gymonline/templates/base.html:109
-#, fuzzy
-#| msgid "Contact us"
 msgid "Contact"
 msgstr "Contacta'ns"
 
@@ -2401,7 +2394,7 @@ msgstr "Comparteix en"
 
 #: gymonline/templates/base.html:139
 msgid "TuGymOnline 2016. All rights reserved."
-msgstr ""
+msgstr "TuGymOnline 2016. Tots els dres reservats."
 
 #: gymonline/templates/cookielaw/banner.html:5
 msgid "COOKIE_INFO_HEADER"
@@ -2427,14 +2420,12 @@ msgstr "TuGymOnline"
 
 #: gymonline/templates/gymclient/profile_detail.html:7
 #: gymonline/templates/gymclient/profile_detail.html:16
-#, fuzzy
-#| msgid "Profile"
 msgid "My Profile"
 msgstr "Perfil"
 
 #: gymonline/templates/gymclient/profile_detail.html:53
 msgid "Submit"
-msgstr ""
+msgstr "Submit"
 
 #: gymonline/templates/gymcontact/contact.html:16
 #: gymonline/templates/gymonline/index.html:41
@@ -2459,51 +2450,39 @@ msgid "Contact now"
 msgstr "Contacta ara"
 
 #: gymonline/templates/gymcontact/contact_sended.html:9
-#, fuzzy
-#| msgid "Contact us"
 msgid "Contact sended"
 msgstr "Contacta'ns"
 
 #: gymonline/templates/gymcontact/contact_sended.html:15
-#, fuzzy
-#| msgid ""
-#| "Your message has been successfully send. We will contact you as soon as "
-#| "possible.\n"
-#| "Thank you very much"
 msgid ""
 "<p>Your message has been successfully send. We will contact you as soon as "
 "possible.<br />Thank you very much</p>"
 msgstr ""
-"El seu missatge s'ha enviat correctament. L'equip de TuGymOnline contactarà "
-"amb vosté amb la major brevetat possible. \n"
-"Moltes gràcies"
+"<p>El seu missatge s'ha enviat correctament. L'equip de TuGymOnline "
+"contactarà amb vosté amb la major brevetat possible.<br />Moltes gràcies</p>"
 
 #: gymonline/templates/gymnews/article_detail.html:7
 msgid "News Article"
-msgstr ""
+msgstr "Article"
 
 #: gymonline/templates/gymnews/article_form.html:5
 #: gymonline/templates/gymnews/article_list.html:7
-#, fuzzy
-#| msgid "Gym Centers"
 msgid "Gym News"
 msgstr "Centres"
 
 #: gymonline/templates/gymnews/article_list.html:13
-#, fuzzy
-#| msgid "TuGymOnline"
 msgid "tugymonline news"
-msgstr "TuGymOnline"
+msgstr "Les nostres noticies"
 
 #: gymonline/templates/gymnews/article_list.html:23
 msgid "Sorry, we don't have any news yet. Come again to read our updates."
 msgstr ""
+"Oh! Encara no hem publicat cap noticia. Torni a consultar aquesta página per "
+"veure les nostres publicacions en el futur"
 
 #: gymonline/templates/gymonline/index.html:11
-#, fuzzy
-#| msgid "TuGymOnline"
 msgid "tugymonline"
-msgstr "TuGymOnline"
+msgstr "tugymonline"
 
 #: gymonline/templates/gymonline/index.html:39
 msgid "Welcome to TuGymOnline!"
@@ -2573,31 +2552,38 @@ msgstr ""
 
 #: gymonline/templates/gymonline/mision-vision.html:15
 msgid "Mision"
-msgstr ""
+msgstr "Missió"
 
 #: gymonline/templates/gymonline/mision-vision.html:17
 msgid ""
 "Nuestra misión consiste en proporcionar una plataforma que sirva de guía y "
-"motivación para mejorar la calidad de vida de las personas estén dónde "
-"estén.\n"
-"\t\t\t\t\t\t\t"
+"motivación para mejorar la calidad de vida de las personas estén dónde estén."
 msgstr ""
-
-#: gymonline/templates/gymonline/mision-vision.html:26
-msgid "Vision"
-msgstr ""
+"La nostra missió consisteix en proporcionar una plataforma que serveixi de "
+"guia i motivació per millorar la qualitat de vida de les persones estiguin "
+"on estiguin."
 
 #: gymonline/templates/gymonline/mision-vision.html:28
+msgid "Vision"
+msgstr "Visió"
+
+#: gymonline/templates/gymonline/mision-vision.html:30
 msgid ""
 "Cada vez más gente tiene trabajos sedentarios que les obligan a permanecer "
 "muchas horas sentados. Además en la sociedad en la que vivimos el tiempo es "
 "un recurso fundamental. En TuGymOnline creemos que las personas necesitaran "
 "un medio para poder escapar de sus rutinas y practicar deporte. Además "
 "pensamos que es importante que lo puedan practicar en el lugar que deseen o "
-"dónde más cómodos se sientan.<br/>Por esto TuGymOnline quiere traer a los "
-"gimnasios a las casas de las personas.\n"
-"\t\t\t\t\t\t\t"
+"dónde más cómodos se sientan. <br/> Por esto TuGymOnline quiere traer a los "
+"gimnasios a las casas de las personas."
 msgstr ""
+"Cada cop més gent té treballs sedentaris que els obliguen a restar moltes "
+"hores asseguts. A més a més, en la societat en la que vivim el temps és un "
+"recurs fonamental. En TuGymOnline creem que les persones necessitaran un "
+"mitjà per poder escapar de les seves rutines i practicar esport. A més "
+"pensem que és important que el puguin practicar en el lloc que desitgin o on "
+"més cómodes es sentin. <br/> Per això TuGymOnline vol portar el gimnasos a "
+"les cases de les persones."
 
 #~ msgid "Logout"
 #~ msgstr "Surt"

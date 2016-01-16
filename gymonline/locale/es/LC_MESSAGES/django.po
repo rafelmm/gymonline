@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-14 18:22+0100\n"
+"POT-Creation-Date: 2016-01-16 12:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2000,7 +2000,7 @@ msgstr "País"
 
 #: gymonline/apps/gymclient/models.py:213
 msgid "Gym Center"
-msgstr "Centor"
+msgstr "Centro"
 
 #: gymonline/apps/gymclient/models.py:214
 msgid "Gym Centers"
@@ -2082,35 +2082,35 @@ msgstr "Su mensaje"
 
 #: gymonline/apps/gymnews/admin.py:11 gymonline/apps/gymnews/models.py:62
 msgid "Comments"
-msgstr ""
+msgstr "Comentarios"
 
 #: gymonline/apps/gymnews/models.py:13
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: gymonline/apps/gymnews/models.py:17
 msgid "Title"
-msgstr ""
+msgstr "Título"
 
 #: gymonline/apps/gymnews/models.py:18 gymonline/apps/gymnews/models.py:47
 msgid "Published at"
-msgstr ""
+msgstr "Publicado en"
 
 #: gymonline/apps/gymnews/models.py:23
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #: gymonline/apps/gymnews/models.py:34
 msgid "Article"
-msgstr ""
+msgstr "Artículo"
 
 #: gymonline/apps/gymnews/models.py:35
 msgid "Articles"
-msgstr ""
+msgstr "Artículos"
 
 #: gymonline/apps/gymnews/models.py:43 gymonline/apps/gymnews/models.py:61
 msgid "Comment"
-msgstr ""
+msgstr "Comentario"
 
 #: gymonline/settings.py:174
 msgid "English"
@@ -2126,11 +2126,11 @@ msgstr "Catalán"
 
 #: gymonline/templates/403.html:5 gymonline/templates/404.html:5
 msgid "Access denied"
-msgstr ""
+msgstr "Acceso denegado"
 
 #: gymonline/templates/403.html:11
 msgid "Acess denied (403 Error)"
-msgstr ""
+msgstr "Acceso denegado (Error 403)"
 
 #: gymonline/templates/403.html:12
 msgid ""
@@ -2140,8 +2140,6 @@ msgid ""
 msgstr ""
 
 #: gymonline/templates/404.html:11
-#, fuzzy
-#| msgid "Page Not Found"
 msgid "Page Not Found (404 Error)"
 msgstr "La página no existe"
 
@@ -2226,8 +2224,6 @@ msgstr ""
 #: gymonline/templates/account/login.html:6
 #: gymonline/templates/account/login.html:12
 #: gymonline/templates/account/login.html:93
-#, fuzzy
-#| msgid "Sign in"
 msgid "Sign In"
 msgstr "Identifícate"
 
@@ -2244,8 +2240,6 @@ msgid "Sign in with Twitter"
 msgstr "Entra con Twitter"
 
 #: gymonline/templates/account/login.html:36
-#, fuzzy
-#| msgid "Sign in"
 msgid "Sign in "
 msgstr "Identifícate"
 
@@ -2316,20 +2310,14 @@ msgid "Your password is now changed."
 msgstr ""
 
 #: gymonline/templates/account/signup.html:9
-#, fuzzy
-#| msgid "Sign in"
 msgid "Signup"
 msgstr "Identifícate"
 
 #: gymonline/templates/account/signup.html:17
-#, fuzzy
-#| msgid "TuGymOnline"
 msgid "Join now TuGymOnline"
-msgstr "TuGymOnline"
+msgstr "Crea tu cuenta ahora en TuGymOnline"
 
 #: gymonline/templates/account/signup.html:170
-#, fuzzy
-#| msgid "Sign in"
 msgid "Sign up"
 msgstr "Identifícate"
 
@@ -2341,7 +2329,7 @@ msgstr ""
 
 #: gymonline/templates/account/snippet/already_logged_in.html:6
 msgid "Note"
-msgstr ""
+msgstr "Nota"
 
 #: gymonline/templates/account/snippet/already_logged_in.html:6
 #, python-format
@@ -2360,28 +2348,28 @@ msgid ""
 "within a few minutes."
 msgstr ""
 
-#: gymonline/templates/base.html:77
-msgid "news"
+#: gymonline/templates/base.html:72 gymonline/templates/base.html.py:74
+msgid "homepage"
 msgstr ""
 
+#: gymonline/templates/base.html:77
+msgid "news"
+msgstr "noticias"
+
 #: gymonline/templates/base.html:79
-#, fuzzy
-#| msgid "Contact us"
 msgid "contact"
-msgstr "Contacta con nosotros"
+msgstr "contacto"
 
 #: gymonline/templates/base.html:104
 msgid "Llevamos el gimnasio a tu casa"
-msgstr ""
+msgstr "Llevamos el gimnasio a tu casa"
 
 #: gymonline/templates/base.html:108
 #: gymonline/templates/gymonline/mision-vision.html:7
 msgid "Mision & Vision"
-msgstr ""
+msgstr "Misión & Visión"
 
 #: gymonline/templates/base.html:109
-#, fuzzy
-#| msgid "Contact us"
 msgid "Contact"
 msgstr "Contacta con nosotros"
 
@@ -2400,7 +2388,7 @@ msgstr "Comparte en"
 
 #: gymonline/templates/base.html:139
 msgid "TuGymOnline 2016. All rights reserved."
-msgstr ""
+msgstr "TuGymOnline 2016. Todos los derechos reservados."
 
 #: gymonline/templates/cookielaw/banner.html:5
 msgid "COOKIE_INFO_HEADER"
@@ -2426,14 +2414,12 @@ msgstr "TuGymOnline"
 
 #: gymonline/templates/gymclient/profile_detail.html:7
 #: gymonline/templates/gymclient/profile_detail.html:16
-#, fuzzy
-#| msgid "Profile"
 msgid "My Profile"
 msgstr "Perfil"
 
 #: gymonline/templates/gymclient/profile_detail.html:53
 msgid "Submit"
-msgstr ""
+msgstr "Submit"
 
 #: gymonline/templates/gymcontact/contact.html:16
 #: gymonline/templates/gymonline/index.html:41
@@ -2458,17 +2444,10 @@ msgid "Contact now"
 msgstr "Contacta ahora"
 
 #: gymonline/templates/gymcontact/contact_sended.html:9
-#, fuzzy
-#| msgid "Contact us"
 msgid "Contact sended"
 msgstr "Contacta con nosotros"
 
 #: gymonline/templates/gymcontact/contact_sended.html:15
-#, fuzzy
-#| msgid ""
-#| "Your message has been successfully send. We will contact you as soon as "
-#| "possible.\n"
-#| "Thank you very much"
 msgid ""
 "<p>Your message has been successfully send. We will contact you as soon as "
 "possible.<br />Thank you very much</p>"
@@ -2479,30 +2458,26 @@ msgstr ""
 
 #: gymonline/templates/gymnews/article_detail.html:7
 msgid "News Article"
-msgstr ""
+msgstr "Artículo"
 
 #: gymonline/templates/gymnews/article_form.html:5
 #: gymonline/templates/gymnews/article_list.html:7
-#, fuzzy
-#| msgid "Gym Centers"
 msgid "Gym News"
 msgstr "Centros"
 
 #: gymonline/templates/gymnews/article_list.html:13
-#, fuzzy
-#| msgid "TuGymOnline"
 msgid "tugymonline news"
-msgstr "TuGymOnline"
+msgstr "Nuestras noticias"
 
 #: gymonline/templates/gymnews/article_list.html:23
 msgid "Sorry, we don't have any news yet. Come again to read our updates."
 msgstr ""
+"¡Oh! Aún no hemos publicado ninguna notica. Vuelva pronto para ver nuestras "
+"actualizaciones."
 
 #: gymonline/templates/gymonline/index.html:11
-#, fuzzy
-#| msgid "TuGymOnline"
 msgid "tugymonline"
-msgstr "TuGymOnline"
+msgstr "tugymonline"
 
 #: gymonline/templates/gymonline/index.html:39
 msgid "Welcome to TuGymOnline!"
@@ -2573,31 +2548,37 @@ msgstr ""
 
 #: gymonline/templates/gymonline/mision-vision.html:15
 msgid "Mision"
-msgstr ""
+msgstr "Misión"
 
 #: gymonline/templates/gymonline/mision-vision.html:17
 msgid ""
 "Nuestra misión consiste en proporcionar una plataforma que sirva de guía y "
-"motivación para mejorar la calidad de vida de las personas estén dónde "
-"estén.\n"
-"\t\t\t\t\t\t\t"
+"motivación para mejorar la calidad de vida de las personas estén dónde estén."
 msgstr ""
-
-#: gymonline/templates/gymonline/mision-vision.html:26
-msgid "Vision"
-msgstr ""
+"Nuestra misión consiste en proporcionar una plataforma que sirva de guía y "
+"motivación para mejorar la calidad de vida de las personas estén dónde estén."
 
 #: gymonline/templates/gymonline/mision-vision.html:28
+msgid "Vision"
+msgstr "Visón"
+
+#: gymonline/templates/gymonline/mision-vision.html:30
 msgid ""
 "Cada vez más gente tiene trabajos sedentarios que les obligan a permanecer "
 "muchas horas sentados. Además en la sociedad en la que vivimos el tiempo es "
 "un recurso fundamental. En TuGymOnline creemos que las personas necesitaran "
 "un medio para poder escapar de sus rutinas y practicar deporte. Además "
 "pensamos que es importante que lo puedan practicar en el lugar que deseen o "
-"dónde más cómodos se sientan.<br/>Por esto TuGymOnline quiere traer a los "
-"gimnasios a las casas de las personas.\n"
-"\t\t\t\t\t\t\t"
+"dónde más cómodos se sientan. <br/> Por esto TuGymOnline quiere traer a los "
+"gimnasios a las casas de las personas."
 msgstr ""
+"Cada vez más gente tiene trabajos sedentarios que les obligan a permanecer "
+"muchas horas sentados. Además en la sociedad en la que vivimos el tiempo es "
+"un recurso fundamental. En TuGymOnline creemos que las personas necesitaran "
+"un medio para poder escapar de sus rutinas y practicar deporte. Además "
+"pensamos que es importante que lo puedan practicar en el lugar que deseen o "
+"dónde más cómodos se sientan. <br/> Por esto TuGymOnline quiere traer a los "
+"gimnasios a las casas de las personas."
 
 #~ msgid "Logout"
 #~ msgstr "Salir"
